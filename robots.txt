@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /private/
+Disallow: /tmp/
+Allow: /wp-admin/admin-ajax.php
+
+# Sitemap
+Sitemap: https://www.wifgroup.in/sitemap.xml
