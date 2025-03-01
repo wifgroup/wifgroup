@@ -16145,6 +16145,11 @@
       padding-top: calc(var(--spacing) * 40);
     }
   }
+  .md\:pt-50 {
+    @media (width >=768px) {
+      padding-top: calc(var(--spacing) * 50);
+    }
+  }
 
   .md\:pt-\[4\.5rem\] {
     @media (width >=768px) {
