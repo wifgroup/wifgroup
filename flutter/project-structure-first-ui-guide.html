@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 2: Flutter Project Structure & First UI | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 2 of the WIF Group 30-Day Flutter Course. Learn the fundamental project structure, build your first UI, and understand hot reload vs. hot restart. Perfect for new Flutter developers.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter project structure, main.dart, pubspec.yaml, Hot Reload, Hot Restart, app development course, mobile development, Dart programming">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/project-structure-first-ui-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 2: Flutter Project Structure & First UI | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Welcome to Day 2! In this lesson, we'll dive into the Flutter project structure and build your very first UI. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day2-hero-image.png">
+    <meta property="og:url" content="https://wifgroup.in/flutter/project-structure-first-ui-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 2: Flutter Project Structure & First UI | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Ready to build? Day 2 of our free 30-day Flutter course covers project structure and building your first UI. Join the journey! #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day2-hero-image.png">
     <meta name="twitter:site" content="@WIFGroup">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/project-structure-first-ui-guide.html"
+      },
+      "headline": "Day 2: Understanding Flutter Project Structure & Building Your First UI",
+      "description": "A detailed lesson on Flutter's core project structure, building a simple UI, and understanding hot reload vs. hot restart. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day2-hero-image.png",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-08-19T00:00:00+05:30",
+      "dateModified": "2025-08-19T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Flutter Project Structure & First UI",
+      "description": "A comprehensive lesson on Flutter's core concepts, designed for beginners.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Beginner",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT30M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Flutter Project Structure & First UI",
+          "url": "https://wifgroup.in/flutter/project-structure-first-ui-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/project-structure-first-ui-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,162 +177,185 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 2: Understanding Flutter Project Structure & Building Your First UI</h1>
+                    <p class="hero-subtitle">Now that your environment is ready, it’s time to understand how a Flutter
+                        project is organized and build your first simple UI. 🚀</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🗂️</span> Flutter Project Structure</h2>
                         <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                            alt="A diagram showing the file and folder structure of a typical Flutter project."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
-                        </ul>
+                        <p>When you run <code>flutter create my_first_app</code>, Flutter generates the following
+                            structure:</p>
+                        <pre class="code-content"><code>my_first_app/
+├── android/           → Native Android code (Kotlin/Java)
+├── ios/               → Native iOS code (Swift/Objective-C)
+├── lib/               → Main Dart code (you’ll live here!)
+│   └── main.dart
+├── test/              → Unit & widget tests
+└── pubspec.yaml       → Project config (dependencies, assets)
+</code></pre>
+                        <p>Let’s break down the important parts:</p>
                     </section>
+                    
+                    <section class="section" id="lib-main-dart" data-section="lib-main-dart">
+                        <h2><span class="section-icon">📁</span> lib/main.dart</h2>
+                        <p>Your app starts from <code>main.dart</code>. Here’s a simple version:</p>
 
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>main.dart</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(title: Text('My First Flutter App')),
+        body: Center(
+          child: Text('Hello, Flutter!'),
+        ),
+      ),
+    );
+  }
+}
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
-                        </div>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
-                        </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+                    <section class="section" id="pubspec" data-section="pubspec">
+                        <h2><span class="section-icon">📄</span> pubspec.yaml</h2>
+                        <ul>
+                            <li>Manages dependencies and assets (images, fonts)</li>
+                            <li>You’ll edit this often when using packages</li>
                         </ul>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>pubspec.yaml</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="first-ui" data-section="first-ui">
+                        <h2><span class="section-icon">🧱</span> Your First UI – Build a Simple Screen</h2>
+                        <p>Let’s make the app more interesting. Replace the <code>body</code> in your <code>main.dart</code>
+                            with this code:</p>
+
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>body: section</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+body: Center(
+  child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Icon(Icons.flutter_dash, size: 100, color: Colors.blue),
+      SizedBox(height: 20),
+      Text(
+        'Welcome to Flutter',
+        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),
+),
+                            </code></pre>
+                        </div>
+                        <p>Try customizing the icon, text, or background color. Play around!</p>
+                    </section>
+
+                    <section class="section" id="hot-reload" data-section="hot-reload">
+                        <h2><span class="section-icon">🔁</span> Hot Reload vs Hot Restart</h2>
+                        <img src="https://placehold.co/800x400/10b981/ffffff?text=Hot+Reload+vs.+Hot+Restart"
+                            alt="A visual comparison of Flutter's hot reload and hot restart features."
+                            class="content-image" width="800" height="400">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Use Case</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Hot Reload</strong></td>
+                                        <td>UI code changes, fast preview</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Hot Restart</strong></td>
+                                        <td>Full rebuild, resets app state</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Use hot reload to quickly preview UI changes. Use hot restart when you modify state-related
+                            logic.</p>
                     </section>
 
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Explored lib/, pubspec.yaml, and main.dart
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Created a basic screen with icon + text
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Ran the app on emulator/device
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Tried hot reload vs hot restart
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🧠</span> Homework: Personalize Your App</h2>
+                        <p>Share your screenshot using <code>#Flutter30Days</code> 💙</p>
+                        <ul>
+                            <li>Change the icon to your favorite</li>
+                            <li>Update the text to your name</li>
+                            <li>Add a new color or font</li>
+                        </ul>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Complete Day 2!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔥</span> Tomorrow's Topic:</h2>
+                        <p>We’ll explore <strong>Stateless vs Stateful widgets</strong> — the building blocks of Flutter logic.</p>
                     </section>
 
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Want Source Code + Bonus Projects?</h2>
+                        <p>Subscribe here to get full GitHub access, extra designs, and dev tips!</p>
                     </section>
-
+                    
                     <section class="section author-section" id="author" data-section="author">
                         <h2><span class="section-icon">👨‍🏫</span> About the Mentor</h2>
                         <div class="author-card">
@@ -384,7 +407,6 @@
                             </div>
                         </div>
                     </section>
-
 
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
@@ -441,16 +463,14 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🗂️</span> Project Structure</a>
+                            <a href="#lib-main-dart" class="toc-item"><span>📁</span> lib/main.dart breakdown</a>
+                            <a href="#pubspec" class="toc-item"><span>📄</span> pubspec.yaml</a>
+                            <a href="#first-ui" class="toc-item"><span>🧱</span> Your First UI</a>
+                            <a href="#hot-reload" class="toc-item"><span>🔁</span> Hot Reload vs Hot Restart</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🧠</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔥</span> Coming Tomorrow</a>
                         </div>
                     </nav>
 
@@ -505,8 +525,7 @@
                 <div class="blog-card-content">
                     <div class="blog-card-day">Day 3</div>
                     <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <p>Learn the core difference between Stateless and Stateful widgets to build dynamic UIs.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +534,10 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 2 Complete!</h2>
+            <p>You now understand the difference between <strong>Stateless</strong> and <strong>Stateful</strong>
+                Widgets.</p>
+            <p>Get ready for <strong>Day 3: Stateless vs Stateful Widgets!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +545,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>
@@ -543,34 +564,34 @@
                 <p>Innovate, Create, Elevate. Your vision, our expertise.</p>
                 <div class="footer-socials">
                     <a href="#" class="social-icon" title="Twitter" aria-label="Follow on Twitter"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                            </path>
-                        </svg></a>
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg></a>
                     <a href="#" class="social-icon" title="LinkedIn" aria-label="Connect on LinkedIn"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                            </path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg></a>
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
                     <a href="#" class="social-icon" title="Instagram" aria-label="Follow on Instagram"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg></a>
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a>
                     <a href="#" class="social-icon" title="GitHub" aria-label="View our GitHub profile"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg></a>
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg></a>
                 </div>
             </div>
             <div class="footer-section contact-info">
