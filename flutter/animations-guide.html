@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 22: Animations in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 22 of the WIF Group 30-Day Flutter Series. Learn how to add motion and visual effects to your apps using implicit, explicit, and Hero animations in Flutter.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter animations, AnimatedContainer, Tween animation, AnimationController, Hero animation, animation curves, UX design">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/animations-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 22: Animations in Flutter | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Bring your UI to life! This lesson covers all the essential animations in Flutter, from simple implicit animations to powerful Hero transitions. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day22-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/animations-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 22: Flutter's Animations | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Today's the day we add motion! Day 22 of our free 30-day Flutter course focuses on making apps interactive and visually appealing with animations. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day22-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/animations-guide.html"
+      },
+      "headline": "Day 22: Animations in Flutter – Tween, AnimatedContainer, Hero",
+      "description": "A detailed lesson on how to add motion and visual effects to Flutter apps using implicit, explicit, and Hero animations. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day22-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-07T00:00:00+05:30",
+      "dateModified": "2025-09-07T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Animations in Flutter",
+      "description": "A comprehensive lesson on adding animations to Flutter apps to improve user experience and aesthetics.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT45M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Animations in Flutter",
+          "url": "https://wifgroup.in/flutter/animations-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/animations-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,213 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 22: Animations in Flutter</h1>
+                    <p class="hero-subtitle">Learn to bring motion and interactivity into your apps with implicit, explicit, and Hero animations. 🎨</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> Why Animations Matter?</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+Animation+Concept"
+                            alt="An illustration of an app UI with animated elements, showing motion and visual effects that guide the user's attention."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Yesterday, we learned about error handling, logging, and debugging. Today, we'll focus on bringing our apps to life with motion. Animations aren't just for flair; they make apps more fun, dynamic, and user-friendly by guiding user focus and improving the overall user experience.</p>
+                        <ul>
+                            <li>Draw user attention to important elements ✨</li>
+                            <li>Make transitions smoother (page changes, button clicks)</li>
+                            <li>Improve usability & aesthetics 🎨</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="implicit-animations" data-section="implicit-animations">
+                        <h2><span class="section-icon">📌</span> Step 1: Implicit Animations</h2>
+                        <p>Implicit animations are the easiest way to get started with motion in Flutter. Widgets like `AnimatedContainer` and `AnimatedOpacity` automatically animate a property change when you update its value. This is a great way to add smooth transitions without writing complex animation logic.</p>
+                        <h3>Example: AnimatedContainer</h3>
+                        <p>This example shows how a container's size and color smoothly change when a button is pressed.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>AnimatedContainer Demo</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+
+class AnimatedContainerDemo extends StatefulWidget {
+  @override
+  _AnimatedContainerDemoState createState() => _AnimatedContainerDemoState();
+}
+
+class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
+  bool _isBig = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: AnimatedContainer(
+          width: _isBig ? 200 : 100,
+          height: _isBig ? 200 : 100,
+          color: _isBig ? Colors.blue : Colors.red,
+          duration: Duration(seconds: 1),
+          curve: Curves.easeInOut,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => setState(() => _isBig = !_isBig),
+        child: Icon(Icons.play_arrow),
+      ),
+    );
+  }
+}
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <p>👉 Tap the `FloatingActionButton` to see the container smoothly resize and change color.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="tween-animations" data-section="tween-animations">
+                        <h2><span class="section-icon">📌</span> Step 2: Tween Animations (Explicit Animations)</h2>
+                        <p>For more fine-grained control, you can use explicit animations with an `AnimationController` and a `Tween`. This gives you full control over the animation's timing, duration, and values.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Tween Animation Demo</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+
+class TweenAnimationDemo extends StatefulWidget {
+  @override
+  _TweenAnimationDemoState createState() => _TweenAnimationDemoState();
+}
+
+class _TweenAnimationDemoState extends State<TweenAnimationDemo>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller =
+        AnimationController(vsync: this, duration: Duration(seconds: 2));
+    _animation = Tween<double>(begin: 0, end: 200).animate(_controller);
+    _controller.repeat(reverse: true);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: AnimatedBuilder(
+          animation: _animation,
+          builder: (_, child) {
+            return Container(
+              width: _animation.value,
+              height: _animation.value,
+              color: Colors.purple,
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+}
+                            </code></pre>
                         </div>
+                        <p>👉 Here, a square smoothly grows and shrinks in a continuous loop. The `AnimatedBuilder` widget is used to rebuild only the animated part of the UI, improving performance.</p>
+                    </section>
+                    
+                    <section class="section" id="hero-animations" data-section="hero-animations">
+                        <h2><span class="section-icon">📌</span> Step 3: Hero Animations (Page Transitions)</h2>
+                        <p>A **Hero** animation creates a dramatic visual effect by smoothly transitioning a shared widget between two different screens. It's a great way to link two screens and provide visual continuity.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Hero Animation Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+// First Page
+GestureDetector(
+  onTap: () => Navigator.push(
+    context,
+    MaterialPageRoute(builder: (_) => SecondPage()),
+  ),
+  child: Hero(
+    tag: "profile-pic",
+    child: CircleAvatar(
+      radius: 40,
+      backgroundImage: AssetImage("assets/profile.jpg"),
+    ),
+  ),
+);
+
+// Second Page
+Hero(
+  tag: "profile-pic",
+  child: Image.asset("assets/profile.jpg", width: 200, height: 200),
+);
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
-                        </ul>
+                        <p>👉 The image smoothly transitions from a small circle avatar on the first screen into a larger image on the second screen.</p>
                     </section>
 
+                    <section class="section" id="curves" data-section="curves">
+                        <h2><span class="section-icon">📌</span> Step 4: Curves</h2>
+                        <p>Animation **Curves** define the pace and feel of an animation. Using different curves can drastically change the user's perception of the motion. Try experimenting with these to find the perfect effect:</p>
+                        <pre class="code-content"><code>
+Curves.linear  // Constant speed
+Curves.easeIn  // Starts slow, speeds up
+Curves.easeOut // Starts fast, slows down
+Curves.bounceOut // Bounces at the end
+Curves.elasticInOut // An elastic effect at the beginning and end
+                        </code></pre>
+                    </section>
+                    
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Learned implicit animations (`AnimatedContainer`)
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Implemented explicit animations (`Tween` + `AnimationController`)
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Built Hero transitions between screens
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Explored animation curves
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Create a card that expands and collapses smoothly using `AnimatedContainer`.</p>
+                        <p>Build a simple loading animation using `Tween` and `AnimationController`.</p>
+                        <p>Add a `Hero` animation to an image when transitioning from a list view to a detail page.</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 22 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 23) → we’ll go deeper into custom UI with **CustomPaint**: drawing shapes, using canvas, and creating truly unique widgets from scratch 🖌️.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +438,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +458,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +493,14 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> Why Animations Matter?</a>
+                            <a href="#implicit-animations" class="toc-item"><span>📌</span> Implicit Animations</a>
+                            <a href="#tween-animations" class="toc-item"><span>📌</span> Tween Animations</a>
+                            <a href="#hero-animations" class="toc-item"><span>📌</span> Hero Animations</a>
+                            <a href="#curves" class="toc-item"><span>📌</span> Curves</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +526,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+20"
+                    alt="An illustration for Day 20 of the Flutter course, covering Firebase Storage."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 20</div>
+                    <h3>Firebase Storage</h3>
+                    <p>Learn how to upload and manage images and files in Firebase Storage and link them to Firestore documents.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+21"
+                    alt="An illustration for Day 21 of the Flutter course, building error handling and debugging."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 21</div>
+                    <h3>Error Handling & Debugging</h3>
+                    <p>Learn best practices for handling errors, logging, and using Flutter's debugging tools to improve app stability.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+23"
+                    alt="An illustration for Day 23 of the Flutter course, focusing on custom painting and canvas."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 23</div>
+                    <h3>CustomPaint & Canvas</h3>
+                    <p>Discover how to create unique and custom UI by drawing shapes directly on a canvas with CustomPaint.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +563,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 22 Complete!</h2>
+            <p>You now know how to add animations to make your Flutter apps more engaging.</p>
+            <p>Get ready for <strong>Day 23: CustomPaint & Canvas!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +573,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

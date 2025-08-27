@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 5: Layout & Flex Widgets | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 5 of the WIF Group 30-Day Flutter Course. Learn advanced layout control with Expanded, Spacer, Wrap, and Stack widgets to create flexible and responsive UI.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Expanded widget, Spacer, Wrap, Stack, Flutter layout, responsive UI, app development, Dart programming">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/layout-flex-widgets-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 5: Layout & Flex Widgets | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Take control of your Flutter layouts! In this lesson, we explore Expanded, Spacer, Wrap, and Stack to build professional and flexible UIs. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day5-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/layout-flex-widgets-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 5: Flutter's Expanded, Spacer, Wrap & Stack Widgets | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Ready to build flexible layouts? Day 5 of our free 30-day Flutter course is all about advanced widgets like Expanded, Spacer, Wrap, and Stack. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day5-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -35,66 +35,66 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/layout-flex-widgets-guide.html"
+      },
+      "headline": "Day 5: Mastering Layout & Flex Widgets – Expanded, Spacer, Wrap & Stack",
+      "description": "A detailed lesson on advanced Flutter layout widgets, complete with code examples. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day5-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-08-21T00:00:00+05:30",
+      "dateModified": "2025-08-21T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Advanced Layout Widgets in Flutter",
+      "description": "A comprehensive lesson on Flutter's flexible layout concepts, designed for beginners moving beyond the basics.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT30M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Layout & Flex Widgets",
+          "url": "https://wifgroup.in/flutter/layout-flex-widgets-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/layout-flex-widgets-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,268 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 5: Layouts & Flex Widgets</h1>
+                    <p class="hero-subtitle">Take control of your Flutter layouts with powerful widgets like Expanded,
+                        Spacer, Wrap & Stack. 📐</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">✨</span> The Foundation of UI</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flexible+Flutter+Layouts"
                             alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
-                        </ul>
+                        <p>Yesterday, we explored basic widgets like Text, Image, Row, Column, and Container. Today,
+                            we’ll take a step further and learn how to control layout and spacing in Flutter using
+                            flexible widgets: <strong>Expanded</strong>, <strong>Spacer</strong>, <strong>Wrap</strong>,
+                            and <strong>Stack</strong>.</p>
                     </section>
 
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    <section class="section" id="expanded-widget" data-section="expanded-widget">
+                        <h2><span class="section-icon">📐</span> 1. Expanded Widget</h2>
+                        <p>The <strong>Expanded</strong> widget takes available space inside <strong>Row</strong> or
+                            <strong>Column</strong> and expands a child widget to fit proportionally.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Expanded Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+Row(
+  children: [
+    Expanded(child: Container(color: Colors.red, height: 50)),
+    Expanded(flex: 2, child: Container(color: Colors.blue, height: 50)),
+  ],
+)
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <p>👉 Here, the blue container takes double the space of the red one (<code>flex: 2</code>).</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="spacer-widget" data-section="spacer-widget">
+                        <h2><span class="section-icon">📏</span> 2. Spacer Widget</h2>
+                        <p><strong>Spacer</strong> is a simpler way to add flexible empty space between widgets.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Spacer Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+Row(
+  children: [
+    Icon(Icons.star, size: 40),
+    Spacer(),
+    Icon(Icons.favorite, size: 40),
+  ],
+)
+                            </code></pre>
                         </div>
+                        <p>👉 The <code>Spacer()</code> pushes the icons to opposite ends.</p>
+                    </section>
+
+                    <section class="section" id="wrap-widget" data-section="wrap-widget">
+                        <h2><span class="section-icon">🔄</span> 3. Wrap Widget</h2>
+                        <p><strong>Wrap</strong> automatically moves children to the next line if they don’t fit in one
+                            row.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Wrap Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+Wrap(
+  spacing: 12,
+  runSpacing: 8,
+  children: List.generate(
+    10,
+    (index) => 
+        Chip(label: 
+                Text('Item $index')),
+  ),
+)
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
+                        <p>👉 Useful for tags, chips, grids, or responsive UI.</p>
+                    </section>
+
+                    <section class="section" id="stack-widget" data-section="stack-widget">
+                        <h2><span class="section-icon">🎨</span> 4. Stack Widget</h2>
+                        <p><strong>Stack</strong> allows widgets to overlap each other.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Stack Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
+                            <pre class="code-content"><code>
+Stack(
+  alignment: Alignment.center,
+  children: [
+    Container(
+      width: 200, 
+      height: 200, 
+      color: Colors.blue.shade200),
+    Positioned(
+      top: 20,
+      right: 20,
+      child: Icon(
+        Icons.star, 
+        size: 40, 
+        color: Colors.yellow),
+    ),
+    Text('Hello Stack!', 
+    style: TextStyle(
+      fontSize: 20, 
+      fontWeight: FontWeight.bold,
+      )),
+  ],
+)
+                            </code></pre>
                         </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
-                        </ul>
+                        <p>👉 Common use cases: profile picture overlays, banners, floating buttons, or custom designs.
+                        </p>
+                    </section>
+
+                    <section class="section" id="example-app" data-section="example-app">
+                        <h2><span class="section-icon">🏗️</span> Example App – Layout Playground</h2>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>main.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text('Day 5: Layouts & Flex')),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              // Expanded Example
+              Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    color: Colors.red,
+                    height: 40,
+                  )),
+                  Expanded(
+                      flex: 2,
+                      child: Container(
+                        color: Colors.green,
+                        height: 40,
+                      )),
+                ],
+              ),
+              SizedBox(height: 20),
+              // Spacer Example
+              Row(
+                children: [
+                  Icon(Icons.home, size: 40),
+                  Spacer(),
+                  Icon(Icons.settings, size: 40),
+                ],
+              ),
+              SizedBox(height: 20),
+              // Wrap Example
+              Wrap(
+                spacing: 8,
+                children: List.generate(
+                  6,
+                  (i) => Chip(label: Text('Tag $i')),
+                ),
+              ),
+              SizedBox(height: 20),
+              // Stack Example
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  Container(
+                    width: 150,
+                    height: 150,
+                    color: Colors.blue.shade100,
+                  ),
+                  Icon(
+                    Icons.person,
+                    size: 80,
+                    color: Colors.blue.shade800,
+                  ),
+                  Positioned(
+                    bottom: 10,
+                    right: 10,
+                    child: Icon(
+                      Icons.check_circle,
+                      color: Colors.green,
+                      size: 30,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+                            </code></pre>
+                        </div>
                     </section>
 
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Used Expanded to share space
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Added flexible gaps with Spacer
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Built responsive rows with Wrap
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Created overlapping UI with Stack
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Practiced combining layouts
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🧠</span> Homework</h2>
+                        <p>Create a profile screen with:</p>
+                        <ul>
+                            <li>Profile image inside a Stack with a badge overlay</li>
+                            <li>Bio text in a Column</li>
+                            <li>Social icons in a Row with Spacer</li>
+                        </ul>
+                        <p>Experiment with Wrap for listing skills or interests.</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 5 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> Tomorrow’s Preview</h2>
+                        <p>We’ll dive into <strong>Navigation Basics</strong> (<code>Navigator.push</code>,
+                            <code>Navigator.pop</code>, routes) to move between screens.</p>
                     </section>
 
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -384,7 +492,6 @@
                             </div>
                         </div>
                     </section>
-
 
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
@@ -441,16 +548,15 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>✨</span> The Foundation of UI</a>
+                            <a href="#expanded-widget" class="toc-item"><span>📐</span> 1. Expanded Widget</a>
+                            <a href="#spacer-widget" class="toc-item"><span>📏</span> 2. Spacer Widget</a>
+                            <a href="#wrap-widget" class="toc-item"><span>🔄</span> 3. Wrap Widget</a>
+                            <a href="#stack-widget" class="toc-item"><span>🎨</span> 4. Stack Widget</a>
+                            <a href="#example-app" class="toc-item"><span>🏗️</span> Example App</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🧠</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> Tomorrow’s Preview</a>
                         </div>
                     </nav>
 
@@ -505,9 +611,8 @@
                 <div class="blog-card-content">
                     <div class="blog-card-day">Day 3</div>
                     <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
-                    <a href="#" class="blog-card-link">Coming Soon...</a>
+                    <p>Learn the core difference between Stateless and Stateful widgets to build dynamic UIs.</p>
+                    <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
         </div>
@@ -515,9 +620,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 5 Complete!</h2>
+            <p>You now know how to build flexible and responsive layouts in Flutter.</p>
+            <p>Get ready for <strong>Day 6: Navigation Basics!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +630,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 6: Navigation Basics in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 6 of the WIF Group 30-Day Flutter Course. Learn the fundamentals of navigation in Flutter using routes, Navigator.push, Navigator.pop, and passing data between screens.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter navigation, routes, Navigator.push, Navigator.pop, named routes, passing data, Flutter for beginners, app development">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/navigation-basics-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 6: Navigation Basics in Flutter | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Master multi-screen apps! This lesson covers the essentials of Flutter navigation, from simple pushes and pops to named routes and data passing. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day6-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/navigation-basics-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 6: Flutter's Navigation & Routes | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Time to build multi-screen apps! This lesson on Flutter navigation is the next step in our free 30-day Flutter course. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day6-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/navigation-basics-guide.html"
+      },
+      "headline": "Day 6: Mastering Navigation Basics in Flutter – Routes & Navigator",
+      "description": "A detailed lesson on Flutter's core navigation system, covering routes, pushing and popping screens, and passing data. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day6-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-08-22T00:00:00+05:30",
+      "dateModified": "2025-08-22T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Navigation Basics in Flutter",
+      "description": "A comprehensive lesson on Flutter's navigation system, designed for beginners moving beyond single-screen apps.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT30M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Navigation Basics in Flutter",
+          "url": "https://wifgroup.in/flutter/navigation-basics-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/navigation-basics-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,213 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 6: Navigation Basics in Flutter</h1>
+                    <p class="hero-subtitle">Learn how to move between screens and pass data using routes and the Navigator. 🧭</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧭</span> What is Navigation?</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+Navigation+Stack"
+                            alt="An abstract illustration of a stack of screens or cards, representing the Navigator's route stack."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
-                        </ul>
+                        <p>In Flutter, each screen is essentially a widget (often called a "Route"). The <strong>Navigator</strong> manages a stack of routes: <code>push</code> adds a new route (screen) on top, and <code>pop</code> removes the top route to go back. Think of it like a stack of cards: adding a new screen is like putting a new card on top.</p>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="two-screen-app" data-section="two-screen-app">
+                        <h2><span class="section-icon">📱</span> Example: Two-Screen App</h2>
+                        <p>Let’s create a simple app with a Home Screen and a Details Screen.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>main.dart</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
-                        </div>
-                        <p>This checks for missing dependencies and setups.</p>
-                    </section>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Navigation Demo',
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Home Screen')),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Go to Details'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DetailsScreen()),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class DetailsScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Details Screen')),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Go Back'),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+    );
+  }
+}
+                            </code></pre>
                         </div>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
-                        </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+                        <p><strong>🔍 What happens?</strong></p>
+                        <ul>
+                            <li>From Home → tap button → new <code>DetailsScreen</code> pushed.</li>
+                            <li>On Details → tap button → pops and goes back.</li>
                         </ul>
                     </section>
 
+                    <section class="section" id="named-routes" data-section="named-routes">
+                        <h2><span class="section-icon">🏷️</span> Named Routes</h2>
+                        <p>Instead of writing <code>MaterialPageRoute</code> everywhere, we can use named routes for cleaner, more manageable code.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>main.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Named Routes Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+        '/details': (context) => DetailsScreen(),
+      },
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Home')),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Go to Details'),
+          onPressed: () {
+            Navigator.pushNamed(context, '/details');
+          },
+        ),
+      ),
+    );
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="passing-data" data-section="passing-data">
+                        <h2><span class="section-icon">📤</span> Passing Data Between Screens</h2>
+                        <p>You can also send data when navigating to a new screen.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Pushing with Data</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (context) => DetailsScreen(data: 'Hello from Home!'),
+  ),
+);
+                            </code></pre>
+                        </div>
+                        <p>And receive it in the second screen:</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Receiving Data</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+class DetailsScreen extends StatelessWidget {
+  final String data;
+  DetailsScreen({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Details')),
+      body: Center(child: Text(data)),
+    );
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+                    
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Learn what routes & navigation are
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Use Navigator.push and Navigator.pop
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Implement named routes
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Pass data between screens
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Create a 3-screen app: Home → Profile → Settings</p>
+                        <ul>
+                            <li>Use named routes for navigation.</li>
+                            <li>Pass a username from Home → Profile.</li>
+                        </ul>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 6 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
                         <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <p>Tomorrow (Day 7) we’ll dive into <strong>Forms & Validation</strong> – making apps interactive with user input.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -384,7 +437,6 @@
                             </div>
                         </div>
                     </section>
-
 
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
@@ -441,16 +493,13 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧭</span> What is Navigation?</a>
+                            <a href="#two-screen-app" class="toc-item"><span>📱</span> Example: Two-Screen App</a>
+                            <a href="#named-routes" class="toc-item"><span>🏷️</span> Named Routes</a>
+                            <a href="#passing-data" class="toc-item"><span>📤</span> Passing Data</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔥</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +525,36 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+4"
+                    alt="An illustration for Day 4 of the Flutter course, covering the introduction to Flutter & Dart."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
+                    <div class="blog-card-day">Day 4</div>
+                    <h3>Basic Widgets in Flutter</h3>
+                    <p>Learn the essential building blocks of any Flutter UI: Text, Image, Row, Column, and Container.
                     </p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+5"
+                    alt="An illustration for Day 5 of the Flutter course, building a 'Hello World' app."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 5</div>
+                    <h3>Layouts & Flex Widgets</h3>
+                    <p>Master multi-screen apps with navigation, routes, and data passing.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+7"
+                    alt="An illustration for Day 7 of the Flutter course, focusing on basic layout widgets."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 7</div>
+                    <h3>Forms & Validation</h3>
+                    <p>Create interactive apps that handle user input and validate data effectively.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +563,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 6 Complete!</h2>
+            <p>You now know how to navigate between screens and pass data in Flutter.</p>
+            <p>Get ready for <strong>Day 7: Forms & Validation!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +573,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

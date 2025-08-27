@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 19: CRUD with Firebase Firestore in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 19 of the WIF Group 30-Day Flutter Course. Learn how to perform CRUD (Create, Read, Update, Delete) operations with Firebase Firestore to build data-driven apps.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Firebase Firestore, CRUD, StreamBuilder, real-time database, NoSQL, data-driven app, mobile backend">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/firestore-crud-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 19: CRUD with Firebase Firestore | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Build your first data-driven app! This lesson covers all the essential CRUD operations with Firebase Firestore for creating, reading, updating, and deleting data. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day19-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/firestore-crud-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 19: Flutter's Firebase Firestore CRUD | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Today's the day we make our app dynamic! Day 19 of our free 30-day Flutter course focuses on using Firestore for real-time data management. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day19-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/firestore-crud-guide.html"
+      },
+      "headline": "Day 19: CRUD with Firebase Firestore",
+      "description": "A detailed lesson on how to perform Create, Read, Update, and Delete (CRUD) operations in Flutter using Firebase Firestore. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day19-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-04T00:00:00+05:30",
+      "dateModified": "2025-09-04T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "CRUD with Firebase Firestore",
+      "description": "A comprehensive lesson on creating, reading, updating, and deleting data using Firebase Firestore.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT45M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "CRUD with Firebase Firestore",
+          "url": "https://wifgroup.in/flutter/firestore-crud-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/firestore-crud-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,267 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 19: CRUD with Firebase Firestore</h1>
+                    <p class="hero-subtitle">Learn to create, read, update, and delete data with Firebase Firestore to build dynamic, data-driven apps. 📝</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> What is Firestore?</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Firestore+Collections+and+Documents"
+                            alt="An illustration of Firestore data structure, showing a hierarchy of collections, documents, and fields."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Firestore is a flexible, scalable **NoSQL cloud database** from Firebase. It stores data in a hierarchical structure of **collections** and **documents**. It’s perfect for real-time applications because it automatically keeps your data in sync across all connected devices.</p>
+                        <ul>
+                            <li>Stores data in **collections → documents → fields**.</li>
+                            <li>Provides **real-time updates** to connected devices.</li>
+                            <li>Highly scalable and easy to integrate.</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="step1-deps" data-section="step1-deps">
+                        <h2><span class="section-icon">📦</span> Step 1: Firestore Dependency</h2>
+                        <p>Make sure you have the `cloud_firestore` package in your `pubspec.yaml` file from Day 17. If not, add it now.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>pubspec.yaml</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^5.6.0
+  firebase_core: ^2.15.0
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <p>Run `flutter pub get` to fetch the package.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="step2-init" data-section="step2-init">
+                        <h2><span class="section-icon">📌</span> Step 2: Initialize Firestore</h2>
+                        <p>To use Firestore, you need an instance of `FirebaseFirestore`. You can create a global instance like this:</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Initialize Firestore</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+FirebaseFirestore firestore = FirebaseFirestore.instance;
+                            </code></pre>
                         </div>
+                    </section>
+                    
+                    <section class="section" id="step3-create" data-section="step3-create">
+                        <h2><span class="section-icon">📝</span> Step 3: Create Data</h2>
+                        <p>To add a new document to a collection, use the `.add()` method. Firestore will automatically generate a unique ID for the new document.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Create a new document</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+await firestore.collection('tasks').add({
+  'title': 'Buy groceries',
+  'description': 'Milk, Eggs, Bread',
+  'completed': false,
+});
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
-                        </ul>
                     </section>
 
+                    <section class="section" id="step4-read" data-section="step4-read">
+                        <h2><span class="section-icon">📖</span> Step 4: Read Data</h2>
+                        <p>To read data in real-time, use `StreamBuilder` and listen to a collection's `.snapshots()`. The builder function will automatically rebuild whenever data changes in the Firestore database.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Read data with StreamBuilder</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+StreamBuilder(
+  stream: firestore.collection('tasks').snapshots(),
+  builder: (context, snapshot) {
+    if (!snapshot.hasData) return CircularProgressIndicator();
+
+    final tasks = snapshot.data!.docs;
+
+    return ListView.builder(
+      itemCount: tasks.length,
+      itemBuilder: (context, index) {
+        final task = tasks[index];
+        return ListTile(
+          title: Text(task['title']),
+          subtitle: Text(task['description']),
+          trailing: Checkbox(
+            value: task['completed'],
+            onChanged: (value) {
+              firestore.collection('tasks').doc(task.id).update({
+                'completed': value,
+              });
+            },
+          ),
+        );
+      },
+    );
+  },
+)
+                            </code></pre>
+                        </div>
+                        <p>The `task.id` is the unique document ID, which is essential for updating or deleting specific documents.</p>
+                    </section>
+                    
+                    <section class="section" id="step5-update" data-section="step5-update">
+                        <h2><span class="section-icon">✏️</span> Step 5: Update Data</h2>
+                        <p>To update an existing document, you need its document ID. Use the `.doc()` method to specify the document and then call `.update()` with the new data.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Update a document</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+await firestore.collection('tasks').doc('DOCUMENT_ID').update({
+  'title': 'Buy groceries and fruits',
+});
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="step6-delete" data-section="step6-delete">
+                        <h2><span class="section-icon">❌</span> Step 6: Delete Data</h2>
+                        <p>To delete a document, you also need its ID. Use `.doc()` to target the document, and then call `.delete()`.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Delete a document</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+await firestore.collection('tasks').doc('DOCUMENT_ID').delete();
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="example-app" data-section="example-app">
+                        <h2><span class="section-icon">🧑‍💻</span> Example: Simple To-Do App</h2>
+                        <p>This simple app demonstrates all CRUD operations in action. It creates a task, displays a list of tasks in real-time, and allows you to update and delete them.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Complete Code</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+class TodoApp extends StatelessWidget {
+  final FirebaseFirestore firestore = FirebaseFirestore.instance;
+  final TextEditingController _controller = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Firestore CRUD")),
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(8),
+            child: TextField(controller: _controller, decoration: InputDecoration(labelText: 'New Task')),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              await firestore.collection('tasks').add({
+                'title': _controller.text,
+                'completed': false,
+              });
+              _controller.clear();
+            },
+            child: Text("Add Task"),
+          ),
+          Expanded(
+            child: StreamBuilder(
+              stream: firestore.collection('tasks').snapshots(),
+              builder: (context, snapshot) {
+                if (!snapshot.hasData) return CircularProgressIndicator();
+                final tasks = snapshot.data!.docs;
+                return ListView.builder(
+                  itemCount: tasks.length,
+                  itemBuilder: (context, index) {
+                    final task = tasks[index];
+                    return ListTile(
+                      title: Text(task['title']),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(
+                            icon: Icon(Icons.edit),
+                            onPressed: () async {
+                              await firestore.collection('tasks').doc(task.id).update({'title': 'Updated Task'});
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.delete),
+                            onPressed: () async {
+                              await firestore.collection('tasks').doc(task.id).delete();
+                            },
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+                    
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Connected Flutter app to Firestore
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Performed Create, Read, Update, Delete operations
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Implemented real-time updates with StreamBuilder
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Built a simple To-Do app
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Add a completed toggle for each task using a Checkbox.</p>
+                        <p>Add a timestamp to tasks and order them by the latest first.</p>
+                        <p>Add a task description field to your To-Do app.</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 19 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 20) → we’ll explore **Firebase Storage**: Uploading images and files and linking them to Firestore documents. This will allow us to build apps with media support 🌟.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +492,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +512,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +547,17 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> What is Firestore?</a>
+                            <a href="#step1-deps" class="toc-item"><span>📦</span> Step 1: Dependency</a>
+                            <a href="#step2-init" class="toc-item"><span>📌</span> Step 2: Initialize Firestore</a>
+                            <a href="#step3-create" class="toc-item"><span>📝</span> Step 3: Create Data</a>
+                            <a href="#step4-read" class="toc-item"><span>📖</span> Step 4: Read Data</a>
+                            <a href="#step5-update" class="toc-item"><span>✏️</span> Step 5: Update Data</a>
+                            <a href="#step6-delete" class="toc-item"><span>❌</span> Step 6: Delete Data</a>
+                            <a href="#example-app" class="toc-item"><span>🧑‍💻</span> Example: Simple To-Do App</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +583,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+17"
+                    alt="An illustration for Day 17 of the Flutter course, covering Firebase setup."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 17</div>
+                    <h3>Firebase Setup</h3>
+                    <p>Learn how to connect your Flutter app to Firebase for authentication, databases, and more.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+18"
+                    alt="An illustration for Day 18 of the Flutter course, building Firebase Authentication."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 18</div>
+                    <h3>Firebase Authentication</h3>
+                    <p>Learn how to implement user sign-up, sign-in, and session management using Firebase Auth.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+20"
+                    alt="An illustration for Day 20 of the Flutter course, focusing on Firebase Storage."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 20</div>
+                    <h3>Firebase Storage</h3>
+                    <p>Learn how to upload and manage images and files in Firebase Storage and link them to Firestore documents.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +620,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 19 Complete!</h2>
+            <p>You now know how to perform CRUD operations with Firebase Firestore.</p>
+            <p>Get ready for <strong>Day 20: Firebase Storage!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +630,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

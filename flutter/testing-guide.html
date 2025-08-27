@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 29: Testing in Flutter (Unit, Widget, Integration) | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 29 of the 30-Day Flutter Series. Learn how to ensure your app is reliable and bug-free by writing unit, widget, and integration tests to verify functionality and user flows.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter testing, unit test, widget test, integration test, flutter_test, integration_test, TDD, code quality">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/testing-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 29: Testing in Flutter | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Build reliable apps with confidence! This lesson covers all three types of Flutter tests—unit, widget, and integration—to ensure your app is robust and bug-free. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day29-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/testing-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 29: Flutter's Testing Methods | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Today we learn to build with confidence! Day 29 of our free 30-day Flutter course focuses on writing robust unit, widget, and integration tests. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day29-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -35,66 +35,66 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/testing-guide.html"
+      },
+      "headline": "Day 29: Testing (Unit, Widget, Integration) in Flutter",
+      "description": "A detailed lesson on why and how to write unit, widget, and integration tests to ensure a robust and bug-free Flutter application. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day29-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-14T00:00:00+05:30",
+      "dateModified": "2025-09-14T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Testing in Flutter",
+      "description": "A comprehensive lesson on Flutter's testing pyramid for building reliable and stable apps.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT60M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Testing in Flutter",
+          "url": "https://wifgroup.in/flutter/testing-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/testing-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,217 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 29: Testing (Unit, Widget, Integration)</h1>
+                    <p class="hero-subtitle">Learn to write and run tests to ensure your apps are reliable, robust, and bug-free. 🧪</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> Why Testing Matters</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+Testing+Workflow"
+                            alt="An illustration showing the process of unit, widget, and integration testing, forming a pyramid structure."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Yesterday, we optimized apps for performance. Today, we'll ensure our apps are reliable by adding automated tests. Testing is a crucial part of the software development lifecycle that prevents regressions, ensures features work as expected, and ultimately gives you confidence in your code before a release.</p>
+                        <ul>
+                            <li>Prevents regressions when code changes.</li>
+                            <li>Ensures features work as expected.</li>
+                            <li>Improves code quality and confidence before release.</li>
+                            <li>Saves debugging time in production.</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
+                    
+                    <section class="section" id="types-of-tests" data-section="types-of-tests">
+                        <h2><span class="section-icon">🧩</span> Types of Tests in Flutter</h2>
+                        <p>Flutter provides a testing framework that supports three main types of tests, each with a different focus and speed.</p>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Test Type</th>
+                                        <th>What it Covers</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Unit Test</strong></td>
+                                        <td>Small pieces of logic (functions, classes)</td>
+                                        <td>⚡ Fast</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Widget Test</strong></td>
+                                        <td>Individual widgets in isolation</td>
+                                        <td>⚡ Medium</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Integration Test</strong></td>
+                                        <td>Full app, real user flow</td>
+                                        <td>🐢 Slower</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </section>
 
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    <section class="section" id="unit-testing" data-section="unit-testing">
+                        <h2><span class="section-icon">✅</span> 1. Unit Testing</h2>
+                        <p>Unit tests verify the behavior of a single class or function. They are fast to run and provide quick feedback on the correctness of your code's logic.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>test/counter_test.dart</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+import 'package:flutter_test/flutter_test.dart';
+
+int add(int a, int b) => a + b;
+
+void main() {
+  test('adds two numbers correctly', () {
+    expect(add(2, 3), 5);
+  });
+}
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <p>To run this test, use the command: `flutter test`.</p>
+                    </section>
+                    
+                    <section class="section" id="widget-testing" data-section="widget-testing">
+                        <h2><span class="section-icon">✅</span> 2. Widget Testing</h2>
+                        <p>Widget tests build and interact with a single widget in a controlled environment, ensuring that the UI looks and behaves as expected. You can simulate user gestures like taps and scrolls without running the app on a device or emulator.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>test/widget_test.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+  testWidgets('Counter increments when button is tapped',
+      (WidgetTester tester) async {
+    // Build widget
+    await tester.pumpWidget(MaterialApp(
+      home: Scaffold(
+        body: StatefulBuilder(
+          builder: (context, setState) {
+            int counter = 0;
+            return Column(
+              children: [
+                Text('Count: $counter', key: Key('counter')),
+                ElevatedButton(
+                  onPressed: () => setState(() => counter++),
+                  child: Text('Increment'),
+                ),
+              ],
+            );
+          },
+        ),
+      ),
+    ));
+
+    // Verify initial state
+    expect(find.text('Count: 0'), findsOneWidget);
+
+    // Tap button
+    await tester.tap(find.text('Increment'));
+    await tester.pump();
+
+    // Verify updated state
+    expect(find.text('Count: 1'), findsOneWidget);
+  });
+}
+                            </code></pre>
+                        </div>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="integration-testing" data-section="integration-testing">
+                        <h2><span class="section-icon">✅</span> 3. Integration Testing</h2>
+                        <p>Integration tests run on a real device or emulator and verify the entire app's functionality from end to end. They simulate a real user's journey through the app, ensuring all components work together seamlessly.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>integration_test/app_test.dart</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
+import 'package:my_app/main.dart' as app;
+
+void main() {
+  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+
+  testWidgets('App startup and button test', (tester) async {
+    app.main();
+    await tester.pumpAndSettle();
+
+    // Find button
+    final button = find.text('Increment');
+    expect(button, findsOneWidget);
+
+    // Tap button
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+
+    // Check updated counter
+    expect(find.text('1'), findsOneWidget);
+  });
+}
+                            </code></pre>
                         </div>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
-                        </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+                        <p>To run integration tests, use: `flutter test integration_test`.</p>
+                    </section>
+                    
+                    <section class="section" id="testing-tools" data-section="testing-tools">
+                        <h2><span class="section-icon">🛠️</span> Testing Tools</h2>
+                        <ul>
+                            <li>`flutter_test` → The core package for unit and widget tests.</li>
+                            <li>`integration_test` → The official package for end-to-end testing.</li>
+                            <li>`mockito` or `mocktail` → Essential packages for creating mock objects to test code in isolation.</li>
+                            <li>**CI/CD pipelines** (e.g., GitHub Actions, Bitrise) → Automate your tests with every code change to catch bugs early.</li>
                         </ul>
                     </section>
 
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Write at least 1 unit test
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Write at least 1 widget test
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Run an integration test on an emulator/device
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Add tests to a CI/CD pipeline (optional)
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Write unit tests for your API service by mocking the network response.</p>
+                        <p>Write a widget test for your login form to ensure it responds correctly to user input and button taps.</p>
+                        <p>Run an integration test that simulates the full login-to-dashboard flow of your app.</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 29 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>🎉 Tomorrow is **Day 30 — Final Revision & Wrap-Up** 🎉. We’ll recap all 29 days of the series, share a Flutter learning roadmap, provide project ideas to practice further, and discuss next steps for your journey into advanced Flutter and native integrations.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +442,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +462,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +497,15 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> Why Testing Matters</a>
+                            <a href="#types-of-tests" class="toc-item"><span>🧩</span> Types of Tests</a>
+                            <a href="#unit-testing" class="toc-item"><span>✅</span> 1. Unit Testing</a>
+                            <a href="#widget-testing" class="toc-item"><span>✅</span> 2. Widget Testing</a>
+                            <a href="#integration-testing" class="toc-item"><span>✅</span> 3. Integration Testing</a>
+                            <a href="#testing-tools" class="toc-item"><span>🛠️</span> Testing Tools</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +531,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+27"
+                    alt="An illustration for Day 27 of the Flutter course, covering Clean Architecture."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 27</div>
+                    <h3>Clean Architecture</h3>
+                    <p>Learn how to organize your Flutter project with a clean architecture to build scalable, maintainable, and testable applications.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+28"
+                    alt="An illustration for Day 28 of the Flutter course, building App Optimization."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 28</div>
+                    <h3>App Optimization & Performance</h3>
+                    <p>Learn how to reduce widget rebuilds, optimize images, and minimize memory usage to create fast and smooth applications.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+30"
+                    alt="An illustration for Day 30 of the Flutter course, focusing on a final recap and next steps."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 30</div>
+                    <h3>Final Revision & Wrap-Up</h3>
+                    <p>A comprehensive recap of all 29 days, a learning roadmap, and project ideas to continue your Flutter journey.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +568,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 29 Complete!</h2>
+            <p>You now know how to build a robust and reliable Flutter app using various testing methods.</p>
+            <p>Get ready for <strong>Day 30: Final Revision & Wrap-Up!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +578,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

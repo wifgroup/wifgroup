@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 25: Local Storage in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 25 of the 30-Day Flutter Series. Learn how to save data locally in your apps using SharedPreferences, Hive, and SQLite for user preferences, structured data, and complex databases.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, local storage, SharedPreferences, Hive, SQLite, offline-first, data persistence, mobile development">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/local-storage-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 25: Local Storage in Flutter | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Master offline-first apps! This lesson covers SharedPreferences, Hive, and SQLite to store and manage data directly on the user's device. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day25-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/local-storage-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 25: Flutter's Local Storage | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Today we learn to save data! Day 25 of our free 30-day Flutter course focuses on SharedPreferences, Hive, and SQLite for local data persistence. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day25-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/local-storage-guide.html"
+      },
+      "headline": "Day 25: Local Storage (SharedPreferences, Hive, SQLite)",
+      "description": "A detailed lesson on how to save and manage data locally in Flutter using SharedPreferences, Hive, and SQLite. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day25-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-10T00:00:00+05:30",
+      "dateModified": "2025-09-10T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Local Storage in Flutter",
+      "description": "A comprehensive lesson on Flutter's local data storage options for building offline-first apps.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT45M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Local Storage in Flutter",
+          "url": "https://wifgroup.in/flutter/local-storage-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/local-storage-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,218 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 25: Local Storage (SharedPreferences, Hive, SQLite)</h1>
+                    <p class="hero-subtitle">Learn to save user preferences, structured data, and build offline-first apps in Flutter. 💾</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> Flutter Local Storage Options</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+Local+Storage+Options"
+                            alt="An illustration comparing different local storage options in Flutter: SharedPreferences, Hive, and SQLite, with icons representing key-value, NoSQL, and SQL databases."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
-                        </ul>
+                        <p>Yesterday, we explored Background Services & Notifications. Today, we'll learn how to store data locally within a Flutter app. Local storage is crucial for saving user preferences, caching data for offline access, and improving app performance by reducing network requests. Choosing the right storage solution depends on your data's structure and complexity.</p>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Storage Type</th>
+                                        <th>Use Case</th>
+                                        <th>Pros</th>
+                                        <th>Cons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>SharedPreferences</strong></td>
+                                        <td>Store key-value pairs (settings, flags)</td>
+                                        <td>Simple, fast</td>
+                                        <td>Only supports primitives (String, int, bool, double, List)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Hive</strong></td>
+                                        <td>Store structured NoSQL-like data</td>
+                                        <td>Super fast, no native dependencies</td>
+                                        <td>Not ideal for very complex relations</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SQLite</strong></td>
+                                        <td>Relational database with full SQL support</td>
+                                        <td>Full SQL support, complex queries</td>
+                                        <td>Slower than Hive, more setup</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="shared-preferences" data-section="shared-preferences">
+                        <h2><span class="section-icon">📌</span> Step 1: SharedPreferences (Key-Value Storage)</h2>
+                        <p>This is the simplest form of local storage and is perfect for saving small amounts of data like user settings, preferences, or a login flag.</p>
+                        <p>First, add the `shared_preferences` dependency to your `pubspec.yaml` file:</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>pubspec.yaml</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+dependencies:
+  shared_preferences: ^2.3.2
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <h3>Usage:</h3>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Saving and Loading Data</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:shared_preferences/shared_preferences.dart';
+
+Future<void> saveData() async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setBool('isDarkMode', true);
+}
+
+Future<void> loadData() async {
+  final prefs = await SharedPreferences.getInstance();
+  bool? isDarkMode = prefs.getBool('isDarkMode');
+  print("Dark Mode: $isDarkMode");
+}
+                            </code></pre>
+                        </div>
+                        <p>👉 Best for flags, login state, and small preferences.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="hive" data-section="hive">
+                        <h2><span class="section-icon">📌</span> Step 2: Hive (NoSQL DB for Flutter)</h2>
+                        <p>Hive is a lightweight and blazing-fast NoSQL database that works great for storing structured data like tasks, notes, or user profiles. It's known for its speed and ease of use, with no native dependencies.</p>
+                        <p>First, add the dependencies:</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>pubspec.yaml</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+dependencies:
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+                            </code></pre>
                         </div>
+                        <p>Then, initialize Hive in your `main()` function:</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Initialize Hive in main()</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+import 'package:hive_flutter/hive_flutter.dart';
+
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox('myBox');
+}
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
+                        <h3>Usage:</h3>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Using Hive Box</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
+                            <pre class="code-content"><code>
+var box = Hive.box('myBox');
+box.put('username', 'Harshil');
+print(box.get('username')); // Harshil
+                            </code></pre>
                         </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
-                        </ul>
+                        <p>👉 Best for apps needing offline caching, notes, and tasks.</p>
+                    </section>
+                    
+                    <section class="section" id="sqlite" data-section="sqlite">
+                        <h2><span class="section-icon">📌</span> Step 3: SQLite (Relational DB)</h2>
+                        <p>For more complex data with structured relationships, a full relational database like SQLite is the best choice. The `sqflite` package provides a robust interface for interacting with the database.</p>
+                        <p>First, add the dependencies:</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>pubspec.yaml</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+dependencies:
+  sqflite: ^2.4.0
+  path: ^1.9.0
+                            </code></pre>
+                        </div>
+                        <h3>Example:</h3>
+                        <p>This example shows how to open a database, create a table, and perform a simple insert and query.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>SQLite Example</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:sqflite/sqflite.dart';
+import 'package:path/path.dart';
+
+Future<void> databaseExample() async {
+  final db = await openDatabase(
+    join(await getDatabasesPath(), 'demo.db'),
+    onCreate: (db, version) {
+      return db.execute(
+        'CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT)',
+      );
+    },
+    version: 1,
+  );
+
+  // Insert
+  await db.insert('users', {'id': 1, 'name': 'Harshil'});
+  // Query
+  final result = await db.query('users');
+  print(result);
+}
+                            </code></pre>
+                        </div>
+                        <p>👉 Best for complex apps (chat, e-commerce, offline-first apps).</p>
                     </section>
 
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Stored preferences with SharedPreferences
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Saved objects using Hive
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Managed relational data with SQLite
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Build a theme toggle app that saves the user's light/dark mode preference using `SharedPreferences`.</p>
+                        <p>Create a notes app with `Hive` to store notes offline.</p>
+                        <p>Build a contacts database using `SQLite` where you can add, read, and delete contact information.</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 25 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 26) → we’ll cover **Networking in Flutter** (HTTP, Dio, REST APIs) 🌐: how to fetch data from APIs, parse JSON, and handle errors and retries. We'll build a basic weather app or movie database app.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +443,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +463,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +498,13 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> Local Storage Options</a>
+                            <a href="#shared-preferences" class="toc-item"><span>📌</span> SharedPreferences</a>
+                            <a href="#hive" class="toc-item"><span>📌</span> Hive</a>
+                            <a href="#sqlite" class="toc-item"><span>📌</span> SQLite</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +530,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+23"
+                    alt="An illustration for Day 23 of the Flutter course, covering Custom Paint."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 23</div>
+                    <h3>Custom Paint & Canvas</h3>
+                    <p>Learn how to create unique and custom UI by drawing shapes directly on a canvas with CustomPaint.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+24"
+                    alt="An illustration for Day 24 of the Flutter course, building notifications and background services."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 24</div>
+                    <h3>Notifications & Background Services</h3>
+                    <p>Learn how to use local and push notifications to keep users engaged and run tasks even when the app is in the background.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+26"
+                    alt="An illustration for Day 26 of the Flutter course, focusing on networking and APIs."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 26</div>
+                    <h3>Networking in Flutter</h3>
+                    <p>Discover how to fetch data from APIs, parse JSON, and handle network requests to power your app with real-time data.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +567,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 25 Complete!</h2>
+            <p>You now know how to save and manage data locally in Flutter apps.</p>
+            <p>Get ready for <strong>Day 26: Networking in Flutter!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +577,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

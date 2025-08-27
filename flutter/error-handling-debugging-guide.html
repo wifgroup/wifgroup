@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 21: Error Handling, Logging, and Debugging in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 21 of the WIF Group 30-Day Flutter Series. Learn best practices for error handling, effective logging, and using debugging tools to build stable and bug-free Flutter applications.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, error handling, try-catch, FlutterError, logging, debugPrint, logger package, Flutter DevTools, debugging tools, app stability">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/error-handling-debugging-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 21: Error Handling, Logging, & Debugging | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Master the art of building stable apps! This lesson covers everything from try/catch blocks and logging to using Flutter DevTools to find and fix bugs. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day21-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/error-handling-debugging-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 21: Flutter's Error Handling & Debugging | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Time to build robust apps! Day 21 of our free 30-day Flutter course focuses on how to handle errors and debug your code effectively. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day21-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/error-handling-debugging-guide.html"
+      },
+      "headline": "Day 21: Error Handling, Logging, and Debugging Tools in Flutter",
+      "description": "A detailed lesson on best practices for error handling, logging, and debugging Flutter applications using try/catch, FlutterError, and DevTools. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day21-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-06T00:00:00+05:30",
+      "dateModified": "2025-09-06T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Error Handling, Logging, and Debugging in Flutter",
+      "description": "A comprehensive lesson on building stable and bug-free Flutter apps.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT45M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Error Handling, Logging, and Debugging in Flutter",
+          "url": "https://wifgroup.in/flutter/error-handling-debugging-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/error-handling-debugging-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,202 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 21: Error Handling, Logging, and Debugging Tools</h1>
+                    <p class="hero-subtitle">Learn how to make your apps stable and bug-free by catching errors and using powerful debugging tools. 🛠️</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> Why Error Handling & Logging Matters</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+Debugging+Illustration"
+                            alt="An illustration of a developer looking at code and using a magnifying glass to find a bug, with a crash symbol in the background."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Yesterday, we learned Firebase Storage and uploading images/files. Today, we'll focus on making your apps stable and bug-free. A professional developer knows how to prevent crashes, quickly identify issues, and understand unexpected behavior. This is where error handling, logging, and debugging tools become invaluable.</p>
+                        <ul>
+                            <li>Prevent app crashes 🔥</li>
+                            <li>Track unexpected behavior</li>
+                            <li>Improve user experience</li>
+                            <li>Debug faster during development</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="try-catch" data-section="try-catch">
+                        <h2><span class="section-icon">📌</span> Step 1: Error Handling with Try/Catch</h2>
+                        <p>The most common way to handle predictable errors in Dart is with `try/catch` blocks. You wrap code that might fail in a `try` block and handle any exceptions in the `catch` block.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Basic try/catch</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+try {
+  int result = 100 ~/ 0; // Division by zero, this will throw an error
+} catch (e) {
+  print("Error occurred: $e");
+}
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <p>You can also catch **specific exceptions**, which is useful for handling different types of errors with custom logic. For example, catching a `FirebaseAuthException` to show a user-friendly message.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Catching specific exceptions</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+try {
+  // Firebase Auth sign-in
+  await FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password);
+} on FirebaseAuthException catch (e) {
+  if (e.code == 'user-not-found') {
+    print("No user found for that email");
+  } else if (e.code == 'wrong-password') {
+    print("Incorrect password");
+  }
+} catch (e) {
+  print("Unexpected error: $e");
+}
+                            </code></pre>
+                        </div>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="flutter-error" data-section="flutter-error">
+                        <h2><span class="section-icon">📌</span> Step 2: Using FlutterError for Widget Tree Errors</h2>
+                        <p>The `FlutterError.onError` handler is a global way to catch errors that occur within the Flutter framework itself. It's especially useful for catching UI-level errors that might not be caught by a standard `try/catch` block. You can also use this to send errors to logging services like Sentry or Firebase Crashlytics.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Using FlutterError.onError</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+FlutterError.onError = (FlutterErrorDetails details) {
+  FlutterError.presentError(details); // default error handling
+  print("Caught FlutterError: ${details.exception}");
+};
+                            </code></pre>
                         </div>
+                    </section>
+                    
+                    <section class="section" id="logging" data-section="logging">
+                        <h2><span class="section-icon">📌</span> Step 3: Logging with print & debugPrint</h2>
+                        <p>For simple logging, `print()` and `debugPrint()` are your go-to tools. `print()` can be useful but may truncate large logs. `debugPrint()` is a better alternative as it automatically formats and prevents truncation.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Using debugPrint</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+debugPrint("Debug info: App started successfully");
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
+                    </section>
+
+                    <section class="section" id="logger-package" data-section="logger-package">
+                        <h2><span class="section-icon">📌</span> Step 4: Using the `logger` Package</h2>
+                        <p>For more advanced logging, the `logger` package provides a more structured and color-coded output. It's a great tool for categorizing your logs and can be easily integrated with other services.</p>
+                        <p>First, add the dependency to `pubspec.yaml`:</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>pubspec.yaml</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
+                            <pre class="code-content"><code>
+dependencies:
+  logger: ^1.2.2
+                            </code></pre>
                         </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+                        <p>Then, use it in your code:</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Using the Logger</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:logger/logger.dart';
+
+var logger = Logger();
+
+logger.d("Debug message");
+logger.i("Info message");
+logger.w("Warning message");
+logger.e("Error message");
+                            </code></pre>
+                        </div>
+                    </section>
+                    
+                    <section class="section" id="debugging-tools" data-section="debugging-tools">
+                        <h2><span class="section-icon">📌</span> Step 5: Debugging Tools in Flutter</h2>
+                        <p>Flutter comes with a powerful suite of debugging tools. You can access these in your IDE (VS Code or Android Studio) or via a browser by running `flutter run --device-id web-server` and opening the link in your console.</p>
+                        <ul>
+                            <li>**Flutter DevTools**: An all-in-one suite for inspecting your widget tree, profiling performance, and viewing network calls.</li>
+                            <li>**Hot Reload & Hot Restart**: Use hot reload for fast UI changes without losing state, and hot restart for a full rebuild when you change the app state or logic.</li>
+                            <li>**Breakpoints**: Pause code execution at a specific line to inspect variable values and understand the flow of your program.</li>
+                            <li>**Flutter Inspector**: A tool within DevTools that visualizes your widget tree and allows you to inspect properties and rebuild widgets.</li>
                         </ul>
                     </section>
 
+                    <section class="section" id="async-errors" data-section="async-errors">
+                        <h2><span class="section-icon">📌</span> Step 6: Handling Asynchronous Errors</h2>
+                        <p>When working with `Future`s or async functions, it's crucial to use `try/catch` to handle potential errors that might occur during network requests or file operations.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Handling async errors</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+Future<void> fetchData() async {
+  try {
+    var result = await someAsyncFunction();
+    print(result);
+  } catch (e) {
+    print("Async error: $e");
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+                    
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Used try/catch for error handling
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Learned `FlutterError.onError` for widget errors
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Used `print`/`debugPrint`/`logger` for logging
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Explored Flutter DevTools for debugging
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Handled asynchronous errors with try/catch
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Wrap your Firebase CRUD operations (from Day 19) in `try/catch` blocks to handle potential errors from Firestore or Storage.</p>
+                        <p>Log meaningful messages for success and failure cases using the `logger` package.</p>
+                        <p>Explore Flutter DevTools to inspect your widget tree and check the app's performance.</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 21 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 22) → we’ll learn **Animations in Flutter**: We'll dive into `Tween` animations, `AnimatedContainer`, and `Hero` animations. This will make your app more interactive and visually appealing 🎨.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +427,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +447,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +482,16 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> Why Error Handling & Logging?</a>
+                            <a href="#try-catch" class="toc-item"><span>📌</span> Step 1: Try/Catch</a>
+                            <a href="#flutter-error" class="toc-item"><span>📌</span> Step 2: FlutterError</a>
+                            <a href="#logging" class="toc-item"><span>📌</span> Step 3: Logging Basics</a>
+                            <a href="#logger-package" class="toc-item"><span>📌</span> Step 4: Logger Package</a>
+                            <a href="#debugging-tools" class="toc-item"><span>📌</span> Step 5: Debugging Tools</a>
+                            <a href="#async-errors" class="toc-item"><span>📌</span> Step 6: Async Errors</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +517,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+19"
+                    alt="An illustration for Day 19 of the Flutter course, covering Firestore CRUD operations."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 19</div>
+                    <h3>Firestore CRUD</h3>
+                    <p>Learn how to create, read, update, and delete data in a Firebase Firestore database.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+20"
+                    alt="An illustration for Day 20 of the Flutter course, building Firebase Storage integration."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 20</div>
+                    <h3>Firebase Storage</h3>
+                    <p>Learn how to upload and manage images and files in Firebase Storage and link them to Firestore documents.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+22"
+                    alt="An illustration for Day 22 of the Flutter course, focusing on animations."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 22</div>
+                    <h3>Animations in Flutter</h3>
+                    <p>Discover how to add visual flair to your apps with implicit and explicit animations to create engaging user experiences.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +554,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 21 Complete!</h2>
+            <p>You now know how to handle errors and debug your Flutter apps effectively.</p>
+            <p>Get ready for <strong>Day 22: Animations!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +564,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

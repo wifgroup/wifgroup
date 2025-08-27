@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 28: App Optimization & Performance Tips in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 28 of the 30-Day Flutter Series. Learn key strategies for optimizing your Flutter app's performance, including minimizing widget rebuilds, managing memory, and debugging with Flutter DevTools.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, app optimization, performance tips, Flutter DevTools, widget rebuilds, memory management, ListView.builder, cached_network_image">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/app-optimization-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 28: App Optimization & Performance Tips | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Make your app fast and smooth! This lesson covers golden rules for optimization, from smart state management to efficient image loading and debugging. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day28-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/app-optimization-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 28: Flutter's App Optimization & Performance | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Today we make our apps faster! Day 28 of our free 30-day Flutter course focuses on optimizing performance and building a smooth user experience. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day28-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/app-optimization-guide.html"
+      },
+      "headline": "Day 28: App Optimization & Performance Tips in Flutter",
+      "description": "A detailed lesson on best practices for optimizing a Flutter app's performance, including tips on widget rebuilds, memory management, and debugging. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day28-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-13T00:00:00+05:30",
+      "dateModified": "2025-09-13T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "App Optimization & Performance Tips in Flutter",
+      "description": "A comprehensive lesson on making Flutter applications fast, efficient, and responsive.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Advanced",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT60M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "App Optimization & Performance Tips in Flutter",
+          "url": "https://wifgroup.in/flutter/app-optimization-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/app-optimization-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,236 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 28: App Optimization & Performance Tips</h1>
+                    <p class="hero-subtitle">Learn how to make your Flutter apps smooth, fast, and responsive for an exceptional user experience. ⚡</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> Why Optimize?</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+Performance+Profiling"
+                            alt="An illustration of a performance graph showing a smooth line, representing a well-optimized and high-performing app."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Yesterday, we structured apps using Clean Architecture. Today, we’ll focus on making those apps perform like a dream. **Optimization** is key to a smooth user experience. It ensures your app has fluid animations, fast scrolling, and lower memory usage, which in turn leads to better user reviews and retention.</p>
+                        <ul>
+                            <li>Smooth animations & scrolling</li>
+                            <li>Lower memory & battery usage</li>
+                            <li>Faster startup times</li>
+                            <li>Better user experience ⭐</li>
+                            <li>Avoid app crashes</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
+                    
+                    <section class="section" id="golden-rules" data-section="golden-rules">
+                        <h2><span class="section-icon">🚦</span> Golden Rules for Optimization</h2>
+                        <p>Here are some of the most effective techniques to improve your app's performance.</p>
+                        <h3>1. Minimize Widget Rebuilds</h3>
+                        <p>Widget rebuilds are the most common cause of performance issues. By minimizing them, you can significantly speed up your UI.</p>
+                        <ul>
+                            <li>Use `const` constructors wherever possible for widgets that don't change.</li>
+                            <li>Extract static parts of a widget into smaller, separate `StatelessWidget`s.</li>
+                            <li>Use state management tools like `Selector` (from Provider) to rebuild only the necessary part of the widget tree.</li>
                         </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Using `const` for performance</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+const Text("Static Text"); // Flutter won't rebuild this widget
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="state-management" data-section="state-management">
+                        <h3>2. Use Efficient State Management</h3>
+                        <p>While `setState` is great for local state, it rebuilds the entire `StatefulWidget`. For larger apps, use a more granular state management solution.</p>
+                        <ul>
+                            <li>Avoid calling `setState` unnecessarily inside build methods.</li>
+                            <li>Prefer solutions like Provider, Riverpod, or Bloc for managing global state.</li>
+                            <li>Keep heavy business logic, calculations, and API calls outside of your UI widgets.</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="images-assets" data-section="images-assets">
+                        <h3>3. Optimize Images & Assets</h3>
+                        <p>Images can be a major source of lag and memory issues if not handled correctly. Proper image optimization is crucial for a smooth user experience.</p>
+                        <ul>
+                            <li>Use `cached_network_image` to cache remote images and prevent re-downloading.</li>
+                            <li>Compress all your images before adding them to your project assets.</li>
+                            <li>Prefer `flutter_svg` for scalable vector icons instead of raster PNGs.</li>
+                        </ul>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Using `cached_network_image`</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+CachedNetworkImage(
+  imageUrl: "https://picsum.photos/200",
+  placeholder: (c, s) => CircularProgressIndicator(),
+);
+                            </code></pre>
                         </div>
+                    </section>
+
+                    <section class="section" id="overdraw" data-section="overdraw">
+                        <h3>4. Reduce Overdraw</h3>
+                        <p>Overdraw happens when your app draws the same pixel multiple times. You can reduce this by simplifying your widget tree and using more efficient widgets.</p>
+                        <ul>
+                            <li>Avoid deep widget trees with many unnecessary `Container`s.</li>
+                            <li>Use `ClipRRect` and `Opacity` sparingly, as they can be performance-intensive.</li>
+                            <li>Prefer `DecoratedBox` instead of wrapping a `Container` inside another `Container`.</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="lists-grids" data-section="lists-grids">
+                        <h3>5. Optimize Lists & Grids</h3>
+                        <p>Displaying large lists of items can cause performance issues if not handled correctly. The `builder` constructors are your best friends here.</p>
+                        <ul>
+                            <li>Use `ListView.builder` or `GridView.builder` instead of static lists. These only build the widgets that are currently visible on screen.</li>
+                            <li>For infinite scrolls, use a combination of `ListView.builder` and pagination to load data in chunks.</li>
+                        </ul>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Using `ListView.builder`</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+ListView.builder(
+  itemCount: 1000,
+  itemBuilder: (_, i) => ListTile(title: Text("Item $i")),
+);
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+                    </section>
+
+                    <section class="section" id="startup-time" data-section="startup-time">
+                        <h3>6. Improve Startup Time</h3>
+                        <p>A fast startup time is crucial for a good first impression. Avoid doing heavy work when the app launches.</p>
+                        <ul>
+                            <li>Use `flutter_native_splash` for a fast and smooth native splash screen.</li>
+                            <li>Avoid heavy data initialization, complex API calls, or database migrations in `main()`.</li>
+                            <li>Lazy-load non-critical features after the app has started.</li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="memory" data-section="memory">
+                        <h3>7. Memory Management</h3>
+                        <p>Leaky apps can be frustrating for users. Always be mindful of the resources you're using.</p>
+                        <ul>
+                            <li>Always `dispose()` of `TextEditingController`, `AnimationController`, and other controllers.</li>
+                            <li>Use `AutomaticKeepAliveClientMixin` carefully, as it keeps widgets alive in memory.</li>
+                            <li>Avoid retaining large amounts of unused data in memory.</li>
                         </ul>
                     </section>
 
+                    <section class="section" id="debugging" data-section="debugging">
+                        <h3>8. Debugging Performance Issues</h3>
+                        <p>When you encounter performance issues, use **Flutter DevTools** to pinpoint the problem. You can access it from your terminal or IDE.</p>
+                        <ul>
+                            <li>**Performance tab:** Profile CPU usage and check for dropped frames.</li>
+                            <li>**Memory tab:** Check for memory leaks and see how much memory your app is using.</li>
+                            <li>**Widget Inspector:** Visualize your widget tree and find unnecessary rebuilds.</li>
+                        </ul>
+                        <p>You can also use this simple line to debug excessive rebuilds in your console:</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Debug excessive rebuilds</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+debugPrintRebuildDirtyWidgets = true;
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="quick-checklist" data-section="quick-checklist">
+                        <h2><span class="section-icon">📊</span> Quick Performance Checklist</h2>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Area</th>
+                                        <th>Tip</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Widgets</strong></td>
+                                        <td>Use `const`, split into small widgets</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>State</strong></td>
+                                        <td>Keep logic out of UI, use efficient state mgmt</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Lists</strong></td>
+                                        <td>Use `builder` constructors, paginate large lists</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Images</strong></td>
+                                        <td>Cache, compress, prefer SVGs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Startup</strong></td>
+                                        <td>Lazy-load, splash screen optimization</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Memory</strong></td>
+                                        <td>Dispose controllers, avoid leaks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Debugging</strong></td>
+                                        <td>Use Flutter DevTools, rebuild tracing</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Applied `const` where possible
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Replaced static lists with `ListView.builder`
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Used `cached_network_image` for remote images
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Disposed controllers correctly
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Profiled the app with Flutter DevTools
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Profile your app in Flutter DevTools to identify areas for improvement.</p>
+                        <p>Optimize one of your existing screens for performance, paying attention to lists, images, and state management.</p>
+                        <p>Add `const` to as many widgets as you can to prevent unnecessary rebuilds.</p>
+                        <p>Share your optimization journey with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 28 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 29) → we'll learn **Testing in Flutter**: writing unit tests for business logic, widget tests for UI components, and integration tests to ensure your app works as a whole. This is a vital step toward building professional, reliable applications 🧪.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +461,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +481,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +516,19 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> Why Optimize?</a>
+                            <a href="#golden-rules" class="toc-item"><span>🚦</span> Golden Rules</a>
+                            <a href="#state-management" class="toc-item"><span>2.</span> Efficient State Mgmt</a>
+                            <a href="#images-assets" class="toc-item"><span>3.</span> Optimize Images</a>
+                            <a href="#overdraw" class="toc-item"><span>4.</span> Reduce Overdraw</a>
+                            <a href="#lists-grids" class="toc-item"><span>5.</span> Optimize Lists & Grids</a>
+                            <a href="#startup-time" class="toc-item"><span>6.</span> Improve Startup Time</a>
+                            <a href="#memory" class="toc-item"><span>7.</span> Memory Management</a>
+                            <a href="#debugging" class="toc-item"><span>8.</span> Debugging Performance</a>
+                            <a href="#quick-checklist" class="toc-item"><span>📊</span> Quick Checklist</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +554,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+26"
+                    alt="An illustration for Day 26 of the Flutter course, covering networking and APIs."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 26</div>
+                    <h3>Networking in Flutter</h3>
+                    <p>Discover how to fetch data from APIs, parse JSON, and handle network requests to power your app with real-time data.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+27"
+                    alt="An illustration for Day 27 of the Flutter course, building clean architecture."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 27</div>
+                    <h3>Clean Architecture</h3>
+                    <p>Learn how to organize your Flutter project with a clean architecture to build scalable, maintainable, and testable applications.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+29"
+                    alt="An illustration for Day 29 of the Flutter course, focusing on testing."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 29</div>
+                    <h3>Testing in Flutter</h3>
+                    <p>Learn how to write unit, widget, and integration tests to ensure your app is robust and bug-free.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +591,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 28 Complete!</h2>
+            <p>You now know how to optimize your Flutter app for performance and speed.</p>
+            <p>Get ready for <strong>Day 29: Testing in Flutter!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +601,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 27: Clean Architecture & Folder Structure in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 27 of the WIF Group 30-Day Flutter Series. Learn how to organize your Flutter project using Clean Architecture to build scalable, maintainable, and testable applications.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Clean Architecture, folder structure, repository pattern, use cases, domain layer, data layer, presentation layer">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/clean-architecture-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 27: Clean Architecture & Folder Structure | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Organize your Flutter code like a pro! This lesson introduces Clean Architecture to separate UI, business logic, and data, making your apps scalable and easy to test. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day27-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/clean-architecture-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 27: Flutter's Clean Architecture | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="It's time to talk about app structure! Day 27 of our free 30-day Flutter course focuses on building scalable and maintainable apps with clean architecture. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day27-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/clean-architecture-guide.html"
+      },
+      "headline": "Day 27: Clean Architecture & Folder Structure in Flutter",
+      "description": "A detailed lesson on organizing a Flutter project using Clean Architecture, separating code into core, data, domain, and presentation layers. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day27-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-09-12T00:00:00+05:30",
+      "dateModified": "2025-09-12T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Clean Architecture & Folder Structure in Flutter",
+      "description": "A comprehensive lesson on structuring a Flutter project for scalability and maintainability.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Advanced",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT60M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Clean Architecture & Folder Structure in Flutter",
+          "url": "https://wifgroup.in/flutter/clean-architecture-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/clean-architecture-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,245 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 27: Clean Architecture & Folder Structure</h1>
+                    <p class="hero-subtitle">Learn how to organize your Flutter project for better scalability, maintainability, and teamwork. 🏗️</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🧠</span> Why Clean Architecture?</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Clean+Architecture+Diagram"
+                            alt="A diagram showing the layers of a clean architecture: UI, Business Logic, and Data, with arrows showing the flow of control and data."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Yesterday, we connected to APIs. Today, let’s bring order to your app with **Clean Architecture**. This pattern is a lifesaver for any developer or team, ensuring your project remains organized and manageable as it grows. Clean Architecture helps you separate concerns, making your code easier to read, test, and scale.</p>
+                        <ul>
+                            <li>Keeps code organized and readable.</li>
+                            <li>Easier to scale apps with more features.</li>
+                            <li>Supports team collaboration.</li>
+                            <li>Makes testing easier.</li>
+                            <li>Separates UI, business logic, and data layers.</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="messy-structure" data-section="messy-structure">
+                        <h2><span class="section-icon">📌</span> Typical Flutter Messy Structure ❌</h2>
+                        <p>A typical unorganized project starts simple but quickly becomes unmanageable as you add more files and features. This is often called "spaghetti code."</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Messy Structure</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+/lib
+  ├── main.dart
+  ├── home.dart
+  ├── login.dart
+  ├── api.dart
+  ├── utils.dart
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+                        <p>👉 This works for small apps but quickly becomes a maintenance nightmare.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="clean-structure" data-section="clean-structure">
+                        <h2><span class="section-icon">📌</span> Clean Folder Structure ✅</h2>
+                        <p>A Clean Architecture approach organizes your project into distinct layers, each with a specific responsibility. This structure prevents circular dependencies and ensures a clear flow of data and control.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Clean Architecture Structure</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+/lib
+ ├── core/                  # Global utilities (theme, constants, errors)
+ │   ├── theme/
+ │   ├── utils/
+ │   └── errors/
+ │
+ ├── data/                  # External layer
+ │   ├── models/            # Data models
+ │   ├── datasources/       # API, Firebase, Local DB
+ │   └── repositories/impl/ # Repository implementations
+ │
+ ├── domain/                # Business logic
+ │   ├── entities/          # Pure Dart classes
+ │   ├── repositories/      # Abstract repository contracts
+ │   └── usecases/          # Business logic (e.g., LoginUser, FetchPosts)
+ │
+ ├── presentation/          # UI layer
+ │   ├── pages/             # Screens
+ │   ├── widgets/           # Reusable widgets
+ │   └── state/             # Providers, blocs, cubits
+ │
+ ├── injection_container.dart  # Dependency injection setup
+ └── main.dart
+                            </code></pre>
                         </div>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
-                        </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+                    </section>
+                    
+                    <section class="section" id="layer-explanation" data-section="layer-explanation">
+                        <h2><span class="section-icon">📌</span> Layer Explanation</h2>
+                        <ul>
+                            <li>**Core**: Contains global utilities like themes, constants, and error definitions that can be used by any layer.</li>
+                            <li>**Data**: The external layer that handles data fetching from sources like APIs, Firebase, or a local database. It also includes data models for serialization.</li>
+                            <li>**Domain**: The heart of your app's business logic. It's a pure Dart layer that contains entities (data classes), abstract repository contracts, and use cases (business logic). It has no knowledge of the UI or data sources.</li>
+                            <li>**Presentation**: The UI layer. It contains your widgets, screens, and state management logic (e.g., Provider, Bloc). It knows about the `domain` layer but not the `data` layer.</li>
                         </ul>
                     </section>
 
+                    <section class="section" id="example-flow" data-section="example-flow">
+                        <h2><span class="section-icon">📌</span> Example Flow</h2>
+                        <p>This is how a typical data-fetching request would flow through the layers:</p>
+                        <p>User taps "Fetch Posts" → UI (Presentation) → calls → UseCase (Domain) → asks → Repository (Domain) → gets data from → API/DataSource (Data) → returns a model → back to UI.</p>
+                    </section>
+                    
+                    <section class="section" id="repo-contract" data-section="repo-contract">
+                        <h2><span class="section-icon">📌</span> Example Repository Contract</h2>
+                        <p>The `domain` layer defines an abstract contract that the `data` layer must implement. This is a crucial part of the architecture, as it decouples your business logic from the data source.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>domain/repositories/post_repository.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+abstract class PostRepository {
+  Future<List<Post>> getPosts();
+}
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="repo-impl" data-section="repo-impl">
+                        <h2><span class="section-icon">📌</span> Example Repository Implementation</h2>
+                        <p>The `data` layer implements the contract defined in the `domain` layer. This is where you write the actual code for fetching data, like making an API call with Dio.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>data/repositories/post_repository_impl.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:dio/dio.dart';
+import '../../domain/repositories/post_repository.dart';
+import '../models/post_model.dart';
+
+class PostRepositoryImpl implements PostRepository {
+  final Dio dio;
+  PostRepositoryImpl(this.dio);
+
+  @override
+  Future<List<PostModel>> getPosts() async {
+    final response = await dio.get('https://jsonplaceholder.typicode.com/posts');
+    return (response.data as List).map((e) => PostModel.fromJson(e)).toList();
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+                    
+                    <section class="section" id="use-case" data-section="use-case">
+                        <h2><span class="section-icon">📌</span> Example Use Case</h2>
+                        <p>Use cases contain your business logic. They orchestrate the flow of data and perform operations without knowing where the data comes from. They simply call the abstract repository interface.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>domain/usecases/get_posts.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import '../repositories/post_repository.dart';
+import '../entities/post.dart';
+
+class GetPosts {
+  final PostRepository repository;
+  GetPosts(this.repository);
+
+  Future<List<Post>> call() async {
+    return await repository.getPosts();
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="ui-example" data-section="ui-example">
+                        <h2><span class="section-icon">📌</span> Example UI</h2>
+                        <p>The UI layer only interacts with the `domain` layer (the use cases). It never directly calls an API or a database. This keeps the UI completely independent of the data source.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>presentation/pages/post_page.dart</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+import '../../domain/usecases/get_posts.dart';
+
+class PostPage extends StatelessWidget {
+  final GetPosts getPosts;
+  PostPage(this.getPosts);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Posts")),
+      body: FutureBuilder(
+        future: getPosts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          }
+          if (snapshot.hasError) return Text("Error: ${snapshot.error}");
+          final posts = snapshot.data ?? [];
+          return ListView.builder(
+            itemCount: posts.length,
+            itemBuilder: (_, i) => ListTile(title: Text(posts[i].title)),
+          );
+        },
+      ),
+    );
+  }
+}
+                            </code></pre>
+                        </div>
+                    </section>
+                    
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Understood Clean Architecture basics
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Organized project with core/data/domain/presentation layers
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Used Repository + UseCase + UI pattern
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Applied separation of concerns
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Refactor your last project (Firebase/REST API integration) into a clean architecture.</p>
+                        <p>Create a `UserRepository` and `GetUserProfile` use case to demonstrate data flow.</p>
+                        <p>Practice separating the presentation logic (widgets) from the data sources (APIs).</p>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 27 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 28) → we’ll learn **App Optimization & Performance Tips** ⚡. We'll cover how to reduce widget rebuilds, optimize images and assets, minimize memory leaks, and improve scrolling performance to make your app fast and smooth.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +470,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +490,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +525,18 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>🧠</span> Why Clean Architecture?</a>
+                            <a href="#messy-structure" class="toc-item"><span>📌</span> Messy Structure ❌</a>
+                            <a href="#clean-structure" class="toc-item"><span>📌</span> Clean Folder Structure ✅</a>
+                            <a href="#layer-explanation" class="toc-item"><span>📌</span> Layer Explanation</a>
+                            <a href="#example-flow" class="toc-item"><span>📌</span> Example Flow</a>
+                            <a href="#repo-contract" class="toc-item"><span>📌</span> Repo Contract</a>
+                            <a href="#repo-impl" class="toc-item"><span>📌</span> Repo Implementation</a>
+                            <a href="#use-case" class="toc-item"><span>📌</span> Example Use Case</a>
+                            <a href="#ui-example" class="toc-item"><span>📌</span> Example UI</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +562,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+25"
+                    alt="An illustration for Day 25 of the Flutter course, covering local storage."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 25</div>
+                    <h3>Local Storage</h3>
+                    <p>Explore how to save data locally on the device using packages like SharedPreferences, Hive, and SQLite for offline-first apps.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+26"
+                    alt="An illustration for Day 26 of the Flutter course, building networking and APIs."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 26</div>
+                    <h3>Networking in Flutter</h3>
+                    <p>Discover how to fetch data from APIs, parse JSON, and handle network requests to power your app with real-time data.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+28"
+                    alt="An illustration for Day 28 of the Flutter course, focusing on app optimization and performance."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 28</div>
+                    <h3>App Optimization & Performance</h3>
+                    <p>Learn how to reduce widget rebuilds, optimize images, and minimize memory usage to create fast and smooth applications.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +599,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 27 Complete!</h2>
+            <p>You now know how to structure your Flutter app with clean architecture.</p>
+            <p>Get ready for <strong>Day 28: App Optimization & Performance!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +609,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

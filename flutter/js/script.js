@@ -343,7 +343,7 @@ function shareProgress(platform) {
     const dayTitle = document.querySelector('.hero-title').textContent.trim();
     const userProgressText = document.getElementById('progressText').textContent;
     
-    const text = `🚀 I've completed ${userProgressText} of "${dayTitle}" in the #Flutter30Days challenge by @WIFGroup. Join me on this learning journey!`;
+    const text = `🚀 I've completed ${userProgressText} of "${dayTitle}" in the #Flutter30Days challenge by @wif_marketing. Join me on this learning journey!`;
     const encodedText = encodeURIComponent(text);
 
     if (platform === 'twitter') {

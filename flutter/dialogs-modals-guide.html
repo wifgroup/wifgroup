@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 11: Dialogs, BottomSheets, Snackbars & Modals in Flutter | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 11 of the WIF Group 30-Day Flutter Course. Learn how to communicate with users using essential UI overlays like dialogs, bottom sheets, and snackbars for feedback and confirmations.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter dialogs, AlertDialog, showDialog, snackbar, BottomSheet, showModalBottomSheet, user feedback, Flutter modals">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/dialogs-modals-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 11: Dialogs, BottomSheets, Snackbars & Modals | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Master user communication! This lesson covers all the essential overlays in Flutter for providing feedback, confirmations, and alerts. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day11-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/dialogs-modals-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 11: Flutter's Dialogs & Modals | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Today's lesson is all about communicating with your users! Day 11 of our free 30-day Flutter course focuses on dialogs, snackbars, and bottom sheets. #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day11-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -33,68 +33,68 @@
     <link rel="apple-touch-icon" href="../assets/img/favicon/apple-icon-152x152.png">
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/dialogs-modals-guide.html"
+      },
+      "headline": "Day 11: Dialogs, BottomSheets, Snackbars & Modals in Flutter",
+      "description": "A detailed lesson on Flutter's essential UI overlays for communicating with users, including alerts, bottom sheets, and snackbars. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day11-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-08-27T00:00:00+05:30",
+      "dateModified": "2025-08-27T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Dialogs, BottomSheets, Snackbars & Modals in Flutter",
+      "description": "A comprehensive lesson on Flutter's UI communication widgets, designed for providing interactive feedback to users.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Intermediate",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT30M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Dialogs, BottomSheets, Snackbars & Modals",
+          "url": "https://wifgroup.in/flutter/dialogs-modals-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/dialogs-modals-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
@@ -177,160 +177,297 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 11: Dialogs, BottomSheets, Snackbars & Modals</h1>
+                    <p class="hero-subtitle">Learn how to communicate with users using alerts, temporary messages, and slide-up panels. 💬</p>
                 </div>
             </section>
 
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
-                            alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">📌</span> Types of User Feedback in Flutter</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Flutter+UI+Overlays"
+                            alt="An abstract illustration of different Flutter UI overlay types like dialogs and bottom sheets."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
+                        <p>Yesterday we explored buttons, switches, sliders, and gestures. Today, we’ll learn how to communicate with users using dialogs, snackbars, and sheets. These widgets are essential for feedback, confirmations, and additional actions.</p>
+                        <ul>
+                            <li><strong>Dialogs:</strong> Alert or custom pop-ups.</li>
+                            <li><strong>Bottom Sheets:</strong> Slide-up panels.</li>
+                            <li><strong>Snackbars:</strong> Temporary messages at the bottom.</li>
+                            <li><strong>Modals:</strong> Overlay elements blocking UI until dismissed.</li>
                         </ul>
                     </section>
-
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
+                    
+                    <section class="section" id="alert-dialog" data-section="alert-dialog">
+                        <h2><span class="section-icon">⚠️</span> AlertDialog</h2>
+                        <p>Use <code>showDialog()</code> to display a confirmation or alert dialog that requires user interaction.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>AlertDialog Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+showDialog(
+  context: context,
+  builder: (context) {
+    return AlertDialog(
+      title: Text("Delete Item?"),
+      content: Text("Are you sure you want to delete this item?"),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context, "Cancel"),
+          child: Text("Cancel"),
+        ),
+        ElevatedButton(
+          onPressed: () => Navigator.pop(context, "Delete"),
+          child: Text("Delete"),
+        ),
+      ],
+    );
+  },
+);
+                            </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="simple-dialog" data-section="simple-dialog">
+                        <h2><span class="section-icon">📥</span> SimpleDialog</h2>
+                        <p>Used for showing simple, multiple-choice options to the user.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>SimpleDialog Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+showDialog(
+  context: context,
+  builder: (context) {
+    return SimpleDialog(
+      title: Text("Choose Option"),
+      children: [
+        SimpleDialogOption(
+          onPressed: () => Navigator.pop(context, "Option 1"),
+          child: Text("Option 1"),
+        ),
+        SimpleDialogOption(
+          onPressed: () => Navigator.pop(context, "Option 2"),
+          child: Text("Option 2"),
+        ),
+      ],
+    );
+  },
+);
+                            </code></pre>
                         </div>
+                    </section>
+                    
+                    <section class="section" id="snackbars" data-section="snackbars">
+                        <h2><span class="section-icon">📌</span> Snackbars</h2>
+                        <p>Snackbars are lightweight, temporary messages that appear at the bottom of the screen. They often include an optional action button.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Snackbar Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
+                            <pre class="code-content"><code>
+ScaffoldMessenger.of(context).showSnackBar(
+  SnackBar(
+    content: Text("Item Added to Cart!"),
+    action: SnackBarAction(
+      label: "Undo",
+      onPressed: () => print("Undo clicked"),
+    ),
+  ),
+);
+                            </code></pre>
                         </div>
-                        <p><strong>Run the App</strong></p>
+                    </section>
+
+                    <section class="section" id="bottom-sheets" data-section="bottom-sheets">
+                        <h2><span class="section-icon">📂</span> Bottom Sheets</h2>
+                        <p>Bottom sheets are panels that slide up from the bottom of the screen. There are two main types: <strong>Modal Bottom Sheet</strong> and <strong>Persistent Bottom Sheet</strong>.</p>
+                        <h3>Modal Bottom Sheet</h3>
+                        <p>A modal bottom sheet is a temporary panel that prevents the user from interacting with the rest of the app until it is dismissed. Use <code>showModalBottomSheet()</code>.</p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Modal Bottom Sheet Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
+                            <pre class="code-content"><code>
+showModalBottomSheet(
+  context: context,
+  builder: (context) {
+    return Container(
+      padding: EdgeInsets.all(16),
+      height: 200,
+      child: Column(
+        children: [
+          Text("This is a modal bottom sheet"),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text("Close"),
+          )
+        ],
+      ),
+    );
+  },
+);
+                            </code></pre>
                         </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
-                        </ul>
+                        <h3>Persistent Bottom Sheet</h3>
+                        <p>A persistent bottom sheet remains visible even when the user interacts with the rest of the app. Use <code>Scaffold.of(context).showBottomSheet()</code>.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Persistent Bottom Sheet Example</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+Scaffold(
+  appBar: AppBar(title: Text("BottomSheet Example")),
+  body: Center(
+    child: ElevatedButton(
+      child: Text("Show Persistent Sheet"),
+      onPressed: () {
+        Scaffold.of(context).showBottomSheet(
+          (context) => Container(
+            color: Colors.blue[100],
+            height: 150,
+            child: Center(child: Text("Persistent Sheet")),
+          ),
+        );
+      },
+    ),
+  ),
+);
+                            </code></pre>
+                        </div>
+                    </section>
+
+                    <section class="section" id="full-example" data-section="full-example">
+                        <h2><span class="section-icon">🧑‍💻</span> Example App: Dialogs, Snackbars & Sheets</h2>
+                        <p>Here is a single app that demonstrates how to trigger an alert dialog, a snackbar, and a modal bottom sheet.</p>
+                        <div class="code-container">
+                            <div class="code-header">
+                                <span>Complete Code</span>
+                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                            </div>
+                            <pre class="code-content"><code>
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: DialogDemo(),
+    );
+  }
+}
+
+class DialogDemo extends StatelessWidget {
+  void _showAlert(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: Text("Logout?"),
+        content: Text("Do you really want to logout?"),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context), 
+            child: Text("Cancel")),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(context), 
+            child: Text("Yes")),
+        ],
+      ),
+    );
+  }
+
+  void _showSnackBar(BuildContext context) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text("This is a Snackbar!")),
+    );
+  }
+
+  void _showModalSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (_) => Container(
+        padding: EdgeInsets.all(20),
+        height: 200,
+        child: Center(child: Text("Hello from Bottom Sheet")),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Day 11: Dialogs & Snackbars")),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () => _showAlert(context),
+              child: Text("Show AlertDialog"),
+            ),
+            ElevatedButton(
+              onPressed: () => _showSnackBar(context),
+              child: Text("Show Snackbar"),
+            ),
+            ElevatedButton(
+              onPressed: () => _showModalSheet(context),
+              child: Text("Show Modal BottomSheet"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+                            </code></pre>
+                        </div>
                     </section>
 
                     <section class="section" id="checklist" data-section="checklist">
                         <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Showed alerts & confirmation dialogs
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Used snackbars for temporary messages
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Added modal & persistent bottom sheets
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">🏗️</span> Homework</h2>
+                        <p>Build a shopping cart screen with:</p>
+                        <ul>
+                            <li>Alert dialog for delete confirmation</li>
+                            <li>Snackbar after adding item</li>
+                            <li>Modal bottom sheet for checkout options</li>
+                        </ul>
+                        <p>Share your result with <code>#Flutter30Days</code> 💙</p>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Day 11 Complete!</button>
+                        </div>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔮</span> What’s Next?</h2>
+                        <p>Tomorrow (Day 12), we’ll dive into <strong>App Structure Widgets</strong>: <strong>AppBar</strong>, <strong>TabBar</strong>, <strong>Drawer</strong> & <strong>BottomNavigationBar</strong> – the core of app navigation UI.</p>
                     </section>
-
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
+                    
+                    <section class="section" id="source-code" data-section="source-code">
+                        <h2><span class="section-icon">📩</span> Bonus Resources</h2>
+                        <p>Subscribe here for GitHub source code, UI templates, and project challenges.</p>
                     </section>
 
                     <section class="section author-section" id="author" data-section="author">
@@ -385,7 +522,6 @@
                         </div>
                     </section>
 
-
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
@@ -406,8 +542,8 @@
                             <button class="share-icon" onclick="shareProgress('linkedin')" title="Share on LinkedIn"
                                 aria-label="Share your progress on LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -441,16 +577,15 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
-                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#intro" class="toc-item"><span>📌</span> Types of User Feedback</a>
+                            <a href="#alert-dialog" class="toc-item"><span>⚠️</span> AlertDialog</a>
+                            <a href="#simple-dialog" class="toc-item"><span>📥</span> SimpleDialog</a>
+                            <a href="#snackbars" class="toc-item"><span>📌</span> Snackbars</a>
+                            <a href="#bottom-sheets" class="toc-item"><span>📂</span> Bottom Sheets</a>
+                            <a href="#full-example" class="toc-item"><span>🧑‍💻</span> Example App</a>
+                            <a href="#checklist" class="toc-item"><span>✅</span> Checklist for Today</a>
+                            <a href="#homework" class="toc-item"><span>🏗️</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔮</span> What’s Next?</a>
                         </div>
                     </nav>
 
@@ -476,37 +611,35 @@
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+1"
-                    alt="An illustration for Day 1 of the Flutter course, covering the introduction to Flutter & Dart."
+                <img src="https://placehold.co/600x300/f59e0b/ffffff?text=Day+9"
+                    alt="An illustration for Day 9 of the Flutter course, covering custom widgets and theming."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 1</div>
-                    <h3>Introduction to Flutter & Dart</h3>
-                    <p>Start your journey by setting up your environment and learning the basics of Flutter and Dart.
-                    </p>
+                    <div class="blog-card-day">Day 9</div>
+                    <h3>Custom Widgets & Theming</h3>
+                    <p>Learn how to create reusable UI components and apply a consistent style across your app.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+2"
-                    alt="An illustration for Day 2 of the Flutter course, building a 'Hello World' app."
+                <img src="https://placehold.co/600x300/10b981/ffffff?text=Day+10"
+                    alt="An illustration for Day 10 of the Flutter course, building interactive widgets."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 2</div>
-                    <h3>Your First Flutter App</h3>
-                    <p>Build and run your very first "Hello World" application on an emulator or a physical device.</p>
+                    <div class="blog-card-day">Day 10</div>
+                    <h3>Interactive Widgets & Gestures</h3>
+                    <p>Make your app more interactive with buttons, switches, sliders, and gestures like tapping and swiping.</p>
                     <a href="#" class="blog-card-link">Read More →</a>
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+12"
+                    alt="An illustration for Day 12 of the Flutter course, focusing on app structure widgets."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
-                    <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
-                    </p>
+                    <div class="blog-card-day">Day 12</div>
+                    <h3>App Structure Widgets</h3>
+                    <p>Learn about AppBar, TabBar, Drawer & BottomNavigationBar, the core of app navigation UI.</p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
                 </div>
             </div>
@@ -515,9 +648,9 @@
 
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 11 Complete!</h2>
+            <p>You now know how to communicate with users using alerts, snackbars, and bottom sheets.</p>
+            <p>Get ready for <strong>Day 12: App Structure Widgets!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
@@ -525,6 +658,7 @@
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>

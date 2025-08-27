@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Day 1: Introduction to Flutter & Dart | WIF Group Course</title>
+    <title>Day 3: Learn Flutter Stateless vs. Stateful Widgets | WIF Group Course</title>
     <meta name="description"
-        content="Day 1 of the WIF Group 30-Day Flutter Course. Learn the basics of Flutter and Dart, including setup, tools, and running your first app. Perfect for beginners.">
+        content="Day 3 of the WIF Group 30-Day Flutter Course. Learn the fundamental difference between Stateless and Stateful widgets with practical lessons and code examples. Perfect for new and aspiring Flutter developers.">
     <meta name="keywords"
-        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, Flutter for beginners, app development course, mobile development, Dart programming, free online course, Flutter SDK">
+        content="Flutter course, Flutter tutorial, learn Flutter, WIF Group, StatelessWidget, StatefulWidget, Flutter for beginners, app development course, mobile development, Dart programming, free online course">
     <meta name="author" content="WIF Group">
-    <link rel="canonical" href="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+    <link rel="canonical" href="https://wifgroup.in/flutter/stateless-vs-stateful-widgets-guide.html">
 
-    <meta property="og:title" content="Day 1: Introduction to Flutter & Dart | 30-Day Flutter Course">
+    <meta property="og:title" content="Day 3: Learn Stateless vs. Stateful Widgets | 30-Day Flutter Course">
     <meta property="og:description"
-        content="Start your coding journey with Day 1 of our 30-day Flutter course. Learn the basics of Flutter and Dart, set up your environment, and build your first app! #Flutter30Days">
-    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
-    <meta property="og:url" content="https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html">
+        content="Unlock core Flutter concepts. This comprehensive lesson, part of our 30-day course, teaches you how to use Stateless and Stateful widgets to build dynamic UIs. #Flutter30Days">
+    <meta property="og:image" content="https://wifgroup.in/assets/flutter/flutter-day3-hero-image.jpg">
+    <meta property="og:url" content="https://wifgroup.in/flutter/stateless-vs-stateful-widgets-guide.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="WIF Group 30-Day Flutter Course">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lesson 1: Introduction to Flutter & Dart | WIF Group Course">
+    <meta name="twitter:title" content="Lesson 3: Flutter's Stateless vs. Stateful Widgets | WIF Group Course">
     <meta name="twitter:description"
-        content="Begin your mobile development journey with our free 30-day Flutter course. This lesson covers everything you need to know to get started. #FlutterDev">
-    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png">
+        content="Ready to code? This lesson on Stateless vs. Stateful widgets is the next step in our free 30-day Flutter course. Join the journey! #FlutterDev">
+    <meta name="twitter:image" content="https://wifgroup.in/assets/flutter/flutter-day3-hero-image.jpg">
     <meta name="twitter:site" content="@wif_marketing">
 
     <link rel="icon" href="../assets/img/favicon/favicon.ico" sizes="any">
@@ -35,78 +35,81 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-          },
-          "headline": "Day 1: Introduction to Flutter & Dart – Setup, Tools, and Getting Started",
-          "description": "A detailed lesson for beginners on getting started with Flutter and Dart. Part of the WIF Group's free 30-day Flutter course.",
-          "image": "https://wifgroup.in/assets/flutter/flutter-day1-hero-image.png",
-          "author": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "url": "https://wifgroup.in"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "WIF Group",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wifgroup.in/images/wif-group-logo.png"
-            }
-          },
-          "datePublished": "2025-08-19T00:00:00+05:30",
-          "dateModified": "2025-08-19T00:00:00+05:30"
-        },
-        {
-          "@type": "LearningResource",
-          "name": "Introduction to Flutter & Dart",
-          "description": "A comprehensive lesson on getting started with Flutter and Dart, designed for beginners.",
-          "learningResourceType": "Tutorial",
-          "educationalLevel": "Beginner",
-          "inLanguage": "en-US",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Developers",
-            "geographicArea": "Global"
-          },
-          "timeRequired": "PT30M",
-          "isPartOf": {
-            "@type": "Course",
-            "name": "30-Day Flutter Course",
-            "provider": {
-              "@type": "Organization",
-              "name": "WIF Group"
-            },
-            "hasPart": {
-              "@type": "LearningResource",
-              "name": "Introduction to Flutter & Dart",
-              "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
-            }
-          },
-          "interactivityType": "Active",
-          "url": "https://wifgroup.in/flutter/introduction-to-flutter-dart-guide.html"
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://wifgroup.in/flutter/stateless-vs-stateful-widgets-guide.html"
+      },
+      "headline": "Day 3: Learning the Difference Between Stateless and Stateful Widgets in Flutter",
+      "description": "A detailed lesson on Stateless vs. Stateful widgets for beginners, complete with code examples. Part of the WIF Group's free 30-day Flutter course.",
+      "image": "https://wifgroup.in/assets/flutter/flutter-day3-hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "url": "https://wifgroup.in"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIF Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wifgroup.in/images/wif-group-logo.png"
         }
-      ]
+      },
+      "datePublished": "2025-08-19T00:00:00+05:30",
+      "dateModified": "2025-08-19T00:00:00+05:30"
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Stateless vs. Stateful Widgets in Flutter",
+      "description": "A comprehensive lesson on Flutter's core widget concepts, designed for beginners.",
+      "learningResourceType": "Tutorial",
+      "educationalLevel": "Beginner",
+      "inLanguage": "en-US",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "geographicArea": "Global"
+      },
+      "timeRequired": "PT30M",
+      "isPartOf": {
+        "@type": "Course",
+        "name": "30-Day Flutter Course",
+        "provider": {
+          "@type": "Organization",
+          "name": "WIF Group"
+        },
+        "hasPart": {
+          "@type": "LearningResource",
+          "name": "Stateless vs. Stateful Widgets in Flutter",
+          "url": "https://wifgroup.in/flutter/stateless-vs-stateful-widgets-guide.html"
+        }
+      },
+      "interactivityType": "Active",
+      "url": "https://wifgroup.in/flutter/stateless-vs-stateful-widgets-guide.html"
     }
-    </script>
+  ]
+}
+</script>
 
     <script src="js/script.js" defer></script>
     <script src="js/newsletter.js" defer></script>
 </head>
 
 <body>
+    <!-- Floating Particles -->
     <div class="particles"></div>
 
+    <!-- Progress Bar -->
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
     </div>
 
+    <!-- Header -->
     <header class="header" id="header">
         <nav class="nav-container" aria-label="Main navigation">
             <a href="#" class="logo">WIF Group</a>
@@ -177,180 +180,200 @@
                     <div class="series-badge">
                         📁 Part of the 30-Day Flutter Series
                     </div>
-                    <h1 class="hero-title">Day 1: Introduction to Flutter & Dart</h1>
-                    <p class="hero-subtitle">Setup, Tools, and Getting Started</p>
-                    <p class="hero-subtitle">Welcome to Day 1 of our 30-Day Flutter Series! Whether you're a complete
-                        beginner or just exploring Flutter, this is the perfect starting point.</p>
+                    <h1 class="hero-title">Day 3: Stateless vs Stateful Widgets</h1>
+                    <p class="hero-subtitle">Understand how Flutter builds UI and what makes it dynamic or static. It’s
+                        all
+                        about Widgets! 🧱</p>
+
+                    <div class="interactive-demo">
+                        <h2>Quick Demo</h2>
+                        <button class="demo-button" onclick="runFlutterDemo()">Compare Widgets</button>
+                        <div class="demo-output" id="demoOutput">Click the button to see widget behavior explained! 🧠
+                        </div>
+                    </div>
                 </div>
             </section>
 
+
+
+            <!-- Content Wrapper -->
             <div class="content-wrapper">
                 <div class="main-content">
-                    <section class="section" id="intro-flutter" data-section="intro-flutter">
-                        <h2><span class="section-icon">🧠</span> What is Flutter?</h2>
-                        <img src="../assets/flutter/flutter-day1-hero-image.png"
+                    <section class="section" id="intro" data-section="intro">
+                        <h2><span class="section-icon">🔍</span> What is a Widget?</h2>
+                        <img src="https://placehold.co/800x400/667eea/ffffff?text=Everything+is+a+Widget"
                             alt="An abstract illustration showing various UI components as building blocks, representing Flutter widgets."
                             class="content-image" width="800" height="400">
-
-                        <p>Flutter is an open-source UI software development kit by Google. It allows you to create
-                            beautiful, natively compiled apps for mobile (iOS, Android), web, and desktop from a single
-                            codebase.</p>
-                        <p><strong>Key Highlights:</strong></p>
-                        <ul class="content-list">
-                            <li>Fast Development with Hot Reload</li>
-                            <li>Beautiful UIs with Custom Widgets</li>
-                            <li>Same codebase across platforms</li>
-                            <li>Powered by the Dart programming language</li>
-                        </ul>
+                        <p>In Flutter, <strong>everything is a widget</strong>: text, buttons, layouts, screens — all
+                            are
+                            widgets. They describe what your UI should look like and Flutter rebuilds them when needed.
+                        </p>
                     </section>
 
-                    <section class="section" id="why-flutter" data-section="why-flutter">
-                        <h2><span class="section-icon">💡</span> Why Learn Flutter?</h2>
-                        <ul class="content-list">
-                            <li><strong>Single Codebase:</strong> Write once, run anywhere</li>
-                            <li><strong>Growing Ecosystem:</strong> Huge developer support, packages</li>
-                            <li><strong>Backed by Google:</strong> Used in production (e.g., Google Pay)</li>
-                            <li><strong>Fast & Flexible UI Design:</strong> Perfect for MVPs or complex apps</li>
-                        </ul>
-                    </section>
+                    <section class="section" id="stateless" data-section="stateless">
+                        <h2><span class="section-icon">🧍</span> Stateless Widget</h2>
+                        <p>A <code>StatelessWidget</code> is immutable. It doesn't store any internal state and renders
+                            UI
+                            purely based on the data passed to it.</p>
 
-                    <section class="section" id="what-is-dart" data-section="what-is-dart">
-                        <h2><span class="section-icon">🧾</span> What is Dart?</h2>
-                        <p>Dart is the language behind Flutter. It is easy to learn, especially if you're coming from
-                            JavaScript, Java, or C-style languages.</p>
-                        <ul class="content-list">
-                            <li>Object-Oriented</li>
-                            <li>Sound null safety</li>
-                            <li>Great async/await support</li>
-                            <li>Hot reload enabled</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="install-sdk" data-section="install-sdk">
-                        <h2><span class="section-icon">🛠️</span> Install Flutter SDK</h2>
-                        <p>Follow these steps based on your OS:</p>
-                        <p><strong>🔗 Official Flutter Installation Guide:</strong><br>👉 <a
-                                href="https://docs.flutter.dev/get-started/install"
-                                target="_blank">https://docs.flutter.dev/get-started/install</a></p>
-                        <p><strong>Basic Requirements:</strong></p>
-                        <ul class="content-list">
-                            <li>Git</li>
-                            <li>Command Line Tools</li>
-                            <li>Internet connection</li>
-                        </ul>
-                        <p><strong>For Windows:</strong></p>
-                        <ul class="content-list">
-                            <li>Download the SDK zip</li>
-                            <li>Extract to a location (e.g., <code>C:\src\flutter</code>)</li>
-                            <li>Add <code>flutter\bin</code> to your PATH</li>
-                            <li>Run <code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>For Mac:</strong></p>
-                        <ul class="content-list">
-                            <li><code>brew install --cask flutter</code></li>
-                            <li><code>flutter doctor</code></li>
-                        </ul>
-                        <p><strong>Ensure you install:</strong></p>
-                        <ul class="content-list">
-                            <li>Android SDK (via Android Studio)</li>
-                            <li>Xcode (for iOS dev)</li>
-                            <li>Chrome (for web dev)</li>
-                        </ul>
-                    </section>
-
-                    <section class="section" id="setup-ide" data-section="setup-ide">
-                        <h2><span class="section-icon">🧑‍💻</span> Setting Up Your IDE</h2>
-                        <p><strong>Option 1: Visual Studio Code</strong></p>
-                        <ul class="content-list">
-                            <li>Install Flutter & Dart extensions</li>
-                            <li>Lightweight and fast</li>
-                        </ul>
-                        <p><strong>Option 2: Android Studio</strong></p>
-                        <ul class="content-list">
-                            <li>Full-featured, built-in emulator</li>
-                            <li>Use AVD (Android Virtual Device) manager</li>
-                        </ul>
-                        <p><strong>✅ After installing IDE, run:</strong></p>
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Stateless Widget Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter doctor</code></pre>
+                            <pre class="code-content"><code>
+        import 'package:flutter/material.dart';
+
+        class MyStatelessPage extends StatelessWidget {
+          @override
+          Widget build(BuildContext context) {
+            return Scaffold(
+              appBar: AppBar(title: Text('Stateless Example')),
+              body: Center(
+                child: Text('This is a stateless widget'),
+              ),
+            );
+          }
+        }
+                    </code></pre>
                         </div>
-                        <p>This checks for missing dependencies and setups.</p>
+
+                        <p>🟢 Use this when your UI doesn’t change — like static text, logos, or layout shells.</p>
                     </section>
 
-                    <section class="section" id="first-app" data-section="first-app">
-                        <h2><span class="section-icon">📱</span> Running Your First Flutter App</h2>
-                        <p><strong>Create a New Project</strong></p>
+                    <section class="section" id="stateful" data-section="stateful">
+                        <h2><span class="section-icon">🔁</span> Stateful Widget</h2>
+                        <p>A <code>StatefulWidget</code> has mutable state. When something changes (like a button tap),
+                            the
+                            widget can rebuild with new data.</p>
+
                         <div class="code-container">
                             <div class="code-header">
-                                <span>Command Line</span>
+                                <span>Stateful Widget Example</span>
                                 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
                             </div>
-                            <pre class="code-content"><code>flutter create my_first_app</code></pre>
+                            <pre class="code-content"><code>
+        import 'package:flutter/material.dart';
+
+        class MyStatefulPage extends StatefulWidget {
+          @override
+          _MyStatefulPageState createState() => _MyStatefulPageState();
+        }
+
+        class _MyStatefulPageState extends State<MyStatefulPage> {
+          int counter = 0;
+
+          void incrementCounter() {
+            setState(() {
+              counter++;
+            });
+          }
+
+          @override
+          Widget build(BuildContext context) {
+            return Scaffold(
+              appBar: AppBar(title: Text('Stateful Example')),
+              body: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('You pressed the button \$counter times'),
+                    SizedBox(height: 16),
+                    ElevatedButton(
+                      onPressed: incrementCounter,
+                      child: Text('Increment'),
+                    )
+                  ],
+                ),
+              ),
+            );
+          }
+        }
+                    </code></pre>
                         </div>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>cd my_first_app</code></pre>
-                        </div>
-                        <p><strong>Run the App</strong></p>
-                        <div class="code-container">
-                            <div class="code-header">
-                                <span>Command Line</span>
-                                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                            </div>
-                            <pre class="code-content"><code>flutter run</code></pre>
-                        </div>
-                        <p><strong>You can use:</strong></p>
-                        <ul class="content-list">
-                            <li>Android Emulator</li>
-                            <li>iOS Simulator (Mac only)</li>
-                            <li>Real Device (via USB debugging)</li>
+
+                        <p>🟡 Use this when your UI changes — like counters, toggles, animations, or input forms.</p>
+                    </section>
+
+                    <section class="section" id="comparison" data-section="comparison">
+                        <h2><span class="section-icon">📊</span> Stateless vs Stateful – Quick Comparison</h2>
+                        <ul>
+                            <li><strong>Changes Over Time:</strong> ❌ No (Stateless) | ✅ Yes (Stateful)</li>
+                            <li><strong>Performance:</strong> 🟢 Lighter (Stateless) | 🟡 Heavier (Stateful)</li>
+                            <li><strong>Best Use:</strong> Static UI | Dynamic interactive UI</li>
                         </ul>
+                    </section>
+
+                    <section class="section" id="when-to-use" data-section="when-to-use">
+                        <h2><span class="section-icon">🎯</span> When to Use What?</h2>
+                        <p>✔️ Use <strong>StatelessWidget</strong> when your UI doesn’t rely on any changing values.</p>
+                        <p>✔️ Use <strong>StatefulWidget</strong> when user interaction or data updates need to rebuild
+                            the UI.
+                        </p>
                     </section>
 
                     <section class="section" id="checklist" data-section="checklist">
-                        <h2><span class="section-icon">✅</span> Checklist for Today</h2>
-                        <p>Get a basic understanding of Flutter, Dart, and how to get started.</p>
+                        <h2><span class="section-icon">✅</span> Day 3 Completion Checklist</h2>
+                        <ul class="checklist">
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Understand widget basics
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Implement a StatelessWidget
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Implement a StatefulWidget
+                            </li>
+                            <li onclick="toggleCheck(this)">
+                                <div class="checkbox"></div> Know when to use which
+                            </li>
+                        </ul>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button class="demo-button" onclick="celebrateCompletion()">🎉 Complete Day 3!</button>
+                        </div>
+                    </section>
+
+                    <section class="section" id="homework" data-section="homework">
+                        <h2><span class="section-icon">📌</span> Homework</h2>
+                        <ul>
+                            <li>Create a button that toggles between Light and Dark mode text</li>
+                            <li>Reset a counter after it reaches 10</li>
+                            <li>Try converting a StatefulWidget to StatelessWidget — observe what breaks!</li>
+                        </ul>
+                        <p>📤 Share your screenshots with <code>#Flutter30Days</code> on Twitter/X!</p>
                     </section>
 
                     <section class="section" id="next" data-section="next">
-                        <h2><span class="section-icon">🔥</span> What’s Next?</h2>
-                        <p>Tomorrow we’ll break down the Flutter Project Structure and build our very first UI screen!
-                        </p>
-                        <p>Stay tuned and share your progress using <code>#Flutter30Days</code>. 💙</p>
+                        <h2><span class="section-icon">🔥</span> Coming Tomorrow</h2>
+                        <p>We'll dive into <strong>Basic Widgets</strong> — Text, Image, Row, Column, Container and
+                            build your
+                            first layout!</p>
                     </section>
 
-                    <section class="section" id="bonus" data-section="bonus">
-                        <h2><span class="section-icon">📩</span> Want Full Code + Bonus Resources?</h2>
-                        <p>Drop your email here to get access to our GitHub repo, project templates, and video
-                            walkthroughs!</p>
-                        <p>Happy Fluttering! 🚀</p>
-                    </section>
-
+                    <!-- Author Section -->
                     <section class="section author-section" id="author" data-section="author">
-                        <h2><span class="section-icon">👨‍🏫</span> About the Mentor</h2>
+                        <h2><span class="section-icon">👨‍💻</span> About the Author</h2>
                         <div class="author-card">
                             <div class="author-avatar">
-                                <div class="avatar-placeholder">HC</div>
+                                <div class="avatar-placeholder">FD</div>
                             </div>
                             <div class="author-info">
-                                <h3>Harshil Chovatiya – Flutter Mentor, Author & Developer</h3>
-                                <p>I’m Harshil, a Flutter developer and mentor with 4+ years of experience building
-                                    real-world apps, plugins, and APIs.
-                                    I’m also the author of <em>“HTML, CSS, and JavaScript Demystified”</em> and
-                                    <em>“Build a Straight Mindset”</em>.
-                                    My mission is simple: help learners code smarter, build faster, and think like a pro
-                                    Flutter developer.</p>
+                                <h3>Flutter Developer</h3>
+                                <p>Passionate about creating beautiful, performant mobile apps with Flutter. Helping
+                                    developers
+                                    learn Flutter one day at a time through the #Flutter30Days series.</p>
                             </div>
                             <div class="author-social">
-                                <a href="https://www.linkedin.com/in/harshilbmk" class="social-icon" title="LinkedIn"
-                                    aria-label="Connect on LinkedIn">
+                                <a href="#" class="social-icon" title="Twitter" aria-label="Follow on Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon" title="LinkedIn" aria-label="Connect on LinkedIn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -361,18 +384,7 @@
                                         <circle cx="4" cy="4" r="2"></circle>
                                     </svg>
                                 </a>
-                                <a href="https://twitter.com/harshilbmk" class="social-icon" title="Twitter"
-                                    aria-label="Follow on Twitter">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a href="https://www.instagram.com/harshilchovatiyaa" class="social-icon"
-                                    title="Instagram" aria-label="Follow on Instagram">
+                                <a href="#" class="social-icon" title="Instagram" aria-label="Follow on Instagram">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -385,12 +397,13 @@
                         </div>
                     </section>
 
-
+                    <!-- Share Progress Section -->
                     <section class="section share-section" id="share" data-section="share">
                         <h2><span class="section-icon">📱</span> Share Your Progress</h2>
                         <div class="share-description">
                             <p>Show the world your Flutter learning journey! Share your code, screenshots, and progress
-                                with the community.</p>
+                                with the
+                                community.</p>
                         </div>
                         <div class="share-icons">
                             <button class="share-icon" onclick="shareProgress('twitter')" title="Share on Twitter"
@@ -425,6 +438,7 @@
                                 </svg>
                             </button>
                         </div>
+
                         <div class="hashtags">
                             <p><strong>Use these hashtags:</strong></p>
                             <div class="hashtag-list">
@@ -441,16 +455,14 @@
                     <h3>📚 Table of Contents</h3>
                     <nav aria-label="Article sections">
                         <div class="toc-list">
-                            <a href="#intro-flutter" class="toc-item"><span>🧠</span> What is Flutter?</a>
-                            <a href="#why-flutter" class="toc-item"><span>💡</span> Why Learn Flutter?</a>
-                            <a href="#what-is-dart" class="toc-item"><span>🧾</span> What is Dart?</a>
-                            <a href="#install-sdk" class="toc-item"><span>🛠️</span> Install Flutter SDK</a>
-                            <a href="#setup-ide" class="toc-item"><span>🧑‍💻</span> Setting Up Your IDE</a>
-                            <a href="#first-app" class="toc-item"><span>📱</span> Running Your First App</a>
+                            <a href="#intro" class="toc-item"><span>🔍</span> What is a Widget?</a>
+                            <a href="#stateless" class="toc-item"><span>🧍</span> Stateless Widget</a>
+                            <a href="#stateful" class="toc-item"><span>🔁</span> Stateful Widget</a>
+                            <a href="#comparison" class="toc-item"><span>📊</span> Comparison</a>
+                            <a href="#when-to-use" class="toc-item"><span>🎯</span> When to Use</a>
                             <a href="#checklist" class="toc-item"><span>✅</span> Checklist</a>
-                            <a href="#next" class="toc-item"><span>🔥</span> What's Next?</a>
-                            <a href="#author" class="toc-item"><span>👨‍💻</span> About the Author</a>
-                            <a href="#share" class="toc-item"><span>📱</span> Share Your Progress</a>
+                            <a href="#homework" class="toc-item"><span>📌</span> Homework</a>
+                            <a href="#next" class="toc-item"><span>🔥</span> Next Up</a>
                         </div>
                     </nav>
 
@@ -472,6 +484,7 @@
         </article>
     </main>
 
+    <!-- Past Days Blog Section -->
     <section class="section past-blogs-section">
         <h2><span class="section-icon">📖</span> Explore Past Days</h2>
         <div class="blog-cards-container">
@@ -499,12 +512,12 @@
                 </div>
             </div>
             <div class="blog-card">
-                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+3"
-                    alt="An illustration for Day 3 of the Flutter course, focusing on basic layout widgets."
+                <img src="https://placehold.co/600x300/ef4444/ffffff?text=Day+4"
+                    alt="An illustration for Day 4 of the Flutter course, focusing on basic layout widgets."
                     class="blog-card-image" width="600" height="300" loading="lazy">
                 <div class="blog-card-content">
-                    <div class="blog-card-day">Day 3</div>
-                    <h3>Stateless vs Stateful Widgets</h3>
+                    <div class="blog-card-day">Day 4</div>
+                    <h3>Basic Layout Widgets</h3>
                     <p>Learn about essential layout widgets like Row, Column, and Container to structure your app's UI.
                     </p>
                     <a href="#" class="blog-card-link">Coming Soon...</a>
@@ -513,18 +526,22 @@
         </div>
     </section>
 
+    <!-- Completion Modal -->
     <div id="completionModal" class="modal hidden">
         <div class="modal-content">
-            <h2>🚀 Day 1 Complete!</h2>
-            <p>You have successfully completed Day 1 of our Flutter course.</p>
-            <p>Get ready for <strong>Day 2: Your First Flutter App!</strong> 🎯</p>
+            <h2>🚀 Day 3 Complete!</h2>
+            <p>You now understand the difference between <strong>Stateless</strong> and <strong>Stateful</strong>
+                Widgets.</p>
+            <p>Get ready for <strong>Day 4: Basic Flutter Widgets!</strong> 🎯</p>
             <button class="modal-btn" onclick="closeModal()">Awesome!</button>
         </div>
     </div>
 
+    <!-- Newsletter Section -->
     <section class="section newsletter-section" id="newsletter" data-section="newsletter">
         <h2><span class="section-icon">📧</span> Stay Updated</h2>
         <p>Get the latest Flutter tutorials, tips, and updates delivered straight to your inbox!</p>
+
         <div class="newsletter-form">
             <div class="form-group">
                 <input type="email" id="email" placeholder="Enter your email address" required>
@@ -536,6 +553,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section about">
@@ -602,6 +620,7 @@
         </div>
     </footer>
 
+    <!-- Floating Action Button -->
     <button class="fab" onclick="scrollToTop()" title="Back to Top" aria-label="Scroll to top of the page">
         ↑
     </button>
