@@ -297,42 +297,158 @@ dd{margin:.25rem 0 0;}
 .legal-page p{color:var(--gun);line-height:1.75;}
 .legal-page a{color:var(--ink);font-weight:600;}
 
-/* Responsive */
+/* ── Responsive ──────────────────────────────────────────────────────── */
+
+/* Tablet — hide desktop nav, show hamburger, fix hero padding */
 @media(max-width:860px){
-.topbar{grid-template-columns:auto auto;}
-.nav{display:none;}
-.nav-toggle{display:flex;}
-.hero{grid-template-columns:1fr;min-height:auto;padding-top:8rem;}
-.hero-art{display:none;}
-.hero-metrics{grid-template-columns:1fr 1fr;}
-.hero-metrics>div:last-child{grid-column:span 2;border-right:0;}
-.decision-card{grid-template-columns:1fr;}
-.decision-media{display:none;}
-.value-grid{grid-template-columns:1fr 1fr;}
-.value-grid article{border-right:0;border-bottom:1px solid var(--stone);}
-.trust-grid{grid-template-columns:1fr 1fr;}
-.advisor-row{grid-template-columns:1fr 1fr;}
-.advisor-row article:last-child{grid-column:span 2;}
-.guidance-section{grid-template-columns:1fr;}
-.guidance-sticky{position:static;}
-.case-grid article{grid-template-columns:1fr;}
-.case-grid img{max-height:14rem;object-fit:contain;}
-.fee-section{grid-template-columns:1fr;}
-.fee-copy{padding-top:0;}
-.compare-fee{margin-top:0;}
-.thinking-grid{grid-template-columns:1fr;}
-.final-cta{grid-template-columns:1fr;}
-.final-cta img{display:none;}
-.page-hero{grid-template-columns:1fr;}
-.page-hero img{display:none;}
-.asym-grid{grid-template-columns:1fr;}
-.page-card:nth-child(3){grid-column:span 1;grid-template-columns:1fr;}
-.split-feature,.split-feature.reverse{grid-template-columns:1fr;}
-.split-feature img,.split-feature.reverse img{order:0;}
-.resource-row{grid-template-columns:4rem 1fr;}
-.resource-row .btn-primary{display:none;}
-.material-grid{grid-template-columns:1fr;}
-.material-card:nth-child(3){grid-column:span 1;grid-template-columns:1fr;}
-.material-card:nth-child(3) img{height:auto;aspect-ratio:4/3;}
-.contact-page{grid-template-columns:1fr;}
+  /* Navbar */
+  .topbar{grid-template-columns:auto 1fr auto;gap:1rem;padding:.5rem .75rem .5rem 1rem;}
+  .nav{display:none;}
+  .nav-toggle{display:flex;}
+  /* Hide the ghost "Contact" button on mobile — keep only "Join WIF" */
+  .btn-ghost{display:none;}
+  /* Push "Join WIF" to the right so it sits beside the hamburger */
+  .nav-actions{justify-self:end;}
+
+  /* Section head — wrap so link drops below heading */
+  .section-head{flex-direction:column;align-items:flex-start;gap:.75rem;margin-bottom:2rem;}
+
+  /* Hero */
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:clamp(6rem,14vw,8rem);}
+  .hero-art{display:none;}
+  .hero-metrics{grid-template-columns:1fr 1fr;}
+  .hero-metrics>div{padding:1rem 1.25rem;}
+  .hero-metrics>div:last-child{grid-column:span 2;border-right:0;}
+
+  /* Decision */
+  .decision-card{grid-template-columns:1fr;}
+  .decision-media{display:none;}
+
+  /* Value grid — 2 cols on tablet */
+  .value-grid{grid-template-columns:1fr 1fr;}
+  .value-grid article{border-right:0;border-bottom:1px solid var(--stone);}
+
+  /* Trust grid — 2 cols */
+  .trust-grid{grid-template-columns:1fr 1fr;}
+
+  /* Advisor row — 2 cols, no span trick needed */
+  .advisor-row{grid-template-columns:1fr 1fr;}
+  .advisor-row article:last-child{grid-column:auto;}
+
+  /* Guidance / cases */
+  .guidance-section{grid-template-columns:1fr;}
+  .guidance-sticky{position:static;}
+  .case-grid article{grid-template-columns:1fr;}
+  .case-grid img{max-height:14rem;object-fit:contain;}
+
+  /* Fee */
+  .fee-section{grid-template-columns:1fr;}
+  .fee-copy{padding-top:0;}
+  .compare-fee{margin-top:2rem;}
+  .fee-number strong{font-size:clamp(3rem,10vw,5rem);}
+
+  /* Thinking */
+  .thinking-grid{grid-template-columns:1fr 1fr;}
+
+  /* Final CTA — fix negative padding on narrow screens */
+  .final-cta{
+    grid-template-columns:1fr auto;
+    gap:1.5rem;
+    padding:clamp(2.5rem,6vw,4rem) clamp(1.5rem,5vw,3rem);
+  }
+  .final-cta img{display:none;}
+
+  /* Page hero (inner pages) */
+  .page-hero{grid-template-columns:1fr;}
+  .page-hero img{display:none;}
+
+  /* Asym / community grid */
+  .asym-grid{grid-template-columns:1fr;}
+  .page-card:nth-child(3){grid-column:span 1;grid-template-columns:1fr;}
+
+  /* Split feature */
+  .split-feature,.split-feature.reverse{grid-template-columns:1fr;}
+  .split-feature img,.split-feature.reverse img{order:0;}
+
+  /* Resource list */
+  .resource-row{grid-template-columns:4rem 1fr;}
+  .resource-row .btn-primary{display:none;}
+
+  /* Material grid */
+  .material-grid{grid-template-columns:1fr;}
+  .material-card:nth-child(3){grid-column:span 1;grid-template-columns:1fr;}
+  .material-card:nth-child(3) img{height:auto;aspect-ratio:4/3;}
+
+  /* Contact */
+  .contact-page{grid-template-columns:1fr;}
+}
+
+/* Large phone — single column everything */
+@media(max-width:600px){
+  :root{--gap:52px;}
+
+  /* Navbar — tighter */
+  .topbar{top:12px;padding:.45rem .6rem .45rem .9rem;}
+  .brand img{height:2.1rem;}
+
+  /* Hero */
+  .hero{padding-top:5.5rem;gap:2rem;}
+  .hero h1{font-size:clamp(2.6rem,9vw,3.5rem);}
+  .hero-sub{font-size:1rem;}
+  .hero-actions{flex-direction:column;align-items:flex-start;gap:1rem;}
+  .hero-metrics{grid-template-columns:1fr 1fr;}
+  .hero-metrics>div:last-child{grid-column:span 2;}
+  .hero-metrics strong{font-size:clamp(2rem,8vw,3rem);}
+
+  /* Section */
+  .section{width:calc(100% - 2rem);}
+
+  /* Value grid — 1 col on phones */
+  .value-grid{grid-template-columns:1fr;}
+  .value-grid article{min-height:auto;padding:1.25rem 0;}
+
+  /* Trust grid — 1 col on phones */
+  .trust-grid{grid-template-columns:1fr;}
+
+  /* Advisor row — 1 col */
+  .advisor-row{grid-template-columns:1fr;}
+  .advisor-row article:last-child{grid-column:auto;}
+
+  /* Thinking grid — 1 col */
+  .thinking-grid{grid-template-columns:1fr;}
+
+  /* Final CTA — stack fully */
+  .final-cta{
+    grid-template-columns:1fr;
+    padding:2.5rem 1.25rem;
+    text-align:center;
+  }
+  .final-cta h2{font-size:clamp(1.75rem,6vw,2.4rem);}
+
+  /* Page hero */
+  .page-hero{padding-top:5.5rem;padding-bottom:2rem;}
+  .page-hero h1{font-size:clamp(2.2rem,7vw,3rem);}
+
+  /* Resource row — hide large number on very small screens */
+  .resource-row{grid-template-columns:3rem 1fr;gap:.75rem 1rem;}
+  .resource-row>strong{font-size:clamp(1.75rem,7vw,3rem);}
+
+  /* Fee */
+  .fee-card{padding:1.25rem;}
+  .fee-number strong{font-size:clamp(2.5rem,12vw,4rem);}
+
+  /* Contact card */
+  .contact-card{padding:1.25rem;}
+}
+
+/* Small phone — ultra compact */
+@media(max-width:480px){
+  .topbar{width:calc(100% - 1.25rem);}
+  .hero h1{font-size:clamp(2.2rem,8.5vw,3rem);}
+  .hero-metrics{grid-template-columns:1fr;}
+  .hero-metrics>div{border-right:0;border-bottom:1px solid var(--stone);}
+  .hero-metrics>div:last-child{grid-column:auto;border-bottom:0;}
+  .section-head h2{font-size:clamp(1.8rem,7vw,2.5rem);}
+  .nav-mobile{padding:5.5rem 1.25rem 2rem;}
+  .nav-mobile a{font-size:1.25rem;}
 }
