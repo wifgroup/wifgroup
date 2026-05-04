@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Explore how Agentic AI in 2026 is transforming business operations through autonomous decision-making, intelligent automation, and scalable digital transformation. Powered by WIF Group.">
   <meta name="twitter:image" content="https://wifgroup.in/assets/img/blogs/agentic-ai-business-2026.png">
   <style>
-    /* ── Blog post ─────────────────────────────── */
+    /* ── Blog post layout ─── */
     .post-hero {
       width: min(var(--page), calc(100% - 3rem));
       margin: 0 auto;
@@ -90,7 +90,6 @@
       transition: color .18s;
     }
     .post-back:hover { color: var(--ink); }
-    /* ── Article typography ── */
     .post-body h2 {
       font-size: clamp(1.4rem,2.4vw,1.9rem);
       margin: 2.75rem 0 .9rem;
@@ -161,6 +160,155 @@
     }
     @media (max-width:860px) {
       .post-body { width: calc(100% - 2.5rem); }
+    }
+
+    /* ══════════════════════════════════════════
+       HIGH-END BUTTON SYSTEM — Post Body
+       Philosophy: pill shape, double-bezel,
+       trailing icon, magnetic hover physics
+    ══════════════════════════════════════════ */
+
+    /* ── Base: all buttons & CTA links ── */
+    .post-body button,
+    .post-body input[type="submit"],
+    .post-body input[type="button"],
+    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]) {
+      /* unset browser defaults */
+      -webkit-appearance: none;
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--sans);
+
+      /* Pill shape */
+      display: inline-flex;
+      align-items: center;
+      gap: .625rem;
+      padding: .75rem 1.5rem .75rem 1.625rem;
+      border-radius: 9999px;
+      
+      /* Double-bezel outer shell */
+      background: var(--ink);
+      color: var(--canvas);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1;
+      position: relative;
+      isolation: isolate;
+      white-space: nowrap;
+
+      /* Outer hairline ring — the "bezel" */
+      outline: 1.5px solid rgba(255,255,255,.12);
+      outline-offset: 2px;
+      
+      /* Inset highlight — inner core glass sheen */
+      box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.14),
+        0 2px 12px rgba(0,0,0,.12),
+        0 0 0 1px rgba(0,0,0,.08);
+
+      /* Fluid physics transition */
+      transition:
+        transform 600ms cubic-bezier(.32,.72,0,1),
+        box-shadow 500ms cubic-bezier(.32,.72,0,1),
+        background 400ms cubic-bezier(.32,.72,0,1),
+        outline-color 400ms cubic-bezier(.32,.72,0,1);
+      will-change: transform;
+      margin: .25rem .35rem .25rem 0;
+    }
+
+    /* ── Trailing arrow icon — button-in-button ── */
+    .post-body button::after,
+    .post-body input[type="submit"]::after,
+    .post-body input[type="button"]::after,
+    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"])::after {
+      content: '↗';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 9999px;
+      background: rgba(255,255,255,.12);
+      font-size: .85rem;
+      font-style: normal;
+      flex-shrink: 0;
+      transition:
+        transform 500ms cubic-bezier(.32,.72,0,1),
+        background 300ms;
+    }
+
+    /* ── Magnetic hover — lift + icon kinetics ── */
+    .post-body button:hover,
+    .post-body input[type="submit"]:hover,
+    .post-body input[type="button"]:hover,
+    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]):hover {
+      transform: translateY(-3px);
+      background: #1a1a1a;
+      box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.18),
+        0 8px 32px rgba(0,0,0,.18),
+        0 2px 8px rgba(0,0,0,.12),
+        0 0 0 1px rgba(0,0,0,.1);
+      outline-color: rgba(255,255,255,.22);
+    }
+
+    /* Icon diagonal kinetics on hover */
+    .post-body button:hover::after,
+    .post-body input[type="submit"]:hover::after,
+    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]):hover::after {
+      transform: translate(2px, -2px) scale(1.08);
+      background: rgba(255,255,255,.22);
+    }
+
+    /* ── Active press — physical click feel ── */
+    .post-body button:active,
+    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]):active {
+      transform: translateY(0) scale(.98);
+      box-shadow:
+        inset 0 1px 3px rgba(0,0,0,.2),
+        0 1px 4px rgba(0,0,0,.1);
+      transition-duration: 80ms;
+    }
+
+    /* ── Hashtag / category tags (href="#") ── */
+    .post-body a[href="#"] {
+      display: inline-flex;
+      align-items: center;
+      padding: .35rem .9rem;
+      border-radius: 9999px;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: var(--sage);
+      color: var(--gun);
+      border: 1px solid var(--stone);
+      margin: .2rem .25rem .2rem 0;
+      transition:
+        background 350ms cubic-bezier(.32,.72,0,1),
+        color 350ms cubic-bezier(.32,.72,0,1),
+        transform 350ms cubic-bezier(.32,.72,0,1);
+    }
+    .post-body a[href="#"]:hover {
+      background: var(--ink);
+      color: var(--canvas);
+      border-color: var(--ink);
+      transform: translateY(-1px);
+    }
+
+    /* Wrap multiple buttons in a flex row */
+    .post-body p:has(> button),
+    .post-body div:has(> button),
+    .post-body p:has(> a[href]:not(.post-back):not([href^="#"])) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      align-items: center;
     }
   </style>
 </head>
