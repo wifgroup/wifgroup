@@ -84,7 +84,7 @@
         <div>
           <p class="eyebrow">send a message</p>
           <h2 style="font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:2rem;">Tell us about what you're working on</h2>
-          <form class="contact-form" id="contact-form" action="https://formspree.io/f/wifgroup" method="POST" novalidate>
+          <form class="contact-form" id="contact-form" novalidate>
             <label for="cf-name">
               Full name
               <input id="cf-name" type="text" name="name" placeholder="Your name" required autocomplete="name">
@@ -101,7 +101,8 @@
               Message
               <textarea id="cf-message" name="message" placeholder="Tell us what you're working on and how WIF Group can help." required></textarea>
             </label>
-            <button type="submit" class="btn-primary" style="width:100%;min-height:3.2rem;font-size:1rem;border:none;cursor:pointer;">Send message</button>
+            <button type="submit" id="cf-submit" class="btn-primary" style="width:100%;min-height:3.2rem;font-size:1rem;border:none;cursor:pointer;">Send message</button>
+            <p id="cf-feedback" role="alert" aria-live="polite" style="display:none;margin-top:1rem;font-size:.9rem;"></p>
           </form>
         </div>
       </div>
@@ -164,5 +165,50 @@
     <p>Surat, Gujarat, India. &copy; 2026 WIF Group.</p>
   </footer>
   <script src="assets/js/titan.js" defer></script>
+  <script src="assets/js/mail.js"></script>
+  <script>
+    (function () {
+      const form     = document.getElementById('contact-form');
+      const btn      = document.getElementById('cf-submit');
+      const feedback = document.getElementById('cf-feedback');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const name    = document.getElementById('cf-name').value.trim();
+        const email   = document.getElementById('cf-email').value.trim();
+        const topic   = document.getElementById('cf-topic').value.trim();
+        const message = document.getElementById('cf-message').value.trim();
+
+        // Basic client-side validation
+        if (!name || !email || !message) {
+          feedback.textContent = 'Please fill in your name, email, and message.';
+          feedback.style.color = '#c0392b';
+          feedback.style.display = 'block';
+          return;
+        }
+
+        // Disable button while sending
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        feedback.style.display = 'none';
+
+        const success = await handleContactForm(name, email, topic, message);
+
+        if (success) {
+          form.reset();
+          feedback.textContent = '✓ Message sent! We\'ll get back to you shortly.';
+          feedback.style.color = '#27ae60';
+        } else {
+          feedback.textContent = 'Something went wrong. Please try again or email us directly.';
+          feedback.style.color = '#c0392b';
+        }
+
+        feedback.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Send message';
+      });
+    })();
+  </script>
 </body>
 </html>
