@@ -99,28 +99,36 @@ async function handleNewsletterSubscription(email) {
 async function handleContactForm(name, email, topic, message) {
     console.log('--- Sending Contact Form Submission ---');
 
-    const formData = {
+    // FormSubmit AJAX endpoint — delivers to WIF Group email, no backend required.
+    const CONTACT_API = 'https://formsubmit.co/ajax/wifgroupofcompany@gmail.com';
+
+    const payload = {
         name,
-        phone_number: 'N/A',
-        message: `Topic: ${topic}\n\nFrom: ${name} <${email}>\n\n${message}`
+        email,
+        _subject: topic ? `[WIF Contact] ${topic}` : '[WIF Contact] New message',
+        message,
+        _captcha: 'false',   // Disable FormSubmit's built-in captcha page
+        _template: 'table'   // Clean email layout
     };
 
     try {
-        const response = await fetch(API_URL, {
+        const response = await fetch(CONTACT_API, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify(payload),
         });
 
-        if (response.ok) {
+        const result = await response.json();
+        console.log('FormSubmit response:', result);
+
+        if (result.success === 'true' || result.success === true) {
             console.log('Contact form submitted successfully.');
-            const result = await response.json();
-            console.log('Server response:', result);
             return true;
         } else {
-            console.error('Server error:', response.status, response.statusText);
+            console.error('FormSubmit error:', result);
             return false;
         }
     } catch (error) {
