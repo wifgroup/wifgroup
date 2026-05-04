@@ -13,99 +13,194 @@
   <title>Blog | WIF Group — Insights on Business, Tech & Community</title>
   <meta name="description" content="Read the latest insights from WIF Group on AI, digital marketing, business growth, tech education, and the startup community in Surat, Gujarat.">
   <meta property="og:title" content="Blog | WIF Group">
-  <meta property="og:description" content="Read the latest insights from WIF Group on AI, digital marketing, business growth, tech education, and the Surat startup community.">
+  <meta property="og:description" content="Insights on AI, digital marketing, business growth, tech education, and the WIF community in Surat.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.wifgroup.in/blog.html">
   <style>
-    /* ── Blog grid ─────────────────────────────────────── */
+    /* ── Blog page styles ─────────────────────── */
+
+    /* Filter bar */
+    .blog-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 2.5rem;
+    }
+    .blog-filter-btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.2rem;
+      padding: 0 1.1rem;
+      border-radius: var(--r-nav);
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      border: 1px solid var(--stone);
+      background: transparent;
+      color: var(--gun);
+      cursor: pointer;
+      transition: background .2s, color .2s, border-color .2s;
+    }
+    .blog-filter-btn:hover,
+    .blog-filter-btn.active {
+      background: var(--black);
+      color: var(--canvas);
+      border-color: var(--black);
+    }
+
+    /* Top hero post — full-width split */
+    .blog-hero-post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--stone);
+      border-radius: var(--r-card);
+      overflow: hidden;
+      margin-top: 3rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background .2s var(--ease);
+    }
+    .blog-hero-post:hover { background: var(--sage); }
+    .blog-hero-post img {
+      width: 100%;
+      height: 100%;
+      min-height: 28rem;
+      object-fit: cover;
+      display: block;
+    }
+    .blog-hero-body {
+      padding: clamp(2rem, 4vw, 3.5rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .blog-hero-body .blog-tag {
+      margin-bottom: 1rem;
+    }
+    .blog-hero-body h2 {
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+    .blog-hero-body p {
+      margin-top: 1rem;
+      color: var(--gun);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 42ch;
+    }
+    .blog-hero-body .read-link {
+      display: inline-block;
+      margin-top: 2rem;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    /* Tags / eyebrow on cards */
+    .blog-tag {
+      display: inline-block;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+
+    /* Divider */
+    .blog-divider {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4rem 0 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--stone);
+    }
+    .blog-divider h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--gun);
+    }
+    .blog-divider span {
+      font-size: .8rem;
+      color: var(--gun);
+      font-family: var(--mono);
+    }
+
+    /* Main blog grid — strict 3-col, each card identical */
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      background: var(--stone);
-      margin-top: 3rem;
+      gap: 0;
+      border-left: 1px solid var(--stone);
+      border-top: 1px solid var(--stone);
     }
     .blog-card {
+      border-right: 1px solid var(--stone);
+      border-bottom: 1px solid var(--stone);
       background: var(--canvas);
       display: flex;
       flex-direction: column;
       text-decoration: none;
       color: inherit;
-      transition: background .2s var(--ease);
+      transition: background .18s var(--ease);
     }
     .blog-card:hover { background: var(--sage); }
     .blog-card-img {
       width: 100%;
       aspect-ratio: 16/9;
       object-fit: cover;
-      background: var(--sage);
       display: block;
+      background: var(--sage);
     }
     .blog-card-body {
       padding: 1.5rem;
       display: flex;
       flex-direction: column;
       flex: 1;
-    }
-    .blog-card-tag {
-      display: inline-block;
-      margin-bottom: .75rem;
-      color: var(--orange);
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
+      gap: .5rem;
     }
     .blog-card-title {
-      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      font-size: clamp(.95rem, 1.2vw, 1.15rem);
       font-weight: 700;
       line-height: 1.3;
-      letter-spacing: -0.02em;
-      margin: 0 0 .6rem;
+      letter-spacing: -.02em;
       color: var(--ink);
+      margin: 0;
     }
     .blog-card-desc {
       color: var(--gun);
-      font-size: .88rem;
+      font-size: .85rem;
       line-height: 1.6;
       flex: 1;
+      margin: 0;
     }
     .blog-card-arrow {
       display: inline-block;
-      margin-top: 1.25rem;
-      font-size: .75rem;
+      margin-top: .75rem;
+      font-size: .7rem;
       font-weight: 700;
-      letter-spacing: .08em;
+      letter-spacing: .1em;
       text-transform: uppercase;
       color: var(--ink);
     }
-    /* Featured first post */
-    .blog-card.featured {
-      grid-column: span 2;
-      flex-direction: row;
-      align-items: stretch;
-    }
-    .blog-card.featured .blog-card-img {
-      width: 55%;
-      aspect-ratio: unset;
-      min-height: 22rem;
-      flex-shrink: 0;
-    }
-    .blog-card.featured .blog-card-body {
-      padding: 2.5rem;
-      justify-content: center;
-    }
-    .blog-card.featured .blog-card-title {
-      font-size: clamp(1.4rem, 2.5vw, 2rem);
-    }
+
+    /* Responsive */
     @media (max-width: 860px) {
-      .blog-grid { grid-template-columns: 1fr; }
-      .blog-card.featured { grid-column: span 1; flex-direction: column; }
-      .blog-card.featured .blog-card-img { width: 100%; min-height: 14rem; }
+      .blog-hero-post {
+        grid-template-columns: 1fr;
+      }
+      .blog-hero-post img { min-height: 16rem; }
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (min-width: 861px) and (max-width: 1100px) {
       .blog-grid { grid-template-columns: repeat(2, 1fr); }
-      .blog-card.featured { grid-column: span 2; }
     }
   </style>
 </head>
@@ -137,146 +232,139 @@
   </nav>
 
   <main id="main-content">
+    <section class="section" style="padding-top: clamp(8rem,13vw,10rem);" data-reveal>
 
-    <section class="page-hero" data-reveal>
-      <div>
+      <!-- Header -->
+      <div style="border-bottom:1px solid var(--stone); padding-bottom:2rem;">
         <p class="eyebrow">WIF Group Blog</p>
-        <h1>Insights on business, tech, and community</h1>
-        <p>Perspectives on AI, digital marketing, startup growth, tech education, and the WIF community in Surat — written by founders and operators for founders and operators.</p>
-      </div>
-      <img src="assets/img/wif-titan/article-one.svg" alt="Illustration of articles and writing">
-    </section>
-
-    <section class="section" aria-labelledby="blog-heading" data-reveal>
-      <div class="section-head">
-        <h2 id="blog-heading">All posts</h2>
-        <span style="color:var(--gun);font-size:.85rem;">11 articles</span>
+        <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:2rem; flex-wrap:wrap; margin-top:.75rem;">
+          <h1 style="font-size:clamp(2.5rem,5vw,4rem); max-width:16ch; line-height:1.05;">Insights on business, AI, and community</h1>
+          <p style="max-width:38ch; color:var(--gun); line-height:1.65; font-size:1rem; padding-bottom:.25rem;">Perspectives from founders, operators, and educators building in and around Surat, Gujarat.</p>
+        </div>
       </div>
 
+      <!-- Featured post -->
+      <a class="blog-hero-post" href="blog/agentic-ai-business-operations-2026.html" aria-label="Read: Agentic AI in 2026">
+        <img src="assets/img/blogs/agentic-ai-business-2026.png" alt="Agentic AI in 2026 — transforming business operations" loading="eager">
+        <div class="blog-hero-body">
+          <span class="blog-tag">AI &amp; Technology · Featured</span>
+          <h2>Agentic AI in 2026: How Autonomous AI Is Transforming Business Operations</h2>
+          <p>Discover how Agentic AI enables autonomous business operations, smarter decision-making, and scalable growth. The shift from tools to autonomous agents is already happening.</p>
+          <span class="read-link">Read article →</span>
+        </div>
+      </a>
+
+      <!-- Grid divider -->
+      <div class="blog-divider">
+        <h2>All Articles</h2>
+        <span>10 more posts</span>
+      </div>
+
+      <!-- Uniform 3-col grid — all 10 remaining posts -->
       <div class="blog-grid">
 
-        <!-- Featured post -->
-        <a class="blog-card featured" href="blog/agentic-ai-business-operations-2026.html">
-          <img class="blog-card-img" src="assets/img/blogs/agentic-ai-business-2026.png" alt="Agentic AI in 2026" loading="eager">
-          <div class="blog-card-body">
-            <span class="blog-card-tag">AI &amp; Technology</span>
-            <h2 class="blog-card-title">Agentic AI in 2026: How Autonomous AI Is Transforming Business Operations</h2>
-            <p class="blog-card-desc">Discover how Agentic AI enables autonomous business operations, smarter decision-making, and scalable growth in 2026.</p>
-            <span class="blog-card-arrow">Read article →</span>
-          </div>
-        </a>
-
-        <!-- Post 2 -->
         <a class="blog-card" href="blog/ai-digital-marketing-strategies-2025.html">
-          <img class="blog-card-img" src="assets/img/blogs/ai-marketing-banner.png" alt="AI Digital Marketing" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blogs/ai-marketing-banner.png" alt="AI Digital Marketing Strategies 2025" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Digital Marketing</span>
+            <span class="blog-tag">Digital Marketing</span>
             <h3 class="blog-card-title">The Future of Digital Marketing: AI-Powered Strategies for 2025</h3>
-            <p class="blog-card-desc">Explore how WIF Group is helping businesses adopt AI-driven strategies for maximum impact in digital marketing.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <p class="blog-card-desc">How WIF Group is helping businesses adopt AI-driven strategies for maximum impact in marketing and brand growth.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 3 -->
         <a class="blog-card" href="blog/google-genie-3-ai-generated-worlds.html">
-          <img class="blog-card-img" src="assets/img/blog/google-genie3-banner.jpg" alt="Google Genie 3" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blog/google-genie3-banner.jpg" alt="Google Genie 3 AI worlds" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">AI &amp; Technology</span>
-            <h3 class="blog-card-title">Google Genie 3: Ushering in the Age of AI-Generated Virtual Worlds</h3>
-            <p class="blog-card-desc">Step into explorable AI-generated worlds with Genie 3 — a groundbreaking leap in generative technology from Google DeepMind.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <span class="blog-tag">AI &amp; Technology</span>
+            <h3 class="blog-card-title">Google Genie 3: The Age of AI-Generated Virtual Worlds</h3>
+            <p class="blog-card-desc">Step into explorable AI-generated worlds — a groundbreaking leap in generative technology from Google DeepMind.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 4 -->
         <a class="blog-card" href="blog/ai-ml-mastery-series-to-build-real-world-solutions-with-source-code-2025.html">
-          <img class="blog-card-img" src="assets/img/blogs/ai-ml-mastery-series-banner.png" alt="AI ML Mastery Series" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blogs/ai-ml-mastery-series-banner.png" alt="AI ML Mastery Series 2025" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Education</span>
-            <h3 class="blog-card-title">Free AI/ML Mastery Series 2025 – Build Real-World Solutions with Source Code</h3>
-            <p class="blog-card-desc">Master AI and Machine Learning in 30 days with Harsh Sanghani. Free roadmap, GitHub code, and expert guidance from WIF Group.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <span class="blog-tag">Education</span>
+            <h3 class="blog-card-title">Free AI/ML Mastery Series 2025 – Real-World Solutions with Source Code</h3>
+            <p class="blog-card-desc">Master AI and Machine Learning in 30 days with Harsh Sanghani — free roadmap, GitHub code, expert guidance.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 5 -->
         <a class="blog-card" href="blog/free-flutter-course-to-build-real-world-apps-with-source-code-2025.html">
-          <img class="blog-card-img" src="assets/img/blogs/flutter_course_wif_group.png" alt="Free Flutter Course" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blogs/flutter_course_wif_group.png" alt="Free Flutter Course 2025" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Education</span>
+            <span class="blog-tag">Education</span>
             <h3 class="blog-card-title">Free Flutter Course 2025 – Build Real-World Apps with Source Code</h3>
-            <p class="blog-card-desc">Master Flutter in 30 days with Harshil Chovatiya. Free roadmap, GitHub code, Firebase integration and expert guidance from WIF Group.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <p class="blog-card-desc">Master Flutter in 30 days with Harshil Chovatiya. Free roadmap, GitHub code, Firebase integration and expert guidance.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 6 -->
         <a class="blog-card" href="blog/gujarat-tech-salary-2025.html">
-          <img class="blog-card-img" src="assets/img/blogs/gujarat-salary-guide-banner.png" alt="Gujarat Tech Salary 2025" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blogs/gujarat-salary-guide-banner.png" alt="Gujarat Tech Salary Guide 2025" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Careers &amp; Hiring</span>
-            <h3 class="blog-card-title">Announcing the 2025 Gujarat Tech Salary Guide: Your Ultimate Hiring Resource</h3>
-            <p class="blog-card-desc">Unlock competitive tech salaries in Gujarat with the 2025 guide from WIF Group. Make informed hiring decisions and retain top talent.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <span class="blog-tag">Careers &amp; Hiring</span>
+            <h3 class="blog-card-title">2025 Gujarat Tech Salary Guide: The Ultimate Hiring Resource</h3>
+            <p class="blog-card-desc">Unlock competitive tech salaries in Gujarat. Make informed hiring decisions and retain top tech talent in 2025.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 7 -->
         <a class="blog-card" href="blog/revolt-surat-marketing-case-study.html">
-          <img class="blog-card-img" src="assets/img/banner.jpg" alt="Revolt Surat Case Study" loading="lazy">
+          <img class="blog-card-img" src="assets/img/banner.jpg" alt="Revolt Surat marketing case study" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Case Study</span>
-            <h3 class="blog-card-title">Revolt Surat: Challenges &amp; Solutions by WIF Group</h3>
-            <p class="blog-card-desc">See how WIF Group tackled Revolt Surat's marketing challenges and helped maximise showroom footfall through targeted digital campaigns.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <span class="blog-tag">Case Study</span>
+            <h3 class="blog-card-title">Revolt Surat: Marketing Challenges &amp; Solutions by WIF Group</h3>
+            <p class="blog-card-desc">How WIF Group tackled Revolt Surat's marketing challenges and maximised showroom footfall through targeted digital campaigns.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 8 -->
         <a class="blog-card" href="blog/evanta-international-brand-development.html">
-          <img class="blog-card-img" src="assets/img/banner.jpg" alt="Evanta International" loading="lazy">
+          <img class="blog-card-img" src="assets/img/banner.jpg" alt="Evanta International brand development" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Case Study</span>
+            <span class="blog-tag">Case Study</span>
             <h3 class="blog-card-title">Evanta International: Complete Brand Development &amp; Marketing</h3>
-            <p class="blog-card-desc">Explore how WIF Group transformed Evanta International's brand identity and helped attract international clients through strategic marketing.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <p class="blog-card-desc">How WIF Group built Evanta International's global brand identity and helped attract international clients through strategic marketing.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 9 -->
         <a class="blog-card" href="blog/build-a-straight-mindset-book-launch.html">
-          <img class="blog-card-img" src="assets/img/blog/straight-mindset-book-banner.jpg" alt="Build a Straight Mindset book" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blog/straight-mindset-book-banner.jpg" alt="Build a Straight Mindset book launch" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Books &amp; Ideas</span>
+            <span class="blog-tag">Books &amp; Ideas</span>
             <h3 class="blog-card-title">Build a Straight Mindset: A New Way to Think Straight</h3>
-            <p class="blog-card-desc">Discover Harshil Chovatiya's debut book on mindset clarity, decisiveness, and building the mental framework every entrepreneur needs.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <p class="blog-card-desc">Harshil Chovatiya's debut book on mindset clarity, decisiveness, and the mental framework every entrepreneur needs to build forward.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 10 -->
         <a class="blog-card" href="blog/ishq-e-adhura.html">
-          <img class="blog-card-img" src="assets/img/ishq-e-adhura-cover.png" alt="Ishq-e-Adhura book cover" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blog/Ishq-E-Adhura-1.png" alt="Ishq-e-Adhura book" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Books &amp; Culture</span>
-            <h3 class="blog-card-title">Ishq-e-Adhura by Bhoomika Badkas &amp; Harshil Chovatiya — WIF Group's First Hindi Romance Book</h3>
-            <p class="blog-card-desc">Explore the poetic tale of incomplete love — WIF Group's first Hindi romance book now available on Amazon and Notion Press.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <span class="blog-tag">Books &amp; Culture</span>
+            <h3 class="blog-card-title">Ishq-e-Adhura — WIF Group's First Hindi Romance Book on Amazon</h3>
+            <p class="blog-card-desc">A poetic tale of incomplete love by Bhoomika Badkas &amp; Harshil Chovatiya. Now available on Amazon and Notion Press.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-        <!-- Post 11 -->
         <a class="blog-card" href="blog/lowes-stores-closing-news-2025.html">
-          <img class="blog-card-img" src="assets/img/blog/lowes-easter-close.jpg" alt="Lowe's stores closing 2025" loading="lazy">
+          <img class="blog-card-img" src="assets/img/blog/lowes-store-close-news.jpg" alt="Lowe's stores closing 2025" loading="lazy">
           <div class="blog-card-body">
-            <span class="blog-card-tag">Business News</span>
+            <span class="blog-tag">Business News</span>
             <h3 class="blog-card-title">Why Lowe's Stores Are Closing in 2025 — Full Easter Shutdown News</h3>
-            <p class="blog-card-desc">Explore the truth behind the Lowe's stores closing news 2025 — why the home improvement chain closed all stores for Easter.</p>
-            <span class="blog-card-arrow">Read article →</span>
+            <p class="blog-card-desc">The truth behind the Lowe's stores closing news 2025 and what it means for the US home improvement retail landscape.</p>
+            <span class="blog-card-arrow">Read →</span>
           </div>
         </a>
 
-      </div>
+      </div><!-- /.blog-grid -->
+
     </section>
 
     <section class="final-cta" aria-labelledby="blog-cta" data-reveal>
@@ -284,7 +372,6 @@
       <a class="btn-primary btn-primary-lg" href="contact.html">Join WIF Group</a>
       <img src="assets/img/wif-titan/flatiron-wif.svg" alt="City illustration" aria-hidden="true">
     </section>
-
   </main>
 
   <footer class="footer">
