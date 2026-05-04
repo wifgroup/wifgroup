@@ -24,11 +24,11 @@
   <meta name="twitter:description" content="Explore how Agentic AI in 2026 is transforming business operations through autonomous decision-making, intelligent automation, and scalable digital transformation. Powered by WIF Group.">
   <meta name="twitter:image" content="https://wifgroup.in/assets/img/blogs/agentic-ai-business-2026.png">
   <style>
-    /* ── Blog post article styles ─── */
+    /* ── Blog post ─────────────────────────────── */
     .post-hero {
       width: min(var(--page), calc(100% - 3rem));
       margin: 0 auto;
-      padding: clamp(8rem, 13vw, 10rem) 0 3rem;
+      padding: clamp(8rem,13vw,10rem) 0 3rem;
     }
     .post-hero-meta {
       display: flex;
@@ -46,19 +46,19 @@
       color: var(--orange);
     }
     .post-date {
-      font-size: .8rem;
+      font-size: .78rem;
       color: var(--gun);
       font-family: var(--mono);
     }
     .post-hero h1 {
-      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-size: clamp(2rem,5vw,3.75rem);
       line-height: 1.08;
       letter-spacing: -.035em;
-      max-width: 20ch;
-      margin: 0 0 1.5rem;
+      max-width: 22ch;
+      margin: 0 0 1.25rem;
     }
     .post-hero .post-lead {
-      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      font-size: clamp(.95rem,1.4vw,1.15rem);
       line-height: 1.7;
       color: var(--gun);
       max-width: 60ch;
@@ -70,43 +70,60 @@
       object-fit: cover;
       display: block;
       border-radius: var(--r-card);
-      margin: 2rem 0 0;
+      margin: 2.5rem 0 0;
     }
-    /* Article body */
     .post-body {
-      width: min(74ch, calc(100% - 3rem));
+      width: min(72ch, calc(100% - 3rem));
       margin: 4rem auto 5rem;
     }
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gun);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      transition: color .18s;
+    }
+    .post-back:hover { color: var(--ink); }
+    /* ── Article typography ── */
     .post-body h2 {
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
-      margin: 3rem 0 1rem;
+      font-size: clamp(1.4rem,2.4vw,1.9rem);
+      margin: 2.75rem 0 .9rem;
       letter-spacing: -.025em;
+      line-height: 1.2;
     }
     .post-body h3 {
-      font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-      margin: 2rem 0 .75rem;
-      letter-spacing: -.02em;
+      font-size: clamp(1.1rem,1.6vw,1.35rem);
+      margin: 2rem 0 .7rem;
+      letter-spacing: -.018em;
     }
+    .post-body h4 { font-size: 1rem; margin: 1.5rem 0 .5rem; font-weight: 700; }
     .post-body p {
-      color: var(--gun);
+      color: #3a3a3a;
       font-size: 1.05rem;
-      line-height: 1.8;
-      margin: 0 0 1.25rem;
+      line-height: 1.82;
+      margin: 0 0 1.2rem;
     }
     .post-body ul, .post-body ol {
-      margin: 0 0 1.25rem 1.5rem;
-      color: var(--gun);
+      margin: 0 0 1.2rem 1.5rem;
+      color: #3a3a3a;
     }
     .post-body li {
       font-size: 1.05rem;
-      line-height: 1.75;
-      margin-bottom: .5rem;
+      line-height: 1.78;
+      margin-bottom: .45rem;
     }
     .post-body img {
       width: 100%;
       border-radius: var(--r-md);
       margin: 2rem 0;
       border: 1px solid var(--stone);
+      display: block;
     }
     .post-body blockquote {
       border-left: 4px solid var(--ink);
@@ -120,8 +137,7 @@
       line-height: 1.6;
     }
     .post-body strong { color: var(--ink); }
-    .post-body a { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--stone); }
-    .post-body a:hover { text-decoration-color: var(--ink); }
+    .post-body a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
     .post-body table {
       width: 100%;
       border-collapse: collapse;
@@ -133,31 +149,18 @@
       color: var(--canvas);
       padding: .75rem 1rem;
       text-align: left;
-      font-size: .8rem;
-      letter-spacing: .06em;
+      font-size: .75rem;
+      letter-spacing: .08em;
       text-transform: uppercase;
     }
     .post-body td {
       padding: .75rem 1rem;
       border-bottom: 1px solid var(--stone);
       color: var(--gun);
+      line-height: 1.6;
     }
-    .post-back {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--gun);
-      text-decoration: none;
-      margin-bottom: 2rem;
-      transition: color .2s;
-    }
-    .post-back:hover { color: var(--ink); }
-    @media (max-width: 860px) {
-      .post-body { width: calc(100% - 3rem); }
+    @media (max-width:860px) {
+      .post-body { width: calc(100% - 2.5rem); }
     }
   </style>
 </head>
@@ -189,6 +192,7 @@
   </nav>
 
   <main id="main-content">
+
     <div class="post-hero">
       <div class="post-hero-meta">
         <span class="post-tag">AI & Technology</span>
@@ -196,16 +200,15 @@
       </div>
       <h1>Agentic AI in 2026: How Autonomous AI Is Transforming Business Operations</h1>
       <p class="post-lead">Explore how Agentic AI in 2026 is transforming business operations through autonomous decision-making, intelligent automation, and scalable digital transformation. Powered by WIF Group.</p>
-      <img class="post-banner" src="../assets/img/blogs/agentic-ai-business-2026.png" alt="Agentic AI in 2026: How Autonomous AI Is Transforming Business Operations">
+      <img class="post-banner" src="../assets/img/blogs/agentic-ai-business-2026.png" alt="Agentic AI in 2026: How Autonomous AI Is Transforming Business Operations" loading="eager">
     </div>
+
     <div class="post-body">
       <a class="post-back" href="../blog.html">← Back to all posts</a>
-      <article>
-                                            <div style="position: relative; margin-bottom: 50px;">
+      <div>
 
                                                 <!-- TITLE -->
-                                                <h2
-                                                    class="!text-[calc(1.265rem_+_1.08vw)] font-bold !leading-[1.25] xl:!text-[2rem] !mb-4">
+                                                <h2>
                                                     How Agentic AI Is Transforming Business Strategy, Automation, and
                                                     Decision-Making in 2026
                                                 </h2>
@@ -213,59 +216,52 @@
 
 
                                                 <!-- HERO BLOCKQUOTE -->
-                                                <blockquote
-                                                    style="border-left: 6px solid #4078E0; padding: 30px 26px; margin: 40px 0; font-size: 1.18rem; line-height: 1.9; background: linear-gradient(135deg, rgba(64,120,224,0.08) 0%, rgba(64,120,224,0.02) 100%); border-radius: 12px;">
-                                                    <p style="margin: 0;">
+                                                <blockquote>
+                                                    <p>
                                                         As we enter 2026, businesses are moving beyond AI assistance
                                                         toward fully autonomous systems capable of thinking, acting, and
                                                         optimizing operations in real time.
                                                     </p>
-                                                    <footer
-                                                        style="font-size: 0.8rem; color: #6c757d; margin-top: 18px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06rem;">
+                                                    <footer>
                                                         — WIF Group Insights
                                                     </footer>
                                                 </blockquote>
 
-                                                <hr
-                                                    style="margin: 40px 0; border: none; height: 2px; background: linear-gradient(90deg, #4078E0 0%, rgba(64,120,224,0.25) 50%, transparent 100%);" />
+                                                <hr />
 
                                                 <!-- INTRO -->
-                                                <h3
-                                                    style="font-size: 2em; margin-bottom: 22px; color: #4078E0; font-weight: 700;">
+                                                <h3>
                                                     Introduction: The Shift from AI Tools to AI Agents
                                                 </h3>
 
-                                                <p style="font-size: 1.14em; margin-bottom: 24px;">
+                                                <p>
                                                     With just days left until 2026, the role of artificial intelligence
                                                     in business has fundamentally changed. Organizations are no longer
-                                                    asking how AI can support teams—they are asking how <strong
-                                                        style="color:#4078E0;">Agentic AI</strong> can independently run
+                                                    asking how AI can support teams—they are asking how <strong>Agentic AI</strong> can independently run
                                                     workflows, manage decisions, and deliver outcomes.
                                                 </p>
 
-                                                <p style="font-size: 1.14em; margin-bottom: 24px;">
+                                                <p>
                                                     Agentic AI represents a new generation of autonomous intelligence
                                                     systems that can understand objectives, evaluate constraints, take
                                                     action, and continuously optimize performance. In 2026, this
                                                     capability is becoming a core pillar of digital transformation.
                                                 </p>
 
-                                                <p style="font-size: 1.14em;">
-                                                    At <strong style="color:#4078E0;">WIF Group</strong>, we view
+                                                <p>
+                                                    At <strong>WIF Group</strong>, we view
                                                     Agentic AI as the foundation for scalable, resilient, and
                                                     future-ready businesses across industries.
                                                 </p>
 
-                                                <hr
-                                                    style="margin: 42px 0; border: none; height: 2px; background: linear-gradient(90deg, #4078E0 0%, rgba(64,120,224,0.25) 50%, transparent 100%);" />
+                                                <hr />
 
                                                 <!-- WHAT IS AGENTIC AI -->
-                                                <h3
-                                                    style="font-size: 2em; margin-bottom: 22px; color: #4078E0; font-weight: 700;">
+                                                <h3>
                                                     What Is Agentic AI in 2026?
                                                 </h3>
 
-                                                <p style="font-size: 1.14em; margin-bottom: 24px;">
+                                                <p>
                                                     <strong>Agentic AI</strong> refers to autonomous artificial
                                                     intelligence systems designed to pursue defined goals without
                                                     continuous human supervision. Unlike traditional AI models that
@@ -273,45 +269,38 @@
                                                     within business environments.
                                                 </p>
 
-                                                <ul style="margin: 30px 0; padding-left: 0; list-style: none;">
-                                                    <li
-                                                        style="margin: 16px 0; padding: 16px 20px; border-left: 4px solid #4078E0; background: rgba(64,120,224,0.04); border-radius: 8px;">
+                                                <ul>
+                                                    <li>
                                                         Interpret goals, constraints, and business rules
                                                     </li>
-                                                    <li
-                                                        style="margin: 16px 0; padding: 16px 20px; border-left: 4px solid #4078E0; background: rgba(64,120,224,0.04); border-radius: 8px;">
+                                                    <li>
                                                         Make decisions based on real-time and historical data
                                                     </li>
-                                                    <li
-                                                        style="margin: 16px 0; padding: 16px 20px; border-left: 4px solid #4078E0; background: rgba(64,120,224,0.04); border-radius: 8px;">
+                                                    <li>
                                                         Execute multi-step workflows across systems and tools
                                                     </li>
-                                                    <li
-                                                        style="margin: 16px 0; padding: 16px 20px; border-left: 4px solid #4078E0; background: rgba(64,120,224,0.04); border-radius: 8px;">
+                                                    <li>
                                                         Continuously learn and optimize outcomes
                                                     </li>
                                                 </ul>
 
-                                                <p style="font-size: 1.14em;">
+                                                <p>
                                                     In 2026, Agentic AI is no longer experimental—it is operational.
                                                 </p>
 
-                                                <hr
-                                                    style="margin: 45px 0; border: none; height: 2px; background: linear-gradient(90deg, #4078E0 0%, rgba(64,120,224,0.25) 50%, transparent 100%);" />
+                                                <hr />
 
                                                 <!-- TRANSFORMATION -->
-                                                <h3
-                                                    style="font-size: 2.4em; margin-bottom: 40px; color: #4078E0; font-weight: 800; text-align: center;">
+                                                <h3>
                                                     How Agentic AI Is Transforming Business Operations in 2026
                                                 </h3>
 
                                                 <!-- CARD 1 -->
-                                                <div
-                                                    style="margin-bottom: 32px; padding: 30px; background: linear-gradient(135deg, rgba(64,120,224,0.07), rgba(64,120,224,0.02)); border-radius: 16px; box-shadow: 0 14px 34px rgba(64,120,224,0.1);">
-                                                    <h4 style="font-size: 1.6em; color: #4078E0; margin-bottom: 14px;">
+                                                <div>
+                                                    <h4>
                                                         Autonomous Digital Marketing Operations
                                                     </h4>
-                                                    <p style="font-size: 1.12em;">
+                                                    <p>
                                                         In 2026, Agentic AI systems independently plan, launch,
                                                         optimize, and scale digital marketing campaigns. These agents
                                                         manage audience segmentation, content distribution, ad spend
@@ -321,12 +310,11 @@
                                                 </div>
 
                                                 <!-- CARD 2 -->
-                                                <div
-                                                    style="margin-bottom: 32px; padding: 30px; background: linear-gradient(135deg, rgba(64,120,224,0.07), rgba(64,120,224,0.02)); border-radius: 16px; box-shadow: 0 14px 34px rgba(64,120,224,0.1);">
-                                                    <h4 style="font-size: 1.6em; color: #4078E0; margin-bottom: 14px;">
+                                                <div>
+                                                    <h4>
                                                         Intelligent Customer Experience Management
                                                     </h4>
-                                                    <p style="font-size: 1.12em;">
+                                                    <p>
                                                         Agentic AI enables always-on customer engagement. Autonomous
                                                         agents handle support requests, personalize interactions,
                                                         predict customer needs, and proactively resolve
@@ -336,12 +324,11 @@
                                                 </div>
 
                                                 <!-- CARD 3 -->
-                                                <div
-                                                    style="margin-bottom: 32px; padding: 30px; background: linear-gradient(135deg, rgba(64,120,224,0.07), rgba(64,120,224,0.02)); border-radius: 16px; box-shadow: 0 14px 34px rgba(64,120,224,0.1);">
-                                                    <h4 style="font-size: 1.6em; color: #4078E0; margin-bottom: 14px;">
+                                                <div>
+                                                    <h4>
                                                         Data-Driven Strategic Decision-Making
                                                     </h4>
-                                                    <p style="font-size: 1.12em;">
+                                                    <p>
                                                         By continuously analyzing operational, financial, and market
                                                         data, Agentic AI supports executive decision-making. Businesses
                                                         benefit from predictive insights, scenario modeling, and risk
@@ -350,28 +337,25 @@
                                                 </div>
 
                                                 <!-- CARD 4 -->
-                                                <div
-                                                    style="margin-bottom: 32px; padding: 30px; background: linear-gradient(135deg, rgba(64,120,224,0.07), rgba(64,120,224,0.02)); border-radius: 16px; box-shadow: 0 14px 34px rgba(64,120,224,0.1);">
-                                                    <h4 style="font-size: 1.6em; color: #4078E0; margin-bottom: 14px;">
+                                                <div>
+                                                    <h4>
                                                         End-to-End Operational Automation
                                                     </h4>
-                                                    <p style="font-size: 1.12em;">
+                                                    <p>
                                                         From supply chain coordination to IT operations, Agentic AI
                                                         automates complex workflows across departments—reducing
                                                         bottlenecks, improving accuracy, and enabling scalable growth.
                                                     </p>
                                                 </div>
 
-                                                <hr
-                                                    style="margin: 45px 0; border: none; height: 2px; background: linear-gradient(90deg, #4078E0 0%, rgba(64,120,224,0.25) 50%, transparent 100%);" />
+                                                <hr />
 
                                                 <!-- BENEFITS -->
-                                                <h3
-                                                    style="font-size: 2em; margin-bottom: 22px; color: #4078E0; font-weight: 700;">
+                                                <h3>
                                                     Key Benefits of Agentic AI in 2026
                                                 </h3>
 
-                                                <ul style="margin: 30px 0; padding-left: 22px; font-size: 1.12em;">
+                                                <ul>
                                                     <li>Significant improvements in operational efficiency</li>
                                                     <li>Reduced dependency on manual processes</li>
                                                     <li>Scalable growth without proportional cost increases</li>
@@ -380,282 +364,51 @@
                                                     <li>Faster and more confident decision-making</li>
                                                 </ul>
 
-                                                <hr
-                                                    style="margin: 45px 0; border: none; height: 2px; background: linear-gradient(90deg, #4078E0 0%, rgba(64,120,224,0.25) 50%, transparent 100%);" />
+                                                <hr />
 
                                                 <!-- CONCLUSION -->
-                                                <h3
-                                                    style="font-size: 2em; margin-bottom: 22px; color: #4078E0; font-weight: 700;">
+                                                <h3>
                                                     Conclusion: Preparing for an Agentic AI-Driven Future
                                                 </h3>
 
-                                                <p style="font-size: 1.14em; margin-bottom: 24px;">
+                                                <p>
                                                     As 2026 begins, Agentic AI is transitioning from innovation to
                                                     infrastructure. Businesses that embrace autonomous intelligence will
                                                     outperform competitors in speed, adaptability, and customer value.
                                                 </p>
 
-                                                <p style="font-size: 1.14em;">
-                                                    <strong style="color:#4078E0;">WIF Group</strong> partners with
+                                                <p>
+                                                    <strong>WIF Group</strong> partners with
                                                     organizations to design, implement, and scale Agentic AI solutions
                                                     that align technology with business strategy—ensuring long-term
                                                     success in an AI-driven economy.
                                                 </p>
 
                                                 <!-- CTA -->
-                                                <div
-                                                    style="margin-top: 50px; padding: 36px; background: linear-gradient(135deg, #4078E0, #5a67d8); border-radius: 18px; text-align: center; color: white; box-shadow: 0 18px 45px rgba(64,120,224,0.35);">
-                                                    <h4 style="font-size: 1.7em; margin-bottom: 18px;">
+                                                <div>
+                                                    <h4>
                                                         Ready for Agentic AI in 2026?
                                                     </h4>
-                                                    <p style="font-size: 1.12em; margin-bottom: 24px;">
+                                                    <p>
                                                         Connect with WIF Group to explore how autonomous AI can
                                                         future-proof your business operations.
                                                     </p>
                                                     <a href="https://wifgroup.in/contact.html">
-                                                        <button
-                                                            style="background: white; color: #4078E0; padding: 15px 34px; border-radius: 32px; border: none; font-weight: 700; font-size: 1.05em; cursor: pointer;">
+                                                        <button>
                                                             Contact Us
                                                         </button>
                                                     </a>
                                                 </div>
 
                                             </div>
-                                        </article>
-
-
-
-
-                                        <!-- /.post -->
-                                    </div>
-                                    <!-- /.classic-view -->
-                                    <hr>
-                                    <div class="author-info xl:!flex lg:!flex md:!flex items-center !mb-3">
-                                        <div class="flex items-center">
-                                            <figure class="w-12 h-12 !relative !mr-4 rounded-[100%]"><img
-                                                    class="rounded-[50%]" alt="image"
-                                                    src="../assets/img/avatars/u5.jpg"></figure>
-                                            <div>
-                                                <h6><a href="#" class="!text-[#343f52] hover:!text-[#3f78e0]">Team
-                                                        Member</a></h6>
-                                                <!-- <h6><a href="#" class="!text-[#343f52] hover:!text-[#3f78e0]">Founder & CEO</a></h6> -->
-                                                <span class="!text-[0.75rem] !text-[#aab0bc] m-0 p-0 list-none">WIF
-                                                    Group</span>
-                                            </div>
-                                        </div>
-                                        <div class="!mt-3 xl:!mt-0 lg:!mt-0 md:!mt-0 !ml-auto">
-                                            <a href="../blog.html"
-                                                class="btn btn-sm btn-soft-ash !rounded-[50rem] btn-icon btn-icon-start !mb-0 hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"><i
-                                                    class="uil uil-file-alt !mr-[0.3rem] before:content-['\eaec'] text-[.8rem]"></i>
-                                                All Posts</a>
-                                        </div>
-                                    </div>
-                                    <!-- /.author-info -->
-                                    <p>Leading with innovation and strategic vision, our founder has built WIF Group
-                                        into a powerhouse of
-                                        marketing, technology, and business growth. With expertise in brand development,
-                                        digital
-                                        transformation, and creative solutions, we help businesses scale and achieve
-                                        lasting success.</p>
-
-                                    <nav class="nav social">
-                                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                                            href="https://x.com/wif_marketing"><i
-                                                class="uil uil-twitter before:content-['\ed59'] text-[1rem] !text-[#5daed5]"></i></a>
-                                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                                            href="https://www.facebook.com/wifmarketing"><i
-                                                class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] !text-[#4470cf]"></i></a>
-                                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                                            href="https://www.linkedin.com/company/wifmarketing"><i
-                                                class="uil uil-linkedin before:content-['\ebd1'] text-[1rem] !text-blue"></i></a>
-                                        <a class="m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
-                                            href="https://www.instagram.com/wifmarketing"><i
-                                                class="uil uil-instagram before:content-['\eb9c'] text-[1rem] !text-[#d53581]"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                    <hr>
-                                    <h3 class="!mb-6">You Might Also Like</h3>
-                                    <div class="swiper-container blog grid-view !mb-24 relative z-10" data-margin="30"
-                                        data-dots="true" data-items-md="2" data-items-xs="1">
-                                        <div class="swiper">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <article>
-                                                        <figure
-                                                            class="overlay overlay-1 hover-scale group rounded !mb-5"><a
-                                                                href="ishq-e-adhura.html"> <img
-                                                                    class="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
-                                                                    src="../assets/img/ishq-e-adhura-cover.png"
-                                                                    alt="Ishq-E-Adhura | WIF Group Blog"></a>
-                                                            <figcaption
-                                                                class="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
-                                                                <h5
-                                                                    class="from-top  !mb-0 absolute w-full translate-y-[-80%] p-[.75rem_1rem] left-0 top-2/4">
-                                                                    Read More</h5>
-                                                            </figcaption>
-                                                        </figure>
-                                                        <div class="post-header !mb-[.9rem]">
-                                                            <div
-                                                                class="inline-flex !mb-[.4rem] uppercase !tracking-[0.02rem] text-[0.7rem] font-bold !text-[#aab0bc] relative align-top !pl-[1.4rem] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0]">
-                                                                <a href="evanta-international-brand-development.html"
-                                                                    class="hover" rel="category">Book</a>
-                                                            </div>
-                                                            <!-- /.post-category -->
-                                                            <h2 class="post-title h3 !mt-1 !mb-3"><a
-                                                                    class='!text-[#343f52] hover:!text-[#3f78e0]'
-                                                                    href='ishq-e-adhura.html'>Ishq-e-Adhura By
-                                                                    WIFGroup’s First Heartfelt Hindi Romance Book Now on
-                                                                    Amazon and Google Play</a>
-                                                            </h2>
-                                                        </div>
-                                                        <!-- /.post-header -->
-                                                        <div class="post-footer">
-                                                            <ul
-                                                                class="!text-[0.7rem] !text-[#aab0bc] m-0 p-0 list-none  !mb-0">
-                                                                <li class="post-date inline-block"><i
-                                                                        class="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']"></i><span>
-                                                                        09 April 2025
-                                                                    </span></li>
-
-                                                            </ul>
-                                                            <!-- /.post-meta -->
-                                                        </div>
-                                                        <!-- /.post-footer -->
-                                                    </article>
-                                                    <!-- /article -->
-                                                </div>
-                                                <!--/.swiper-slide -->
-                                                <div class="swiper-slide">
-                                                    <article>
-                                                        <figure
-                                                            class="overlay overlay-1 hover-scale group rounded !mb-5"><a
-                                                                href="#"> <img
-                                                                    class="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
-                                                                    src="../assets/img/photos/b5.jpg" alt="image"></a>
-                                                            <figcaption
-                                                                class="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
-                                                                <h5
-                                                                    class="from-top  !mb-0 absolute w-full translate-y-[-80%] p-[.75rem_1rem] left-0 top-2/4">
-                                                                    Read More</h5>
-                                                            </figcaption>
-                                                        </figure>
-                                                        <div class="post-header !mb-[.9rem]">
-                                                            <div
-                                                                class="inline-flex !mb-[.4rem] uppercase !tracking-[0.02rem] text-[0.7rem] font-bold !text-[#aab0bc] relative align-top !pl-[1.4rem] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0]">
-                                                                <a href="#" class="hover" rel="category">App
-                                                                    Development</a>
-                                                            </div>
-                                                            <!-- /.post-category -->
-                                                            <h2 class="post-title h3 !mt-1 !mb-3"><a
-                                                                    class='!text-[#343f52] hover:!text-[#3f78e0]'
-                                                                    href='../blog-post.html'>DhanSafar: Financial
-                                                                    Management Made Simple</a></h2>
-                                                        </div>
-                                                        <!-- /.post-header -->
-                                                        <div class="post-footer">
-                                                            <ul
-                                                                class="!text-[0.7rem] !text-[#aab0bc] m-0 p-0 list-none  !mb-0">
-                                                                <li class="post-date inline-block"><i
-                                                                        class="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']"></i><span>26
-                                                                        Dec 2024
-                                                                    </span></li>
-
-                                                            </ul>
-                                                            <!-- /.post-meta -->
-                                                        </div>
-                                                        <!-- /.post-footer -->
-                                                    </article>
-                                                    <!-- /article -->
-                                                </div>
-                                                <!--/.swiper-slide -->
-                                                <div class="swiper-slide">
-                                                    <article>
-                                                        <figure
-                                                            class="overlay overlay-1 hover-scale group rounded !mb-5"><a
-                                                                href="#"> <img
-                                                                    class="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
-                                                                    src="../assets/img/photos/b6.jpg" alt="image"></a>
-                                                            <figcaption
-                                                                class="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
-                                                                <h5
-                                                                    class="from-top  !mb-0 absolute w-full translate-y-[-80%] p-[.75rem_1rem] left-0 top-2/4">
-                                                                    Read More</h5>
-                                                            </figcaption>
-                                                        </figure>
-                                                        <div class="post-header !mb-[.9rem]">
-                                                            <div
-                                                                class="inline-flex !mb-[.4rem] uppercase !tracking-[0.02rem] text-[0.7rem] font-bold !text-[#aab0bc] relative align-top !pl-[1.4rem] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0]">
-                                                                <a href="#" class="hover" rel="category">Branding &
-                                                                    Design</a>
-                                                            </div>
-                                                            <!-- /.post-category -->
-                                                            <h2 class="post-title h3 !mt-1 !mb-3"><a
-                                                                    class='!text-[#343f52] hover:!text-[#3f78e0]'
-                                                                    href='../blog-post.html'>Jivan Amrut Singtel:
-                                                                    Crafting a Distinct Identity</a></h2>
-                                                        </div>
-                                                        <!-- /.post-header -->
-                                                        <div class="post-footer">
-                                                            <ul
-                                                                class="!text-[0.7rem] !text-[#aab0bc] m-0 p-0 list-none  !mb-0">
-                                                                <li class="post-date inline-block"><i
-                                                                        class="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']"></i><span>20
-                                                                        Sep 2024
-                                                                    </span></li>
-
-                                                            </ul>
-                                                            <!-- /.post-meta -->
-                                                        </div>
-                                                        <!-- /.post-footer -->
-                                                    </article>
-                                                    <!-- /article -->
-                                                </div>
-                                                <!--/.swiper-slide -->
-                                                <div class="swiper-slide">
-                                                    <article>
-                                                        <figure
-                                                            class="overlay overlay-1 hover-scale group rounded !mb-5"><a
-                                                                href="#"> <img
-                                                                    class="!transition-all !duration-[0.35s] !ease-in-out group-hover:scale-105"
-                                                                    src="../assets/img/photos/b7.jpg" alt="image"></a>
-                                                            <figcaption
-                                                                class="group-hover:opacity-100 absolute w-full h-full opacity-0 text-center px-4 py-3 inset-0 z-[5] pointer-events-none p-2">
-                                                                <h5
-                                                                    class="from-top  !mb-0 absolute w-full translate-y-[-80%] p-[.75rem_1rem] left-0 top-2/4">
-                                                                    Read More</h5>
-                                                            </figcaption>
-                                                        </figure>
-                                                        <div class="post-header !mb-[.9rem]">
-                                                            <div
-                                                                class="inline-flex !mb-[.4rem] uppercase !tracking-[0.02rem] text-[0.7rem] font-bold !text-[#aab0bc] relative align-top !pl-[1.4rem] before:content-[''] before:absolute before:inline-block before:translate-y-[-60%] before:w-3 before:h-[0.05rem] before:left-0 before:top-2/4 before:bg-[#3f78e0]">
-                                                                <a href="#" class="hover" rel="category">App Development
-                                                                </a>
-                                                            </div>
-                                                            <!-- /.post-category -->
-                                                            <h2 class="post-title h3 !mt-1 !mb-3"><a
-                                                                    class='!text-[#343f52] hover:!text-[#3f78e0]'
-                                                                    href='../blog-post.html'>CricAt: Real-Time Cricket
-                                                                    Scoring App</a></h2>
-                                                        </div>
-                                                        <div class="post-footer">
-                                                            <ul
-                                                                class="!text-[0.7rem] !text-[#aab0bc] m-0 p-0 list-none  !mb-0">
-                                                                <li class="post-date inline-block"><i
-                                                                        class="uil uil-calendar-alt pr-[0.2rem] align-[-.05rem] before:content-['\e9ba']"></i><span>7
-                                                                        Jan 2023</span></li>
-
-                                                            </ul>
-                                                            <!-- /.post-meta -->
-                                                        </div>
-                                                        <!-- /.post-footer -->
-                                                    </article>
     </div>
 
-    <section class="final-cta" aria-labelledby="post-cta">
-      <h2 id="post-cta">Join the WIF Group community</h2>
+    <section class="final-cta" aria-labelledby="post-cta-agentic-ai">
+      <h2 id="post-cta-agentic-ai">Join the WIF Group community</h2>
       <a class="btn-primary btn-primary-lg" href="../contact.html">Join WIF Group</a>
       <img src="../assets/img/wif-titan/flatiron-wif.svg" alt="" aria-hidden="true">
     </section>
+
   </main>
 
   <footer class="footer">
