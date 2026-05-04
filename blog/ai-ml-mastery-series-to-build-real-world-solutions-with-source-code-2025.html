@@ -20,295 +20,149 @@
   <meta property="og:url" content="https://wifgroup.in/blog/ai-ml-mastery-series-to-build-real-world-solutions-with-source-code-2025.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Free AI/ML Mastery Series 2025 – Build Real-World Solutions with Source Code | WIF Group">
-  <meta name="twitter:description" content="Kickstart your AI/ML journey with Harsh Sanghani’s free 2025 AI/ML Mastery course. Build real-world models, solve real-world problems, and access full source code — exclusively by WIF Group.">
-  <meta name="twitter:image" content="https://wifgroup.in/assets/img/blogs/ai-ml-mastery-series-banner.png">
   <style>
-    /* ── Blog post layout ─── */
-    .post-hero {
-      width: min(var(--page), calc(100% - 3rem));
-      margin: 0 auto;
-      padding: clamp(8rem,13vw,10rem) 0 3rem;
-    }
-    .post-hero-meta {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .post-tag {
-      display: inline-block;
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--orange);
-    }
-    .post-date {
-      font-size: .78rem;
-      color: var(--gun);
-      font-family: var(--mono);
-    }
-    .post-hero h1 {
-      font-size: clamp(2rem,5vw,3.75rem);
-      line-height: 1.08;
-      letter-spacing: -.035em;
-      max-width: 22ch;
-      margin: 0 0 1.25rem;
-    }
-    .post-hero .post-lead {
-      font-size: clamp(.95rem,1.4vw,1.15rem);
-      line-height: 1.7;
-      color: var(--gun);
-      max-width: 60ch;
-      margin: 0;
-    }
-    .post-banner {
-      width: 100%;
-      max-height: 28rem;
-      object-fit: cover;
-      display: block;
-      border-radius: var(--r-card);
-      margin: 2.5rem 0 0;
-    }
-    .post-body {
-      width: min(72ch, calc(100% - 3rem));
-      margin: 4rem auto 5rem;
-    }
-    .post-back {
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--gun);
-      text-decoration: none;
-      margin-bottom: 2.5rem;
-      transition: color .18s;
-    }
-    .post-back:hover { color: var(--ink); }
-    .post-body h2 {
-      font-size: clamp(1.4rem,2.4vw,1.9rem);
-      margin: 2.75rem 0 .9rem;
-      letter-spacing: -.025em;
-      line-height: 1.2;
-    }
-    .post-body h3 {
-      font-size: clamp(1.1rem,1.6vw,1.35rem);
-      margin: 2rem 0 .7rem;
-      letter-spacing: -.018em;
-    }
-    .post-body h4 { font-size: 1rem; margin: 1.5rem 0 .5rem; font-weight: 700; }
-    .post-body p {
-      color: #3a3a3a;
-      font-size: 1.05rem;
-      line-height: 1.82;
-      margin: 0 0 1.2rem;
-    }
-    .post-body ul, .post-body ol {
-      margin: 0 0 1.2rem 1.5rem;
-      color: #3a3a3a;
-    }
-    .post-body li {
-      font-size: 1.05rem;
-      line-height: 1.78;
-      margin-bottom: .45rem;
-    }
-    .post-body img {
-      width: 100%;
-      border-radius: var(--r-md);
-      margin: 2rem 0;
-      border: 1px solid var(--stone);
-      display: block;
-    }
-    .post-body blockquote {
-      border-left: 4px solid var(--ink);
-      margin: 2rem 0;
-      padding: 1rem 1.5rem;
-      background: var(--sage);
-      border-radius: 0 var(--r-sm) var(--r-sm) 0;
-      color: var(--ink);
-      font-size: 1.1rem;
-      font-weight: 500;
-      line-height: 1.6;
-    }
-    .post-body strong { color: var(--ink); }
-    .post-body a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
-    .post-body table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 2rem 0;
-      font-size: .95rem;
-    }
-    .post-body th {
-      background: var(--ink);
-      color: var(--canvas);
-      padding: .75rem 1rem;
-      text-align: left;
-      font-size: .75rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .post-body td {
-      padding: .75rem 1rem;
-      border-bottom: 1px solid var(--stone);
-      color: var(--gun);
-      line-height: 1.6;
-    }
-    @media (max-width:860px) {
-      .post-body { width: calc(100% - 2.5rem); }
-    }
+    .post-hero{width:min(var(--page),calc(100% - 3rem));margin:0 auto;padding:clamp(8rem,13vw,10rem) 0 3rem}
+    .post-hero-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
+    .post-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+    .post-date{font-size:.78rem;color:var(--gun);font-family:var(--mono)}
+    .post-hero h1{font-size:clamp(2rem,5vw,3.75rem);line-height:1.08;letter-spacing:-.035em;max-width:22ch;margin:0 0 1.25rem}
+    .post-hero .post-lead{font-size:clamp(.95rem,1.4vw,1.15rem);line-height:1.7;color:var(--gun);max-width:60ch;margin:0}
+    .post-banner{width:100%;max-height:28rem;object-fit:cover;display:block;border-radius:var(--r-card);margin:2.5rem 0 0}
+    .post-body{width:min(72ch,calc(100% - 3rem));margin:4rem auto 5rem}
+    .post-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gun);text-decoration:none;margin-bottom:2.5rem;transition:color .18s}
+    .post-back:hover{color:var(--ink)}
+    .post-body h2{font-size:clamp(1.4rem,2.4vw,1.9rem);margin:2.75rem 0 .9rem;letter-spacing:-.025em;line-height:1.2}
+    .post-body h3{font-size:clamp(1.1rem,1.6vw,1.35rem);margin:2rem 0 .7rem;letter-spacing:-.018em}
+    .post-body h4{font-size:1rem;margin:1.5rem 0 .5rem;font-weight:700}
+    .post-body p{color:#3a3a3a;font-size:1.05rem;line-height:1.82;margin:0 0 1.2rem}
+    .post-body ul,.post-body ol{margin:0 0 1.2rem 1.5rem;color:#3a3a3a}
+    .post-body li{font-size:1.05rem;line-height:1.78;margin-bottom:.45rem}
+    .post-body img{width:100%;border-radius:var(--r-md);margin:2rem 0;border:1px solid var(--stone);display:block}
+    .post-body blockquote{border-left:4px solid var(--ink);margin:2rem 0;padding:1rem 1.5rem;background:var(--sage);border-radius:0 var(--r-sm) var(--r-sm) 0;color:var(--ink);font-size:1.1rem;font-weight:500;line-height:1.6}
+    .post-body strong{color:var(--ink)}
+    .post-body a{color:var(--ink);font-weight:600;text-underline-offset:3px}
+    .post-body table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:.95rem}
+    .post-body th{background:var(--ink);color:var(--canvas);padding:.75rem 1rem;text-align:left;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+    .post-body td{padding:.75rem 1rem;border-bottom:1px solid var(--stone);color:var(--gun);line-height:1.6}
+    @media(max-width:860px){.post-body{width:calc(100% - 2.5rem)}}
 
-    /* ══════════════════════════════════════════
-       HIGH-END BUTTON SYSTEM — Post Body
-       Philosophy: pill shape, double-bezel,
-       trailing icon, magnetic hover physics
-    ══════════════════════════════════════════ */
-
-    /* ── Base: all buttons & CTA links ── */
+    /* ── Premium buttons (High-End Design) ── */
     .post-body button,
     .post-body input[type="submit"],
-    .post-body input[type="button"],
-    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]) {
-      /* unset browser defaults */
-      -webkit-appearance: none;
-      appearance: none;
-      border: none;
-      cursor: pointer;
-      font-family: var(--sans);
-
-      /* Pill shape */
-      display: inline-flex;
-      align-items: center;
-      gap: .625rem;
-      padding: .75rem 1.5rem .75rem 1.625rem;
-      border-radius: 9999px;
-      
-      /* Double-bezel outer shell */
-      background: var(--ink);
-      color: var(--canvas);
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      text-decoration: none;
-      line-height: 1;
-      position: relative;
-      isolation: isolate;
-      white-space: nowrap;
-
-      /* Outer hairline ring — the "bezel" */
-      outline: 1.5px solid rgba(255,255,255,.12);
-      outline-offset: 2px;
-      
-      /* Inset highlight — inner core glass sheen */
-      box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.14),
-        0 2px 12px rgba(0,0,0,.12),
-        0 0 0 1px rgba(0,0,0,.08);
-
-      /* Fluid physics transition */
-      transition:
-        transform 600ms cubic-bezier(.32,.72,0,1),
+    .post-body input[type="button"] {
+      -webkit-appearance: none; appearance: none;
+      border: none; cursor: pointer; font-family: var(--sans);
+      display: inline-flex; align-items: center; gap: .625rem;
+      padding: .75rem 1.625rem; border-radius: 9999px;
+      background: var(--ink); color: var(--canvas);
+      font-size: .8rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      text-decoration: none; line-height: 1; position: relative;
+      outline: 1.5px solid rgba(255,255,255,.12); outline-offset: 2px;
+      box-shadow: inset 0 1px 1px rgba(255,255,255,.14), 0 2px 12px rgba(0,0,0,.12);
+      transition: transform 600ms cubic-bezier(.32,.72,0,1),
         box-shadow 500ms cubic-bezier(.32,.72,0,1),
-        background 400ms cubic-bezier(.32,.72,0,1),
-        outline-color 400ms cubic-bezier(.32,.72,0,1);
-      will-change: transform;
-      margin: .25rem .35rem .25rem 0;
+        background 400ms cubic-bezier(.32,.72,0,1);
+      will-change: transform; margin: .25rem .35rem .25rem 0;
     }
-
-    /* ── Trailing arrow icon — button-in-button ── */
+    /* CTA external links (not nav/back/tag links) */
+    .post-body a.cta-btn {
+      display: inline-flex; align-items: center; gap: .625rem;
+      padding: .75rem 1.5rem .75rem 1.625rem; border-radius: 9999px;
+      background: var(--ink); color: var(--canvas);
+      font-size: .8rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; text-decoration: none; line-height: 1;
+      outline: 1.5px solid rgba(255,255,255,.12); outline-offset: 2px;
+      box-shadow: inset 0 1px 1px rgba(255,255,255,.14), 0 2px 12px rgba(0,0,0,.12);
+      transition: transform 600ms cubic-bezier(.32,.72,0,1),
+        box-shadow 500ms cubic-bezier(.32,.72,0,1);
+      will-change: transform; margin: .25rem .35rem .25rem 0;
+    }
+    /* Trailing icon */
     .post-body button::after,
-    .post-body input[type="submit"]::after,
-    .post-body input[type="button"]::after,
-    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"])::after {
-      content: '↗';
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 1.6rem;
-      height: 1.6rem;
-      border-radius: 9999px;
-      background: rgba(255,255,255,.12);
-      font-size: .85rem;
-      font-style: normal;
-      flex-shrink: 0;
-      transition:
-        transform 500ms cubic-bezier(.32,.72,0,1),
-        background 300ms;
+    .post-body a.cta-btn::after {
+      content: '↗'; display: inline-flex; align-items: center;
+      justify-content: center; width: 1.6rem; height: 1.6rem;
+      border-radius: 9999px; background: rgba(255,255,255,.12);
+      font-size: .85rem; flex-shrink: 0;
+      transition: transform 500ms cubic-bezier(.32,.72,0,1);
     }
-
-    /* ── Magnetic hover — lift + icon kinetics ── */
+    /* Hover */
     .post-body button:hover,
-    .post-body input[type="submit"]:hover,
-    .post-body input[type="button"]:hover,
-    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]):hover {
-      transform: translateY(-3px);
-      background: #1a1a1a;
-      box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.18),
-        0 8px 32px rgba(0,0,0,.18),
-        0 2px 8px rgba(0,0,0,.12),
-        0 0 0 1px rgba(0,0,0,.1);
-      outline-color: rgba(255,255,255,.22);
+    .post-body a.cta-btn:hover {
+      transform: translateY(-3px); background: #1a1a1a;
+      box-shadow: inset 0 1px 1px rgba(255,255,255,.18), 0 8px 32px rgba(0,0,0,.18);
     }
-
-    /* Icon diagonal kinetics on hover */
     .post-body button:hover::after,
-    .post-body input[type="submit"]:hover::after,
-    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]):hover::after {
-      transform: translate(2px, -2px) scale(1.08);
+    .post-body a.cta-btn:hover::after {
+      transform: translate(2px,-2px) scale(1.08);
       background: rgba(255,255,255,.22);
     }
-
-    /* ── Active press — physical click feel ── */
-    .post-body button:active,
-    .post-body a[href]:not(.post-back):not([href^="#"]):not([href*="blog"]):not([href*="wifgroup"]):not([href*="contact"]):active {
+    /* Active press */
+    .post-body button:active, .post-body a.cta-btn:active {
       transform: translateY(0) scale(.98);
-      box-shadow:
-        inset 0 1px 3px rgba(0,0,0,.2),
-        0 1px 4px rgba(0,0,0,.1);
+      box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
       transition-duration: 80ms;
     }
-
-    /* ── Hashtag / category tags (href="#") ── */
+    /* Hashtag/category pill tags */
     .post-body a[href="#"] {
-      display: inline-flex;
-      align-items: center;
-      padding: .35rem .9rem;
-      border-radius: 9999px;
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      text-decoration: none;
-      background: var(--sage);
-      color: var(--gun);
-      border: 1px solid var(--stone);
-      margin: .2rem .25rem .2rem 0;
-      transition:
-        background 350ms cubic-bezier(.32,.72,0,1),
-        color 350ms cubic-bezier(.32,.72,0,1),
-        transform 350ms cubic-bezier(.32,.72,0,1);
+      display: inline-flex; align-items: center;
+      padding: .35rem .9rem; border-radius: 9999px;
+      font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; text-decoration: none;
+      background: var(--sage); color: var(--gun);
+      border: 1px solid var(--stone); margin: .2rem .25rem .2rem 0;
+      transition: background 350ms cubic-bezier(.32,.72,0,1),
+        color 350ms, transform 350ms cubic-bezier(.32,.72,0,1);
     }
     .post-body a[href="#"]:hover {
-      background: var(--ink);
-      color: var(--canvas);
-      border-color: var(--ink);
-      transform: translateY(-1px);
+      background: var(--ink); color: var(--canvas);
+      border-color: var(--ink); transform: translateY(-1px);
     }
-
-    /* Wrap multiple buttons in a flex row */
-    .post-body p:has(> button),
-    .post-body div:has(> button),
-    .post-body p:has(> a[href]:not(.post-back):not([href^="#"])) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .5rem;
-      align-items: center;
+    /* Image link wrappers — NO button styling, clean lightbox links */
+    .post-body figure a,
+    .post-body a:has(> img),
+    .post-body a:has(img) {
+      all: unset; cursor: zoom-in; display: block;
+    }
+    .post-body figure a img,
+    .post-body a:has(> img) img {
+      display: block; width: 100%; height: 100%;
+      object-fit: cover; border-radius: var(--r-md);
+      border: 1px solid var(--stone);
+      transition: transform 500ms cubic-bezier(.32,.72,0,1),
+        box-shadow 500ms cubic-bezier(.32,.72,0,1);
+    }
+    .post-body figure a:hover img,
+    .post-body a:has(> img):hover img {
+      transform: scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,0,0,.15);
+    }
+    /* Image grid layout */
+    .post-body .img-grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .post-body .img-grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .post-body .img-grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .post-body .img-grid figure,
+    .post-body .img-grid a {
+      margin: 0 !important; border-radius: var(--r-md);
+      overflow: hidden; aspect-ratio: 4/3;
+    }
+    .post-body .img-grid figure img,
+    .post-body .img-grid a img {
+      width: 100%; height: 100%; object-fit: cover;
+      border-radius: var(--r-md); margin: 0 !important;
+    }
+    /* Standalone figure */
+    .post-body figure {
+      margin: 2rem 0; border-radius: var(--r-md); overflow: hidden;
+    }
+    @media (max-width: 640px) {
+      .post-body .img-grid-2,
+      .post-body .img-grid-3 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -340,7 +194,6 @@
   </nav>
 
   <main id="main-content">
-
     <div class="post-hero">
       <div class="post-hero-meta">
         <span class="post-tag">Education</span>
@@ -350,7 +203,6 @@
       <p class="post-lead">Kickstart your AI/ML journey with Harsh Sanghani’s free 2025 AI/ML Mastery course. Build real-world models, solve real-world problems, and access full source code — exclusively by WIF Group.</p>
       <img class="post-banner" src="../assets/img/blogs/ai-ml-mastery-series-banner.png" alt="Free AI/ML Mastery Series 2025 – Build Real-World Solutions with Source Code" loading="eager">
     </div>
-
     <div class="post-body">
       <a class="post-back" href="../blog.html">← Back to all posts</a>
       <div>
@@ -481,7 +333,7 @@
                                                         </ul>
                                                     </div>
                                                     <div>
-                                                        <a href="https://wifgroup.in/courses.html" target="_blank">
+                                                        <a href="https://wifgroup.in/courses.html" class="cta-btn" target="_blank" rel="noopener">
                                                             <button>
                                                                 👉 Preview the Roadmap & Join Now
                                                             </button>
@@ -496,13 +348,11 @@
                                                 </p>
                                             </div>
     </div>
-
-    <section class="final-cta" aria-labelledby="post-cta-ai-ml-mast">
-      <h2 id="post-cta-ai-ml-mast">Join the WIF Group community</h2>
+    <section class="final-cta" aria-labelledby="cta-ai-ml-ma">
+      <h2 id="cta-ai-ml-ma">Join the WIF Group community</h2>
       <a class="btn-primary btn-primary-lg" href="../contact.html">Join WIF Group</a>
       <img src="../assets/img/wif-titan/flatiron-wif.svg" alt="" aria-hidden="true">
     </section>
-
   </main>
 
   <footer class="footer">
