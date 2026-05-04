@@ -17,45 +17,17 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.wifgroup.in/blog.html">
   <style>
-    /* ── Blog page styles ─────────────────────── */
+    /* ── Blog page ─────────────────────────────── */
 
-    /* Filter bar */
-    .blog-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .5rem;
-      margin-top: 2.5rem;
-    }
-    .blog-filter-btn {
-      display: inline-flex;
-      align-items: center;
-      min-height: 2.2rem;
-      padding: 0 1.1rem;
-      border-radius: var(--r-nav);
-      font-size: .8rem;
-      font-weight: 600;
-      letter-spacing: .04em;
-      border: 1px solid var(--stone);
-      background: transparent;
-      color: var(--gun);
-      cursor: pointer;
-      transition: background .2s, color .2s, border-color .2s;
-    }
-    .blog-filter-btn:hover,
-    .blog-filter-btn.active {
-      background: var(--black);
-      color: var(--canvas);
-      border-color: var(--black);
-    }
-
-    /* Top hero post — full-width split */
+    /* Hero featured post */
     .blog-hero-post {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.15fr .85fr;
       border: 1px solid var(--stone);
       border-radius: var(--r-card);
       overflow: hidden;
       margin-top: 3rem;
+      min-height: 32rem;
       text-decoration: none;
       color: inherit;
       transition: background .2s var(--ease);
@@ -64,42 +36,40 @@
     .blog-hero-post img {
       width: 100%;
       height: 100%;
-      min-height: 28rem;
       object-fit: cover;
       display: block;
     }
     .blog-hero-body {
-      padding: clamp(2rem, 4vw, 3.5rem);
+      padding: clamp(2.5rem, 4vw, 4rem);
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .blog-hero-body .blog-tag {
-      margin-bottom: 1rem;
-    }
+    .blog-hero-body .blog-tag { margin-bottom: 1.25rem; }
     .blog-hero-body h2 {
-      font-size: clamp(1.6rem, 3vw, 2.5rem);
-      line-height: 1.15;
-      letter-spacing: -.03em;
+      font-size: clamp(1.75rem, 2.8vw, 2.6rem);
+      line-height: 1.1;
+      letter-spacing: -.035em;
+      margin: 0;
     }
     .blog-hero-body p {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
       color: var(--gun);
       font-size: 1rem;
-      line-height: 1.7;
-      max-width: 42ch;
+      line-height: 1.75;
+      max-width: 44ch;
     }
     .blog-hero-body .read-link {
       display: inline-block;
-      margin-top: 2rem;
-      font-size: .78rem;
+      margin-top: 2.5rem;
+      font-size: .75rem;
       font-weight: 700;
-      letter-spacing: .1em;
+      letter-spacing: .12em;
       text-transform: uppercase;
       color: var(--ink);
     }
 
-    /* Tags / eyebrow on cards */
+    /* Category tags */
     .blog-tag {
       display: inline-block;
       font-size: .68rem;
@@ -109,97 +79,121 @@
       color: var(--orange);
     }
 
-    /* Divider */
+    /* Section divider */
     .blog-divider {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 4rem 0 0;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--stone);
+      margin: 5rem 0 0;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid var(--ink);
     }
     .blog-divider h2 {
-      font-size: 1rem;
+      font-size: .78rem;
       font-weight: 700;
-      letter-spacing: .06em;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--gun);
+      color: var(--ink);
+      margin: 0;
     }
     .blog-divider span {
-      font-size: .8rem;
+      font-size: .75rem;
       color: var(--gun);
       font-family: var(--mono);
     }
 
-    /* Main blog grid — strict 3-col, each card identical */
+    /* 3-column grid */
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 0;
-      border-left: 1px solid var(--stone);
-      border-top: 1px solid var(--stone);
+      gap: 2rem;
+      margin-top: 2rem;
     }
+
+    /* Card */
     .blog-card {
-      border-right: 1px solid var(--stone);
-      border-bottom: 1px solid var(--stone);
       background: var(--canvas);
+      border: 1px solid var(--stone);
+      border-radius: var(--r-md);
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       text-decoration: none;
       color: inherit;
-      transition: background .18s var(--ease);
+      transition: transform .22s var(--ease), box-shadow .22s var(--ease), background .18s;
     }
-    .blog-card:hover { background: var(--sage); }
+    .blog-card:hover {
+      background: var(--sage);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 48px rgba(0,0,0,.09);
+    }
+
+    /* Card image — strict 16:9 */
     .blog-card-img {
       width: 100%;
-      aspect-ratio: 16/9;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
       display: block;
       background: var(--sage);
+      flex-shrink: 0;
     }
+
+    /* Card body — flex column, arrow pinned to bottom */
     .blog-card-body {
-      padding: 1.5rem;
+      padding: 1.25rem 1.5rem 1.5rem;
       display: flex;
       flex-direction: column;
       flex: 1;
-      gap: .5rem;
+      gap: 0;
     }
+
+    /* 2-line clamped title */
     .blog-card-title {
-      font-size: clamp(.95rem, 1.2vw, 1.15rem);
+      font-size: 1.05rem;
       font-weight: 700;
-      line-height: 1.3;
+      line-height: 1.35;
       letter-spacing: -.02em;
       color: var(--ink);
-      margin: 0;
+      margin: .5rem 0 .65rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
+
+    /* 3-line clamped description, grows to fill space */
     .blog-card-desc {
       color: var(--gun);
-      font-size: .85rem;
-      line-height: 1.6;
-      flex: 1;
+      font-size: .875rem;
+      line-height: 1.65;
       margin: 0;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
+
+    /* Arrow always at bottom */
     .blog-card-arrow {
       display: inline-block;
-      margin-top: .75rem;
-      font-size: .7rem;
+      margin-top: 1.25rem;
+      font-size: .68rem;
       font-weight: 700;
-      letter-spacing: .1em;
+      letter-spacing: .12em;
       text-transform: uppercase;
       color: var(--ink);
     }
 
     /* Responsive */
     @media (max-width: 860px) {
-      .blog-hero-post {
-        grid-template-columns: 1fr;
-      }
-      .blog-hero-post img { min-height: 16rem; }
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
+      .blog-hero-post { grid-template-columns: 1fr; min-height: auto; }
+      .blog-hero-post img { min-height: 16rem; max-height: 22rem; }
+      .blog-grid { grid-template-columns: 1fr; gap: 1.25rem; }
     }
     @media (min-width: 861px) and (max-width: 1100px) {
+      .blog-hero-post { grid-template-columns: 1fr; min-height: auto; }
+      .blog-hero-post img { min-height: 20rem; max-height: 28rem; }
       .blog-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
