@@ -1,11 +1,82 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&family=Geist+Mono:wght@400;500&display=swap');
+/* ── Made Tommy – self-hosted ──────────────────────────────────────── */
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY Thin_PERSONAL USE.otf") format("opentype");
+  font-weight:100;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY Light_PERSONAL USE.otf") format("opentype");
+  font-weight:300;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY Regular_PERSONAL USE.otf") format("opentype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY Medium_PERSONAL USE.otf") format("opentype");
+  font-weight:500;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY Bold_PERSONAL USE.otf") format("opentype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY ExtraBold_PERSONAL USE.otf") format("opentype");
+  font-weight:800;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy";
+  src:url("../fonts/made-tommy/MADE TOMMY Black_PERSONAL USE.otf") format("opentype");
+  font-weight:900;
+  font-style:normal;
+  font-display:swap;
+}
+/* Outline variants (optional — available for decorative use) */
+@font-face{
+  font-family:"Made Tommy Outline";
+  src:url("../fonts/made-tommy/MADE TOMMY Regular Outline_PERSONAL USE.otf") format("opentype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy Outline";
+  src:url("../fonts/made-tommy/MADE TOMMY Bold Outline_PERSONAL USE.otf") format("opentype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Made Tommy Outline";
+  src:url("../fonts/made-tommy/MADE TOMMY Black Outline_PERSONAL USE.otf") format("opentype");
+  font-weight:900;
+  font-style:normal;
+  font-display:swap;
+}
 
 :root{
 --ink:#111111;--canvas:#ffffff;--sage:#f3efeb;--stone:#e9eaeb;--gun:#615e5b;
 --concrete:#d8d3cc;--black:#000000;--orange:#ff9900;
---font:"Geist",ui-sans-serif,system-ui,-apple-system,sans-serif;
---mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+--font:"Made Tommy",ui-sans-serif,system-ui,-apple-system,sans-serif;
+--mono:"Made Tommy",ui-monospace,SFMono-Regular,Menlo,monospace;
 --r-card:32px;--r-sm:10px;--r-md:20px;--r-btn:160px;--r-nav:140px;
 --page:1200px;--gap:80px;--cp:28px;--eg:24px;
 --ease:cubic-bezier(.22,1,.36,1);
